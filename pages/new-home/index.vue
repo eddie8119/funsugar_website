@@ -1,0 +1,34 @@
+<template>
+  <div class="w-full h-screen">
+    <NavbarElement />
+
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSf9Gz3Tbm2qxpIxiQVAZRqNx3ZBaO2R3LiQam-Wpyt-xno_kA/viewform?embedded=true"
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0"
+    >
+      載入中…
+    </iframe>
+  </div>
+</template>
+
+<script>
+import NavbarElement from "@/components/NavbarElement";
+
+export default {
+  components: {
+    NavbarElement
+  }
+};
+</script>
+
+<style scoped>
+iframe {
+  display: block;
+  width: 100%;
+  height: calc(100vh - 82px); /* 扣掉 navbar 高度 */
+  margin-top: 82px; /* 往下推，避免被蓋住 */
+  border: none;
+}
+</style>
