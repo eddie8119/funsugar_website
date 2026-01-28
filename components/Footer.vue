@@ -10,21 +10,6 @@
       <p>聯絡方式</p>
       <p>E-mail : funsugar8119@gmail.com</p>
       <p>Line : eddi7777</p>
-      <!-- <a href="#">
-				<i class="fa-brands fa-instagram socialIcon"></i>
-			</a>
-			<a href="#">
-				<i class="fa-brands fa-linkedin socialIcon"></i>
-			</a>
-			<a href="#">
-				<i class="fa-brands fa-facebook socialIcon"></i>
-			</a>
-			<a href="#">
-				<i class="fa-brands fa-dribbble socialIcon"></i>
-			</a>
-			<a href="#">
-				<i class="fa-brands fa-pinterest socialIcon"></i>
-			</a> -->
     </div>
   </div>
 </template>

@@ -1,19 +1,19 @@
 <template>
   <div>
-    <NavbarElement />
+    <Navbar />
     <Nuxt />
-    <FooterElement />
+    <Footer />
   </div>
 </template>
 
 <script>
-  import NavbarElement from "@/components/NavbarElement";
-  import FooterElement from "@/components/FooterElement";
+  import Navbar from "@/components/Navbar";
+  import Footer from "@/components/Footer";
 
   export default {
     components: {
-      NavbarElement,
-      FooterElement,
+      Navbar,
+      Footer,
     },
   };
 </script>

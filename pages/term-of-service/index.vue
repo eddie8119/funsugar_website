@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NavbarElement />
+    <Navbar />
     <div class="px-12 lg:px-32 pb-16 pt-36  relative">
       <h1 class="uppercase text-5xl mb-4 font-semibold ">
         常見問題
@@ -75,11 +75,11 @@
 </template>
 
 <script>
-import NavbarElement from "@/components/NavbarElement";
+import Navbar from "@/components/Navbar";
 
 export default {
   comments: {
-    NavbarElement
+    Navbar
   }
 }
 

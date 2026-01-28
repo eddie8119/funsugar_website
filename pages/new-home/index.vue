@@ -1,6 +1,6 @@
 <template>
   <div class="h-screen w-full">
-    <NavbarElement />
+    <Navbar />
 
     <iframe
       src="https://docs.google.com/forms/d/e/1FAIpQLSf9Gz3Tbm2qxpIxiQVAZRqNx3ZBaO2R3LiQam-Wpyt-xno_kA/viewform?embedded=true"
@@ -14,11 +14,11 @@
 </template>
 
 <script>
-  import NavbarElement from "@/components/NavbarElement";
+  import Navbar from "@/components/Navbar";
 
   export default {
     components: {
-      NavbarElement,
+      Navbar,
     },
   };
 </script>
