@@ -1,27 +1,13 @@
 <template>
-	<div class="px-4 pt-[220px] lg:px-16 py-16  relative -z-10">
-		<div class="grid-cols-1 md:grid-cols-4  grid mb-8 gap-4">
-
-
-
-		</div>
-
-
-	</div>
+  <div class="relative -z-10 px-4 py-16 pt-[220px] lg:px-16">
+    <div class="mb-8 grid grid-cols-1 gap-4 md:grid-cols-4"></div>
+  </div>
 </template>
 
 <script>
-
-
-
-
-export default {
-	name: 'FamilyWorkColumn',
-
-
-}
+  export default {
+    name: "FamilyWorkColumn",
+  };
 </script>
 
-<style>
-
-</style>
+<style></style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-screen">
+  <div class="h-screen w-full">
     <NavbarElement />
 
     <iframe
@@ -14,21 +14,21 @@
 </template>
 
 <script>
-import NavbarElement from "@/components/NavbarElement";
+  import NavbarElement from "@/components/NavbarElement";
 
-export default {
-  components: {
-    NavbarElement
-  }
-};
+  export default {
+    components: {
+      NavbarElement,
+    },
+  };
 </script>
 
 <style scoped>
-iframe {
-  display: block;
-  width: 100%;
-  height: calc(100vh - 82px); /* 扣掉 navbar 高度 */
-  margin-top: 82px; /* 往下推，避免被蓋住 */
-  border: none;
-}
+  iframe {
+    display: block;
+    width: 100%;
+    height: calc(100vh - 82px); /* 扣掉 navbar 高度 */
+    margin-top: 82px; /* 往下推，避免被蓋住 */
+    border: none;
+  }
 </style>
