@@ -6,7 +6,9 @@
     "dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider nuxt",
     "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider nuxt build",
     "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider nuxt start",
-    "generate": "cross-env NODE_OPTIONS=--openssl-legacy-provider nuxt generate"
+    "generate": "cross-env NODE_OPTIONS=--openssl-legacy-provider nuxt generate",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,vue,scss,css,md,json}\"",
+    "locales:build": "node scripts/build-locales.js"
   },
   "dependencies": {
     "@fortawesome/vue-fontawesome": "^2.0.8",
@@ -17,6 +19,7 @@
     "sass-loader": "^10.2.0",
     "v-video-embed": "^1.0.8",
     "vue": "^2.7.10",
+    "vue-i18n": "^8.28.2",
     "vue-server-renderer": "^2.7.10",
     "vue-template-compiler": "^2.7.10"
   },
@@ -25,6 +28,8 @@
     "autoprefixer": "^10.4.13",
     "cross-env": "^10.0.0",
     "postcss": "^8.4.18",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.11",
     "tailwindcss": "^3.2.1"
   }
 }
