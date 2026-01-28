@@ -6,8 +6,8 @@
 </template>
 
 <script>
-  import WorkPills from "@/components/workDisplay/WorkPills";
-  import FamilyWorkColumn from "@/components/workDisplay/FamilyWorkColumn";
+  import WorkPills from "@/components/photography/WorkPills";
+  import FamilyWorkColumn from "@/components/photography/FamilyWorkColumn";
 
   export default {
     layout: "mainlayout",

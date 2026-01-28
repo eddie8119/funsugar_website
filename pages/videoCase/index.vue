@@ -6,8 +6,8 @@
 </template>
 
 <script>
-  import WorkPills from "@/components/workDisplay/WorkPills";
-  import VideoWorkColumn from "@/components/workDisplay/VideoWorkColumn";
+  import WorkPills from "@/components/photography/WorkPills";
+  import VideoWorkColumn from "@/components/photography/VideoWorkColumn";
 
   export default {
     layout: "mainlayout",
