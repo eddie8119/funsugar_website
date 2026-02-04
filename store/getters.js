@@ -1,5 +1,5 @@
 const getters = {
-    loading: state => state.app.loading,
-}
+  loading: (state) => state.app.loading,
+};
 
 export default getters;

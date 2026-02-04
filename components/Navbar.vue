@@ -10,20 +10,26 @@
         <i class="fa-solid fa-bars text-2xl"></i>
       </button>
       <div
-        class="absolute left-0 right-0 hidden translate-y-16 flex-col items-center gap-4 bg-white bg-opacity-90 p-4 shadow md:static md:flex md:translate-y-0 md:flex-row md:bg-opacity-0 md:bg-none md:shadow-none"
+        class="absolute left-0 right-0 hidden translate-y-16 flex-col items-center gap-4 bg-white bg-opacity-90 p-4 shadow md:static md:flex md:flex-1 md:translate-y-0 md:flex-row md:items-center md:justify-center md:gap-8 md:bg-opacity-0 md:bg-none md:shadow-none"
         role="menu"
         aria-expanded="false"
       >
-        <NavDropdown label="室內攝影" :items="dropdownItems" />
+        <NavLinkList
+          :items="navItems"
+          class="hidden md:flex md:flex-1 md:justify-center"
+        />
 
-        <a
-          class="btn"
-          role="menuitem"
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=funsugar8119@gmail.com&body=詢問方生糖:"
-          target="_blank"
-        >
-          攝影預約
-        </a>
+        <div class="flex items-center md:ml-auto">
+          <NavDropdown label="服務" :items="dropdownItems" />
+          <a
+            class="btn"
+            role="menuitem"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=funsugar8119@gmail.com&body=詢問方生糖:"
+            target="_blank"
+          >
+            攝影預約
+          </a>
+        </div>
       </div>
       <transition name="fade" mode="out-in">
         <div
@@ -43,16 +49,21 @@
   import CommissionForm from "@/components/Dialog/CommissionForm";
   import NavBrand from "@/components/Navbar/NavBrand.vue";
   import NavDropdown from "@/components/Navbar/NavDropdown.vue";
+  import NavLinkList from "@/components/Navbar/NavLinkList.vue";
 
   export default {
     name: "Navbar",
     data() {
       return {
         showModal: false,
-        dropdownItems: [
+        navItems: [
           { label: "關於", href: "#services-section" },
-          { label: "新居婚紗", to: "/new-home" },
-          { label: "服務問答", to: "/term-of-service" },
+          { label: "新居婚紗", to: "/photography/new-home" },
+          { label: "服務問答", to: "/photography/term-of-service" },
+        ],
+        dropdownItems: [
+          { label: "應用程式", to: "/designer-helper" },
+          { label: "室內攝影", to: "/" },
         ],
       };
     },
@@ -60,6 +71,7 @@
       CommissionForm,
       NavBrand,
       NavDropdown,
+      NavLinkList,
     },
 
     computed: {
