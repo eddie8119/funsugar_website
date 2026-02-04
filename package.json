@@ -12,16 +12,18 @@
   },
   "dependencies": {
     "@fortawesome/vue-fontawesome": "^2.0.8",
+    "baseline-browser-mapping": "^2.9.19",
     "build": "^0.1.4",
+    "caniuse-lite": "^1.0.30001767",
     "core-js": "^3.25.3",
     "generate": "^0.14.0",
     "nuxt": "^2.15.8",
     "sass-loader": "^10.2.0",
     "v-video-embed": "^1.0.8",
-    "vue": "^2.7.10",
+    "vue": "2.6.14",
     "vue-i18n": "^8.28.2",
-    "vue-server-renderer": "^2.7.10",
-    "vue-template-compiler": "^2.7.10"
+    "vue-server-renderer": "2.6.14",
+    "vue-template-compiler": "2.6.14"
   },
   "devDependencies": {
     "@nuxt/postcss8": "^1.1.3",
