@@ -1,29 +1,30 @@
 <template>
   <div>
-    <MainSection />
-    <AboutSection />
-    <ServiceSection />
-    <PortfolioSection />
-    <ContactSection />
+    <Hero />
+    <About />
+    <Feature />
+    <!-- <Showcase /> -->
+    <Experience />
   </div>
 </template>
 
 <script>
-  import MainSection from "@/components/landPage/MainSection";
-  import AboutSection from "@/components/landPage/AboutSection";
-  import ServiceSection from "@/components/landPage/ServiceSection";
-  import PortfolioSection from "@/components/landPage/PortfolioSection";
-  import ContactSection from "@/components/landPage/ContactSection";
+  import Hero from "@/components/application/Hero";
+  import About from "@/components/application/About";
+  import Feature from "@/components/application/Feature";
+  import Experience from "@/components/application/Experience";
 
   export default {
-    layout: "mainlayout",
-    name: "IndexPage",
     components: {
-      MainSection,
-      AboutSection,
-      ServiceSection,
-      PortfolioSection,
-      ContactSection,
+      Hero,
+      About,
+      Feature,
+      Experience,
     },
+    layout: "mainlayout",
   };
 </script>
+
+<style lang="scss">
+  @use "~/assets/styles/designer-helper";
+</style>

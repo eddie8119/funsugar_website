@@ -3,9 +3,9 @@
     class="flex flex-col gap-4 text-base text-gray-700 md:flex-row md:items-center"
   >
     <component
+      :is="item.to ? 'nuxt-link' : 'a'"
       v-for="item in items"
       :key="item.label"
-      :is="item.to ? 'nuxt-link' : 'a'"
       :to="item.to"
       :href="item.href"
       class="hover:text-black"

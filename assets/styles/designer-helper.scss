@@ -1,0 +1,19 @@
+@tailwind components;
+
+@layer components {
+  .dh-container {
+    @apply mx-auto max-w-[1200px];
+  }
+
+  .dh-btn {
+    @apply inline-flex items-center rounded-full font-bold transition-colors duration-300;
+  }
+
+  .dh-btn--primary {
+    @apply bg-yellow-500 py-3 px-8 text-white hover:bg-yellow-600;
+  }
+
+  .dh-btn--dark {
+    @apply bg-black py-3 px-8 text-white hover:bg-gray-800;
+  }
+}

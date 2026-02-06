@@ -1,51 +1,57 @@
 <template>
-  <!-- Main section start -->
-  <section class="mb-8 h-screen px-12 py-32 lg:px-32">
-    <div class="flex h-full w-full flex-col md:w-1/2 md:justify-center">
-      <!-- Main text start -->
-      <h1 class="mb-4 text-5xl font-semibold uppercase xl:text-7xl">
-        房屋的紀錄者 INTERIOR PHOTO
-      </h1>
-      <p class="capitalize text-stone-500 xl:w-1/2">
-        居家空間的捕捉者 <br />
-        觀察空間的質感 塑造空間的情感
-      </p>
-      <div class="mt-3 flex gap-8">
-        <a href="#">
-          <i class="fa-brands fa-instagram socialIcon"></i>
-        </a>
-        <a href="#">
-          <i class="fa-brands fa-linkedin socialIcon"></i>
-        </a>
-        <a href="#">
-          <i class="fa-brands fa-facebook socialIcon"></i>
-        </a>
-        <a href="#">
-          <i class="fa-brands fa-dribbble socialIcon"></i>
-        </a>
-        <a href="#">
-          <i class="fa-brands fa-pinterest socialIcon"></i>
-        </a>
-      </div>
-    </div>
-    <!-- Photographer image start -->
+  <section
+    class="relative overflow-hidden bg-gradient-to-br from-amber-200 via-white to-white py-24 px-8 lg:px-24"
+  >
     <div
-      class="absolute bottom-0 right-0 -z-50 h-2/5 overflow-hidden sm:h-1/2 md:h-3/5 lg:h-4/6"
+      class="mx-auto flex max-w-6xl flex-col-reverse items-center gap-12 lg:flex-row"
     >
-      <img src="@/assets/image.jpg" alt="img" class="h-full" />
-    </div>
-    <div class="flex h-20 w-full items-center justify-start md:justify-center">
-      <a href="#about-section">
-        <i
-          class="fa-solid fa-arrow-down rounded-full bg-yellow-400 p-4 text-xl text-stone-100 shadow transition hover:-translate-y-2 hover:shadow-xl"
-        ></i>
-      </a>
+      <div class="w-full lg:w-1/2">
+        <p class="mb-4 text-sm font-semibold tracking-[0.3em] text-stone-500">
+          FUNSUGAR
+        </p>
+        <h1
+          class="mb-6 text-4xl font-bold leading-tight text-stone-900 md:text-5xl"
+        >
+          打造暖度與態度的室內影像，
+          <span class="text-amber-500">用鏡頭講出房子的故事</span>
+        </h1>
+        <p class="mb-10 text-lg text-stone-600">
+          我們將攝影、美感與空間敘事結合，協助品牌、建商與設計工作室快速建立高辨識度的視覺，讓觀者一眼看懂你的價值。
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a
+            href="#service-section"
+            class="rounded-full bg-stone-900 px-8 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-white transition hover:-translate-y-1 hover:bg-stone-700"
+          >
+            了解服務
+          </a>
+          <a
+            href="mailto:hello@funsugar.tw"
+            class="rounded-full border border-stone-400 px-8 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-stone-700 transition hover:-translate-y-1 hover:border-stone-900 hover:text-stone-900"
+          >
+            聯繫我們
+          </a>
+        </div>
+      </div>
+      <div class="relative w-full lg:w-1/2">
+        <div
+          class="absolute -left-6 top-6 h-16 w-16 rounded-full border-4 border-amber-300"
+        />
+        <div
+          class="absolute -right-4 bottom-10 h-20 w-20 rounded-full bg-stone-900/10"
+        />
+        <img
+          src="@/assets/images/application/Landing.png"
+          alt="Interior composition"
+          class="relative z-10 w-full rounded-3xl shadow-[0_25px_70px_rgba(15,23,42,0.15)]"
+        />
+      </div>
     </div>
   </section>
 </template>
 
 <script>
-  export default {};
+  export default {
+    name: "LandPageMainSection",
+  };
 </script>
-
-<style></style>

@@ -3,21 +3,21 @@
     <div class="flex w-full flex-col items-center">
       <label for="user_email" class="text-left text-stone-500">E-mail</label>
       <input
+        id="user_email"
         type="email"
         name="user_email"
-        id="user_email"
         class="mb-6 w-full bg-stone-200 py-2 px-4 xl:w-[80%]"
       />
       <label for="user_message" class="text-left text-stone-500"
         >訊息 Message</label
       >
       <textarea
-        name="user_message"
         id="user_message"
+        name="user_message"
         cols="30"
         rows="10"
         class="mb-6 w-full bg-stone-200 py-2 px-4 xl:w-[80%]"
-      ></textarea>
+      />
       <button class="btn w-full md:w-[80%]">送出</button>
     </div>
   </div>

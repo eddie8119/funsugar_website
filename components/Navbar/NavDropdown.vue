@@ -5,15 +5,15 @@
     </button>
     <div
       v-if="isOpen"
-      class="absolute left-0 z-10 mt-2 w-48 rounded-md bg-white shadow-lg"
+      class="absolute left-1/2 z-10 mt-2 -translate-x-1/2 bg-gray-100 shadow-lg"
     >
       <component
-        v-for="item in items"
         :is="item.to ? 'nuxt-link' : 'a'"
+        v-for="item in items"
         :key="item.label"
         :to="item.to"
         :href="item.href"
-        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+        class="block whitespace-nowrap px-4 py-2 text-sm text-gray-700 hover:bg-white"
         role="menuitem"
       >
         {{ item.label }}
