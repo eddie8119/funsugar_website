@@ -144,6 +144,7 @@ export default {
     // { src: "@/plugins/fontAwesome.js" },
     "@/plugins/i18n.js",
     { src: "@/plugins/video-embed.js", mode: "client" },
+    { src: "@/plugins/gtag.client.js", mode: "client" },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -154,6 +155,10 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [],
+
+  publicRuntimeConfig: {
+    gaMeasurementId: process.env.NUXT_ENV_GA_ID || "",
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
