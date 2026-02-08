@@ -7,9 +7,32 @@ import zhTW from "@/locales/zh-TW.json";
 
 Vue.use(VueI18n);
 
-export default ({ app }) => {
+const DEFAULT_LOCALE = "zh-TW";
+
+function getLocaleFromCookie(cookieString) {
+  if (!cookieString) return null;
+  const match = cookieString
+    .split(";")
+    .map((c) => c.trim())
+    .find((c) => c.startsWith("preferred-locale="));
+  return match ? decodeURIComponent(match.split("=")[1]) : null;
+}
+
+function getInitialLocale({ req }) {
+  if (process.server && req && req.headers?.cookie) {
+    return getLocaleFromCookie(req.headers.cookie);
+  }
+  if (process.client && typeof document !== "undefined") {
+    return getLocaleFromCookie(document.cookie);
+  }
+  return null;
+}
+
+export default ({ app, req }) => {
+  const savedLocale = getInitialLocale({ req }) || DEFAULT_LOCALE;
+
   app.i18n = new VueI18n({
-    locale: "zh-TW",
+    locale: savedLocale,
     fallbackLocale: "en",
     messages: {
       en,

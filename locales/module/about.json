@@ -1,0 +1,41 @@
+{
+  "en": {
+    "about": {
+      "eyebrow": "About KaiJi Notebook",
+      "headline": "Missing one task on site easily costs an extra NT$3000 day-rate. If materials are wasted it hurts even more — those misses become pure overhead.",
+      "cta": "Launch smarter savings",
+      "savings": {
+        "prefix": "Save",
+        "amount": "NT$ 3,000",
+        "suffix": "per month",
+        "formula": "— 3000 × mistakes × month × project sites"
+      }
+    }
+  },
+  "zh-TW": {
+    "about": {
+      "eyebrow": "關於 KaiJi 開工大吉手帳",
+      "headline": "在工地時常自己一個遺漏，補救至少就是一個點工 3000 起跳。若是材料報銷了，更慘，這些都是公司額外的成本負擔。",
+      "cta": "開工大吉，省起來",
+      "savings": {
+        "prefix": "節省",
+        "amount": "NT$ 3000",
+        "suffix": "起/月",
+        "formula": "— 3000元 × 失誤數 × 每月 × 案場數"
+      }
+    }
+  },
+  "ja": {
+    "about": {
+      "eyebrow": "開工大吉ノートについて",
+      "headline": "現場での一つの抜け漏れが、少なくとも日当3,000元の追加コストに。材料ロスが出ればさらに痛手で、すべて会社の余分な負担になります。",
+      "cta": "始業を整えてコスト削減",
+      "savings": {
+        "prefix": "節約",
+        "amount": "NT$ 3,000",
+        "suffix": "／月～",
+        "formula": "— 3000元 × ミス数 × 月数 × 現場数"
+      }
+    }
+  }
+}

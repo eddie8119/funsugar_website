@@ -1,11 +1,26 @@
 {
   "en": {
-    "button": {}
+    "button": {
+      "about_cta": "Launch smarter savings",
+      "experience_cta": "Try the live demo",
+      "hero_cta": "Launch the job notebook",
+      "nav_cta": "Book now"
+    }
   },
   "zh-TW": {
-    "button": {}
+    "button": {
+      "about_cta": "開工大吉，省起來",
+      "experience_cta": "體驗版，立即感受",
+      "hero_cta": "KaiJi，開工大吉",
+      "nav_cta": "預約"
+    }
   },
   "ja": {
-    "button": {}
+    "button": {
+      "about_cta": "始業を整えてコスト削減",
+      "experience_cta": "デモを今すぐ体験",
+      "hero_cta": "現場ノートを今すぐ体験",
+      "nav_cta": "予約する"
+    }
   }
 }

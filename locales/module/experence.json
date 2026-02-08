@@ -1,0 +1,62 @@
+{
+  "en": {
+    "experence": {
+      "videoBadge": "No signup required",
+      "eyebrow": "— Make site records effortless",
+      "title": "Give interior teams a clear, calm record of every job site",
+      "description": "From capturing updates to sharing them instantly, every milestone stays transparent so the whole crew reacts fast.",
+      "ctaLabel": "Try the live demo",
+      "testimonialHeading": "Users say",
+      "testimonials": [
+        {
+          "quote": "I can prioritize each site in minutes — it's like having a personal assistant.",
+          "author": "Project Manager"
+        },
+        {
+          "quote": "Since adopting the notebook, inspections and records stay in sync.",
+          "author": "Interior Designer"
+        }
+      ]
+    }
+  },
+  "zh-TW": {
+    "experence": {
+      "videoBadge": "不註冊，也能體驗",
+      "eyebrow": "— 把工地的管理紀錄變簡單",
+      "title": "幫助室內事務所輕鬆紀錄工地現場繁瑣，省時省錢",
+      "description": "從記錄、整理到共享，讓每一次工地進度都清楚透明，團隊都能即時掌握。",
+      "ctaLabel": "體驗版，立即感受",
+      "testimonialHeading": "使用者這樣說",
+      "testimonials": [
+        {
+          "quote": "快速整理出每個案場任務的優先順序，就像是一個貼身的助理。",
+          "author": "專案經理"
+        },
+        {
+          "quote": "導入這套手帳後，工地紀錄與驗收節奏一目了然。",
+          "author": "設計師"
+        }
+      ]
+    }
+  },
+  "ja": {
+    "experence": {
+      "videoBadge": "登録なしで体験",
+      "eyebrow": "— 現場記録をもっとシンプルに",
+      "title": "室内設計チームの現場記録をスムーズにし、時間とコストを守る",
+      "description": "記録・整理・共有までを一本化し、現場の進捗を誰もが即座に把握できます。",
+      "ctaLabel": "デモを今すぐ体験",
+      "testimonialHeading": "ユーザーの声",
+      "testimonials": [
+        {
+          "quote": "各現場の優先順位をすぐ整理でき、専属アシスタントのようです。",
+          "author": "プロジェクトマネージャー"
+        },
+        {
+          "quote": "このノートを導入してから、記録と検収のリズムがずれなくなりました。",
+          "author": "デザイナー"
+        }
+      ]
+    }
+  }
+}

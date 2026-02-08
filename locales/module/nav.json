@@ -1,0 +1,80 @@
+{
+  "en": {
+    "nav": {
+      "links": [
+        {
+          "label": "New Home Portraits",
+          "to": "/photography/new-home"
+        },
+        {
+          "label": "Service Q&A",
+          "to": "/photography/term-of-service"
+        }
+      ],
+      "dropdown": [
+        {
+          "label": "KaiJi Luck Builder",
+          "to": "/"
+        },
+        {
+          "label": "Interior Photography",
+          "to": "/photography"
+        }
+      ],
+      "dropdownLabel": "Services",
+      "cta": "Book now"
+    }
+  },
+  "zh-TW": {
+    "nav": {
+      "links": [
+        {
+          "label": "新居婚紗",
+          "to": "/photography/new-home"
+        },
+        {
+          "label": "服務問答",
+          "to": "/photography/term-of-service"
+        }
+      ],
+      "dropdown": [
+        {
+          "label": "KaiJi 開工大吉",
+          "to": "/"
+        },
+        {
+          "label": "室內攝影",
+          "to": "/photography"
+        }
+      ],
+      "dropdownLabel": "服務",
+      "cta": "預約"
+    }
+  },
+  "ja": {
+    "nav": {
+      "links": [
+        {
+          "label": "新居ウェディング",
+          "to": "/photography/new-home"
+        },
+        {
+          "label": "サービスQ&A",
+          "to": "/photography/term-of-service"
+        }
+      ],
+      "dropdown": [
+        {
+          "label": "KaiJi 開工大吉ノート",
+          "to": "/"
+        },
+        {
+          "label": "室内撮影",
+          "to": "/photography"
+        }
+      ],
+      "dropdownLabel": "サービス",
+      "cta": "予約する"
+    }
+  }
+}

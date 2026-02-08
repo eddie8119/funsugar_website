@@ -1,11 +1,23 @@
 {
   "en": {
-    "dialog": {}
+    "dialog": {
+      "email_label": "E-mail",
+      "message_label": "Message",
+      "submit_button": "Submit"
+    }
   },
   "zh-TW": {
-    "dialog": {}
+    "dialog": {
+      "email_label": "E-mail",
+      "message_label": "訊息 Message",
+      "submit_button": "送出"
+    }
   },
   "ja": {
-    "dialog": {}
+    "dialog": {
+      "email_label": "メール",
+      "message_label": "メッセージ",
+      "submit_button": "送信"
+    }
   }
 }

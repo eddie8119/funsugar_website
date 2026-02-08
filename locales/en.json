@@ -1,6 +1,63 @@
 {
-  "button": {},
-  "dialog": {},
+  "about": {
+    "eyebrow": "About KaiJi Notebook",
+    "headline": "Missing one task on site easily costs an extra NT$3000 day-rate. If materials are wasted it hurts even more — those misses become pure overhead.",
+    "cta": "Launch smarter savings",
+    "savings": {
+      "prefix": "Save",
+      "amount": "NT$ 3,000",
+      "suffix": "per month",
+      "formula": "— 3000 × mistakes × month × project sites"
+    }
+  },
+  "button": {
+    "about_cta": "Launch smarter savings",
+    "experience_cta": "Try the live demo",
+    "hero_cta": "Launch the job notebook",
+    "nav_cta": "Book now"
+  },
+  "dialog": {
+    "email_label": "E-mail",
+    "message_label": "Message",
+    "submit_button": "Submit"
+  },
+  "experence": {
+    "videoBadge": "No signup required",
+    "eyebrow": "— Make site records effortless",
+    "title": "Give interior teams a clear, calm record of every job site",
+    "description": "From capturing updates to sharing them instantly, every milestone stays transparent so the whole crew reacts fast.",
+    "ctaLabel": "Try the live demo",
+    "testimonialHeading": "Users say",
+    "testimonials": [
+      {
+        "quote": "I can prioritize each site in minutes — it's like having a personal assistant.",
+        "author": "Project Manager"
+      },
+      {
+        "quote": "Since adopting the notebook, inspections and records stay in sync.",
+        "author": "Interior Designer"
+      }
+    ]
+  },
+  "feature": {
+    "eyebrow": "Key capabilities",
+    "title": "Plan smoothly, execute faster",
+    "subtitle": "Three core tools keep every construction site in sync",
+    "services": [
+      {
+        "title": "Drag-and-drop tasks",
+        "description": "Rearrange tasks freely so the plan always matches the job site reality"
+      },
+      {
+        "title": "Markup on floor plans",
+        "description": "Pin to-dos directly on drawings so every detail pairs visuals with text"
+      },
+      {
+        "title": "Calendar by site",
+        "description": "Multiple projects and crews stay organized with a shared timeline"
+      }
+    ]
+  },
   "footer": {
     "contactTitle": "Contact us",
     "navigationTitle": "Navigation",
@@ -11,7 +68,7 @@
     "nav": {
       "home": "Official Website",
       "photography": "Interior Photography",
-      "app": "Lucky Start Notebook"
+      "app": "KaiJi Notebook"
     },
     "contact": {
       "email": "Email"
@@ -20,10 +77,39 @@
   "hero": {
     "construction": {
       "eyebrow": "Record boldly, reduce mistakes",
-      "headline": "\"Lucky Start Notebook\" keeps every site task documented so progress flows and budgets stay on track.",
+      "headline": "\"KaiJi Notebook\" keeps every site task documented so progress flows and budgets stay on track.",
       "cta": "Launch the job notebook",
-      "subheading": "Lucky Start Notebook",
+      "subheading": "Notebook",
       "tagline": "Funsugar Studio"
+    },
+    "visual": {
+      "logoLabel": "KaiJi",
+      "badgeLabel": "Efficiency boost",
+      "description": "Greater accuracy means less rework so progress and budgets stay steady."
     }
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "New Home Portraits",
+        "to": "/photography/new-home"
+      },
+      {
+        "label": "Service Q&A",
+        "to": "/photography/term-of-service"
+      }
+    ],
+    "dropdown": [
+      {
+        "label": "KaiJi Luck Builder",
+        "to": "/"
+      },
+      {
+        "label": "Interior Photography",
+        "to": "/photography"
+      }
+    ],
+    "dropdownLabel": "Services",
+    "cta": "Book now"
   }
 }

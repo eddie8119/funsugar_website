@@ -1,6 +1,63 @@
 {
-  "button": {},
-  "dialog": {},
+  "about": {
+    "eyebrow": "關於 KaiJi 開工大吉手帳",
+    "headline": "在工地時常自己一個遺漏，補救至少就是一個點工 3000 起跳。若是材料報銷了，更慘，這些都是公司額外的成本負擔。",
+    "cta": "開工大吉，省起來",
+    "savings": {
+      "prefix": "節省",
+      "amount": "NT$ 3000",
+      "suffix": "起/月",
+      "formula": "— 3000元 × 失誤數 × 每月 × 案場數"
+    }
+  },
+  "button": {
+    "about_cta": "開工大吉，省起來",
+    "experience_cta": "體驗版，立即感受",
+    "hero_cta": "KaiJi，開工大吉",
+    "nav_cta": "預約"
+  },
+  "dialog": {
+    "email_label": "E-mail",
+    "message_label": "訊息 Message",
+    "submit_button": "送出"
+  },
+  "experence": {
+    "videoBadge": "不註冊，也能體驗",
+    "eyebrow": "— 把工地的管理紀錄變簡單",
+    "title": "幫助室內事務所輕鬆紀錄工地現場繁瑣，省時省錢",
+    "description": "從記錄、整理到共享，讓每一次工地進度都清楚透明，團隊都能即時掌握。",
+    "ctaLabel": "體驗版，立即感受",
+    "testimonialHeading": "使用者這樣說",
+    "testimonials": [
+      {
+        "quote": "快速整理出每個案場任務的優先順序，就像是一個貼身的助理。",
+        "author": "專案經理"
+      },
+      {
+        "quote": "導入這套手帳後，工地紀錄與驗收節奏一目了然。",
+        "author": "設計師"
+      }
+    ]
+  },
+  "feature": {
+    "eyebrow": "功能亮點",
+    "title": "輕鬆記，順順管",
+    "subtitle": "三大功能幫你輕鬆管理工程",
+    "services": [
+      {
+        "title": "任務自由拖移",
+        "description": "任意拖移任務卡片，順應工地滾動調整"
+      },
+      {
+        "title": "平面圖標記",
+        "description": "代辦任務直接標註在圖紙上，有圖有字更清楚"
+      },
+      {
+        "title": "任務行事曆",
+        "description": "多處工地、多項任務，也能井然有序"
+      }
+    ]
+  },
   "footer": {
     "contactTitle": "聯絡我們",
     "navigationTitle": "網站導覽",
@@ -22,8 +79,37 @@
       "eyebrow": "記錄工地，降低失誤",
       "headline": "「KaiJi 開工大吉手帳」目標是更好的紀錄管理，減少遺漏項目發生的機會。重來的次數少了，工地進展就順了，錢也省了。",
       "cta": "KaiJi，開工大吉",
-      "subheading": "KaiJi 開工大吉手帳",
+      "subheading": "開工大吉手帳",
       "tagline": "方生糖 Studio"
+    },
+    "visual": {
+      "logoLabel": "KaiJi",
+      "badgeLabel": "效率提升",
+      "description": "記錄與完成的準確率提升，減少重工與誤差，讓工進更順更省。"
     }
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "新居婚紗",
+        "to": "/photography/new-home"
+      },
+      {
+        "label": "服務問答",
+        "to": "/photography/term-of-service"
+      }
+    ],
+    "dropdown": [
+      {
+        "label": "KaiJi 開工大吉",
+        "to": "/"
+      },
+      {
+        "label": "室內攝影",
+        "to": "/photography"
+      }
+    ],
+    "dropdownLabel": "服務",
+    "cta": "預約"
   }
 }

@@ -1,17 +1,74 @@
 {
-  "button": {},
-  "dialog": {},
+  "about": {
+    "eyebrow": "開工大吉ノートについて",
+    "headline": "現場での一つの抜け漏れが、少なくとも日当3,000元の追加コストに。材料ロスが出ればさらに痛手で、すべて会社の余分な負担になります。",
+    "cta": "始業を整えてコスト削減",
+    "savings": {
+      "prefix": "節約",
+      "amount": "NT$ 3,000",
+      "suffix": "／月～",
+      "formula": "— 3000元 × ミス数 × 月数 × 現場数"
+    }
+  },
+  "button": {
+    "about_cta": "始業を整えてコスト削減",
+    "experience_cta": "デモを今すぐ体験",
+    "hero_cta": "現場ノートを今すぐ体験",
+    "nav_cta": "予約する"
+  },
+  "dialog": {
+    "email_label": "メール",
+    "message_label": "メッセージ",
+    "submit_button": "送信"
+  },
+  "experence": {
+    "videoBadge": "登録なしで体験",
+    "eyebrow": "— 現場記録をもっとシンプルに",
+    "title": "室内設計チームの現場記録をスムーズにし、時間とコストを守る",
+    "description": "記録・整理・共有までを一本化し、現場の進捗を誰もが即座に把握できます。",
+    "ctaLabel": "デモを今すぐ体験",
+    "testimonialHeading": "ユーザーの声",
+    "testimonials": [
+      {
+        "quote": "各現場の優先順位をすぐ整理でき、専属アシスタントのようです。",
+        "author": "プロジェクトマネージャー"
+      },
+      {
+        "quote": "このノートを導入してから、記録と検収のリズムがずれなくなりました。",
+        "author": "デザイナー"
+      }
+    ]
+  },
+  "feature": {
+    "eyebrow": "主な機能",
+    "title": "簡単に記録し、スムーズに管理",
+    "subtitle": "3つの機能で現場管理をシンプルに",
+    "services": [
+      {
+        "title": "タスクのドラッグ操作",
+        "description": "現場の変化に合わせてカードを自由に並び替え"
+      },
+      {
+        "title": "平面図へのマーキング",
+        "description": "図面上にタスクを直接記して、視覚と文字で伝達"
+      },
+      {
+        "title": "タスクカレンダー",
+        "description": "複数現場とタスクも一つの時間軸で把握"
+      }
+    ]
+  },
   "footer": {
     "contactTitle": "お問い合わせ",
     "navigationTitle": "ナビゲーション",
     "ctaHeading": "— ご連絡をお待ちしています",
     "socialHeading": "ソーシャルメディア",
     "tagline": "Built to Be Better",
-    "copyright": "Copyright © 方生糖",
+    "copyright": "Copyright © Funsugar",
     "nav": {
       "home": "公式サイト",
       "photography": "室内撮影",
-      "app": "開工大吉手帳"
+      "app": "開工大吉ノート"
     },
     "contact": {
       "email": "メール"
@@ -23,7 +80,36 @@
       "headline": "「開工大吉ノート」で現場の記録を一元管理し、抜け漏れを防いで工期とコストを守る。",
       "cta": "現場ノートを今すぐ体験",
       "subheading": "開工大吉ノート",
-      "tagline": "方生糖スタジオ"
+      "tagline": "Funsugar Studio"
+    },
+    "visual": {
+      "logoLabel": "KaiJi",
+      "badgeLabel": "効率アップ",
+      "description": "記録精度が上がれば手戻りが減り、進捗もコストも安定します。"
     }
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "新居ウェディング",
+        "to": "/photography/new-home"
+      },
+      {
+        "label": "サービスQ&A",
+        "to": "/photography/term-of-service"
+      }
+    ],
+    "dropdown": [
+      {
+        "label": "KaiJi 開工大吉ノート",
+        "to": "/"
+      },
+      {
+        "label": "室内撮影",
+        "to": "/photography"
+      }
+    ],
+    "dropdownLabel": "サービス",
+    "cta": "予約する"
   }
 }
