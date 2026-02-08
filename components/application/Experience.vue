@@ -5,15 +5,26 @@
         class="grid h-full w-full grid-cols-1 gap-10 rounded-[32px] p-6 md:py-8 md:px-0 lg:grid-cols-[1.05fr_0.95fr] lg:bg-transparent"
       >
         <div
-          class="relative flex h-full min-h-[260px] items-center justify-center overflow-hidden rounded-2xl"
+          class="relative flex h-full min-h-[260px] items-center justify-center overflow-hidden rounded-2xl bg-black"
         >
-          <img
-            src="~/assets/images/application/Experience.jpg"
-            alt="方生糖的現場紀錄"
-            class="h-full w-full object-cover"
-          />
+          <client-only>
+            <div
+              ref="videoContainer"
+              class="relative h-full w-full overflow-hidden rounded-2xl"
+            >
+              <iframe
+                ref="videoPlayer"
+                :src="videoEmbedUrl"
+                title="Experience video"
+                class="h-full w-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                frameborder="0"
+              />
+            </div>
+          </client-only>
           <span
-            class="absolute bottom-6 left-6 rounded-full bg-yellow-500 px-4 py-2 text-xs font-bold uppercase tracking-[0.3em] shadow-lg"
+            class="absolute bottom-12 right-6 rounded-full bg-yellow-500 px-4 py-2 text-xs font-bold uppercase tracking-[0.3em] shadow-lg"
           >
             不註冊，也能體驗
           </span>
@@ -23,7 +34,7 @@
         >
           <div>
             <p class="text-xs uppercase text-gray-500">
-              — design for impact, not approval.
+              — 把工地的管理紀錄變簡單
             </p>
             <H2Title
               title="幫助室內事務所輕鬆紀錄工地現場繁瑣，省時省錢"
@@ -36,7 +47,7 @@
               <PrimaryCta
                 variant="secondary"
                 href="https://interior-construction-helper.web.app/"
-                label="體驗版，即時感受"
+                label="體驗版，立即感受"
                 :new-tab="true"
               />
             </div>
@@ -71,27 +82,131 @@
   import H2Title from "@/components/core/title/H2Title.vue";
   import PrimaryCta from "@/components/core/button/PrimaryCta.vue";
 
+  let youtubeAPIPromise = null;
+  const loadYouTubeAPI = () => {
+    if (typeof window === "undefined") return Promise.resolve(null);
+    if (window.YT && typeof window.YT.Player === "function") {
+      return Promise.resolve(window.YT);
+    }
+    if (youtubeAPIPromise) return youtubeAPIPromise;
+    youtubeAPIPromise = new Promise((resolve) => {
+      const script = document.createElement("script");
+      script.src = "https://www.youtube.com/iframe_api";
+      script.async = true;
+      document.head.appendChild(script);
+      const previous = window.onYouTubeIframeAPIReady;
+      window.onYouTubeIframeAPIReady = () => {
+        if (typeof previous === "function") previous();
+        resolve(window.YT);
+      };
+    });
+    return youtubeAPIPromise;
+  };
+
   export default {
-    name: "Testimonials",
+    name: "Experience",
     components: {
       H2Title,
       PrimaryCta,
     },
     data() {
       return {
+        videoUrl: "https://youtube.com/shorts/xv1ozfO5S-Q?si=tynpmkuzd_gIB5V8",
+        player: null,
+        playerReady: false,
+        videoObserver: null,
         testimonials: [
           {
-            quote:
-              "They don't just design what we ask for, they understand how people see us. A true creative partnership.",
-            author: "Jane D., COO at Vana Club",
+            quote: "快速整理出每個案場任務的優先順序，就像是一個貼身的助理。",
+            author: "專案經理",
           },
           {
-            quote:
-              "We needed to reinvent our image. Our visuals finally match our brand's voice.",
-            author: "Selena T., Founder of Rice Supply",
+            quote: "導入這套手帳後，工地紀錄與驗收節奏一目了然。",
+            author: "設計師",
           },
         ],
       };
+    },
+    computed: {
+      videoId() {
+        if (!this.videoUrl) return "";
+        const match = this.videoUrl.match(
+          /(?:shorts\/|watch\?v=|embed\/|youtu\.be\/)([A-Za-z0-9_-]{11})/
+        );
+        return match ? match[1] : this.videoUrl;
+      },
+      videoEmbedUrl() {
+        const id = this.videoId;
+        return id
+          ? `https://www.youtube.com/embed/${id}?rel=0&playsinline=1&mute=1&enablejsapi=1`
+          : "";
+      },
+    },
+    mounted() {
+      if (process.client) {
+        this.$nextTick(this.initializePlayer);
+      }
+    },
+    beforeDestroy() {
+      if (this.videoObserver) {
+        this.videoObserver.disconnect();
+        this.videoObserver = null;
+      }
+      if (this.player && typeof this.player.destroy === "function") {
+        this.player.destroy();
+        this.player = null;
+      }
+    },
+    methods: {
+      async initializePlayer() {
+        const videoId = this.videoId;
+        if (!videoId) return;
+        const YT = await loadYouTubeAPI();
+        if (!YT || !this.$refs.videoPlayer) return;
+        this.player = new YT.Player(this.$refs.videoPlayer, {
+          videoId,
+          playerVars: {
+            autoplay: 0,
+            rel: 0,
+            playsinline: 1,
+            mute: 1,
+            controls: 1,
+            modestbranding: 1,
+          },
+          events: {
+            onReady: () => {
+              this.playerReady = true;
+              this.initializeVideoObserver();
+            },
+          },
+        });
+      },
+      initializeVideoObserver() {
+        if (!this.playerReady) return;
+        const target = this.$refs.videoContainer;
+        if (!target || !window.IntersectionObserver) return;
+        this.videoObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                this.controlVideo("playVideo");
+              } else {
+                this.controlVideo("pauseVideo");
+              }
+            });
+          },
+          { threshold: 0.5 }
+        );
+        this.videoObserver.observe(target);
+      },
+      controlVideo(command) {
+        if (!this.player || !this.playerReady) return;
+        if (command === "playVideo") {
+          this.player.playVideo();
+        } else {
+          this.player.pauseVideo();
+        }
+      },
     },
   };
 </script>

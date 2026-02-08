@@ -1,39 +1,45 @@
 <template>
-  <section class="h-screen px-4 py-10 pt-20">
-    <div class="dh-container flex h-full h-full gap-10">
+  <section
+    class="flex min-h-screen items-center px-4 py-16 pt-[80px] sm:px-6 md:pt-16 lg:px-8"
+  >
+    <div
+      class="dh-container flex w-full flex-1 flex-col items-center gap-12 lg:flex-row lg:items-stretch lg:gap-16"
+    >
       <!-- Left  -->
-      <div class="flex h-full w-full flex-col justify-between lg:w-1/2">
+      <div class="flex w-full flex-col justify-between gap-10 lg:w-1/2">
         <div class="space-y-4">
           <p class="text-xs uppercase tracking-[0.4em] text-gray-400">
-            — 記錄工地，掌控節奏
+            — {{ $t("hero.construction.eyebrow") }}
           </p>
 
           <H1Title
-            title="「開工大吉手帳」目標是更好的紀錄管理，減少遺漏項目的機會，工地進展就順了，錢也省了。"
-            class-name="text-4xl font-bold text-black md:text-5xl"
+            :title="$t('hero.construction.headline')"
+            class-name="text-[2.25rem] font-semibold leading-[1.1] tracking-tight  sm:leading-[1.3]  lg:leading-[1.3] text-black"
           />
 
           <PrimaryCta
             href="https://interior-helper.vercel.app/"
             :new-tab="true"
-            label="工地手帳，開工大吉"
+            :label="$t('hero.construction.cta')"
             variant="primary"
           />
         </div>
 
         <div class="space-y-3">
-          <h2 class="text-5xl font-extrabold tracking-tight text-black">
-            開工大吉手帳
+          <h2
+            class="text-4xl font-extrabold tracking-tight text-yellow-500 sm:text-5xl"
+          >
+            {{ $t("hero.construction.subheading") }}
           </h2>
 
           <p class="text-xs uppercase tracking-[0.4em] text-gray-400">
-            方生糖 Studio<span class="align-super text-yellow-400">®</span>
+            {{ $t("hero.construction.tagline") }}
           </p>
         </div>
       </div>
 
       <!-- Right  -->
-      <div class="h-full w-full lg:w-1/2">
+      <div class="flex w-full items-center lg:w-1/2">
         <HeroVisual />
       </div>
     </div>

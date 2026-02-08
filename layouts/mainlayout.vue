@@ -1,19 +1,15 @@
 <template>
-  <div>
-    <Navbar :nav-items="navItems" />
+  <AppShell :nav-items="navItems">
     <Nuxt />
-    <AppFooter />
-  </div>
+  </AppShell>
 </template>
 
 <script>
-  import Navbar from "@/components/Navbar";
-  import AppFooter from "@/components/AppFooter";
+  import AppShell from "@/components/layout/AppShell.vue";
 
   export default {
     components: {
-      Navbar,
-      AppFooter,
+      AppShell,
     },
     computed: {
       navItems() {

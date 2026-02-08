@@ -6,8 +6,10 @@
       alt="方生糖 Logo"
     />
     <div class="flex flex-col justify-center leading-tight">
-      <p class="font-semibold tracking-widest text-yellow-400">方生糖</p>
-      <p class="font-light tracking-widest">Designer Helper</p>
+      <p class="font-semibold tracking-widest text-yellow-500">
+        {{ brandTitle }}
+      </p>
+      <p class="font-light tracking-widest">{{ brandSubtitle }}</p>
     </div>
   </nuxt-link>
 </template>
@@ -15,5 +17,25 @@
 <script>
   export default {
     name: "NavBrand",
+    computed: {
+      brandTitle() {
+        const currentPath = this.$route.path;
+
+        if (currentPath.startsWith("/photography")) {
+          return "方生糖";
+        }
+
+        return "KaiJi";
+      },
+      brandSubtitle() {
+        const currentPath = this.$route.path;
+
+        if (currentPath.startsWith("/photography")) {
+          return "Designer Helper";
+        }
+
+        return "開工大吉手帳";
+      },
+    },
   };
 </script>

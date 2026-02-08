@@ -1,16 +1,19 @@
 <template>
-  <div class="relative w-full max-w-[560px]">
+  <div class="relative w-full max-w-[640px] px-3 sm:px-0">
     <!-- Top-left decorative notch - 左上角裝飾缺口 -->
     <div
-      class="absolute -top-6 left-0 z-10 h-[100px] w-[130px]"
+      class="absolute -top-6 left-3 z-10 h-[90px] w-[120px] bg-white sm:left-0 sm:h-[100px] sm:w-[150px]"
       style="border-bottom-right-radius: 60px"
     />
 
     <!-- Main white frame container - 主要白色外框 -->
-    <div class="relative" style="border-radius: 48px; padding: 16px">
+    <div class="relative mx-auto w-full" style="border-radius: 48px">
       <!-- Image container with precise rounded corners - 圖片容器 -->
       <!-- 關鍵：所有四個角都要有 36px 圓角 -->
-      <div class="relative h-[640px] overflow-hidden rounded-[36px]">
+      <div
+        class="relative h-[420px] overflow-hidden sm:h-[520px] lg:h-[640px]"
+        style="border-radius: 36px 36px 0 36px"
+      >
         <!-- Main image - 主圖片 -->
         <img
           :src="imageSrc"
@@ -19,76 +22,63 @@
         />
 
         <!-- Bottom gradient overlay - 底部漸層 -->
-        <div
-          class="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black/25 to-transparent"
-        />
+        <div class="pointer-events-none absolute inset-x-0 bottom-0 h-40" />
 
-        <!-- Statistic Growth Card (Left) - 左側統計卡片 -->
+        <!-- 左側統計卡片 -->
         <div
-          class="absolute bottom-6 left-6 w-[280px] border border-black/5 bg-white/95 p-5 shadow-[0_12px_40px_rgba(15,23,42,0.18)] backdrop-blur-md"
+          class="absolute bottom-4 left-4 w-[220px] border border-black/5 bg-white p-4 backdrop-blur-md sm:bottom-7 sm:left-7 sm:w-[300px] sm:p-5"
           style="border-radius: 28px"
         >
-          <!-- Card header - 卡片標題 -->
+          <!-- 卡片標題 -->
           <div
             class="flex items-center justify-between text-xs font-semibold text-gray-500"
           >
             <div class="flex items-center gap-1.5">
-              <span class="h-1.5 w-1.5 rounded-full bg-gray-300"></span>
-              <span class="h-1.5 w-1.5 rounded-full bg-gray-300"></span>
-              <span class="h-1.5 w-1.5 rounded-full bg-gray-300"></span>
-              <span class="ml-3 text-gray-600">Statistic Growth</span>
+              <span class="h-1.5 w-1.5 rounded-full bg-gray-300" />
+              <span class="h-1.5 w-1.5 rounded-full bg-gray-300" />
+              <span class="h-1.5 w-1.5 rounded-full bg-gray-300" />
+              <span class="ml-3 text-gray-600">KaiJi</span>
             </div>
-            <span class="text-gray-400">Daily</span>
+            <!-- <span class="text-gray-400">Daily</span> -->
           </div>
 
-          <!-- Bar chart - 長條圖 -->
-          <div class="mt-4 flex h-24 items-end gap-2">
-            <div
-              v-for="(height, idx) in barHeights"
-              :key="idx"
-              class="flex-1 rounded-full bg-lime-100"
-            >
-              <div
-                class="w-full rounded-full bg-lime-400 transition-all duration-700 ease-out"
-                :style="{
-                  height: height + '%',
-                  animationDelay: idx * 80 + 'ms',
-                }"
-                :class="animateIn ? 'bar-grow' : ''"
-              />
-            </div>
+          <div class="mt-2 flex h-[150px] items-end gap-2">
+            <img
+              :src="productImage"
+              alt="KaiJi Application"
+              class="h-full w-full rounded-2xl object-cover"
+            />
           </div>
 
           <!-- Stats footer - 統計數據 -->
-          <div
+          <!-- <div
             class="mt-4 flex items-center justify-between text-sm font-semibold"
           >
             <span class="text-gray-800">Total Revenue</span>
-            <span class="text-green-500">+12%</span>
-          </div>
+            <span class="text-green-500">+3000</span>
+          </div> -->
         </div>
 
         <!-- Bottom-right corner with white background -->
         <div
-          class="absolute bottom-0 right-0 bg-white"
-          style="padding: 16px; border-top-left-radius: 36px"
+          class="absolute bottom-0 right-0 bg-white shadow-lg sm:p-4 md:p-3"
+          style="border-top-left-radius: 36px"
         >
           <!-- Result Card - 成果卡片 -->
           <div
-            class="w-44 border border-lime-300 bg-lime-300 p-4 text-gray-900"
+            class="w-40 bg-brand-tertiary p-4 text-gray-900 sm:w-44"
             style="border-radius: 28px"
           >
             <p
               class="mb-2 text-[10px] font-semibold uppercase tracking-[0.3em] text-gray-700"
             >
-              OUR CORE<br />RESULTS
+              效率提升
             </p>
             <p class="mb-1 text-4xl font-black leading-none text-gray-900">
-              $134<span class="ml-0.5 text-2xl">B</span>
+              30<span class="ml-0.5 text-2xl">%</span>
             </p>
             <p class="text-[10px] leading-relaxed text-gray-700">
-              This year we successfully demonstrate our ability to generate wins
-              and world-class revolutionary results.
+              記錄與完成的準確率提升，減少重工與誤差，讓工進更順更省。
             </p>
           </div>
         </div>
@@ -98,19 +88,22 @@
 </template>
 
 <script>
+  import ProductImage from "~/assets/images/application/Product.png";
+
   export default {
     name: "MarketingHero",
     props: {
       imageSrc: {
         type: String,
         default:
-          "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80",
+          "https://plus.unsplash.com/premium_photo-1681074963599-b895b56dd752?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
     },
     data() {
       return {
         barHeights: [45, 70, 60, 85, 65, 95, 75],
         animateIn: false,
+        productImage: ProductImage,
       };
     },
     mounted() {

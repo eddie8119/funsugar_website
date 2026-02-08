@@ -1,7 +1,9 @@
 <template>
   <!-- Main section start -->
-  <section class="mb-8 h-screen px-12 py-32 lg:px-32">
-    <div class="flex h-full w-full flex-col md:w-1/2 md:justify-center">
+  <section class="relative mb-8 h-screen overflow-hidden px-12 py-32 lg:px-32">
+    <div
+      class="relative z-10 flex h-full w-full flex-col md:w-1/2 md:justify-center"
+    >
       <!-- Main text start -->
       <h1 class="mb-4 text-5xl font-semibold uppercase xl:text-7xl">
         房屋的紀錄者 INTERIOR PHOTO
@@ -30,9 +32,13 @@
     </div>
     <!-- Photographer image start -->
     <div
-      class="absolute bottom-0 right-0 -z-50 h-2/5 overflow-hidden sm:h-1/2 md:h-3/5 lg:h-4/6"
+      class="pointer-events-none absolute bottom-0 right-0 z-0 h-2/5 overflow-hidden sm:h-1/2 md:h-3/5 lg:h-4/6"
     >
-      <img src="@/assets/images/image.jpg" alt="img" class="h-full" />
+      <img
+        src="@/assets/images/image.jpg"
+        alt="img"
+        class="h-full object-cover"
+      />
     </div>
     <div class="flex h-20 w-full items-center justify-start md:justify-center">
       <a href="#about-section">

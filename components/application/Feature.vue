@@ -8,7 +8,7 @@
           功能亮點
         </p>
         <H2Title title="輕鬆記，順順管" class-name="mt-2 text-3xl" />
-        <p class="mt-2 text-base text-gray-600">三大功能幫你成功管理室工程</p>
+        <p class="mt-2 text-base text-gray-600">三大功能幫你輕鬆管理工程</p>
       </div>
       <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
         <div
@@ -79,7 +79,7 @@
             <img
               :src="service.picture"
               :alt="service.title"
-              class="h-32 w-full rounded-xl object-cover md:h-40"
+              class="h-32 w-full rounded-xl object-cover md:h-[180px]"
             />
           </div>
           <!-- <a
@@ -94,7 +94,9 @@
 </template>
 
 <script>
-  import LandingImage from "~/assets/images/application/Landing.png";
+  import Mark from "~/assets/images/application/Mark.png";
+  import Drag from "~/assets/images/application/Drag.png";
+  import Calendar from "~/assets/images/application/Calendar.png";
   import H2Title from "@/components/core/title/H2Title.vue";
   export default {
     name: "Services",
@@ -107,17 +109,17 @@
           {
             title: "任務自由拖移",
             description: "任意的拖移任務卡片，順應工地滾動的變化",
-            picture: LandingImage,
+            picture: Drag,
           },
           {
             title: "平面圖標記",
             description: "代辦任務直接標註在平面圖紙上，有字有圖",
-            picture: LandingImage,
+            picture: Mark,
           },
           {
             title: "任務行事曆",
             description: "多處工地、多個任務，也井然有序",
-            picture: LandingImage,
+            picture: Calendar,
           },
         ],
       };

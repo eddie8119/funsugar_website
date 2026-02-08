@@ -20,7 +20,7 @@
     >
       <p class="group relative text-lg font-semibold">
         <span
-          class="delay-80 transition duration-150 ease-in-out hover:text-yellow-400"
+          class="delay-80 transition duration-150 ease-in-out hover:text-yellow-500"
           >方生糖房子Youtube頻道</span
         >
         <i class="fa-solid fa-arrow-right" />

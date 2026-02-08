@@ -5,21 +5,21 @@
         <nav class="fixed bg-opacity-90 text-stone-500">
           <nuxt-link
             to="/photography"
-            class="delay-80 mx-1 p-4 transition duration-150 ease-in-out hover:text-yellow-400 md:mx-3"
+            class="delay-80 mx-1 p-4 transition duration-150 ease-in-out hover:text-yellow-500 md:mx-3"
             :class="[route === '/photography' ? 'pill-active' : '']"
           >
             室內空間攝影
           </nuxt-link>
           <nuxt-link
             to="/videoCase"
-            class="delay-80 mx-1 p-4 transition duration-150 ease-in-out hover:text-yellow-400 md:mx-3"
+            class="delay-80 mx-1 p-4 transition duration-150 ease-in-out hover:text-yellow-500 md:mx-3"
             :class="[route === '/videoCase' ? 'pill-active' : '']"
           >
             企業影片製片
           </nuxt-link>
           <nuxt-link
             to="/familyRecording"
-            class="delay-80 mx-1 p-4 transition duration-150 ease-in-out hover:text-yellow-400 md:mx-3"
+            class="delay-80 mx-1 p-4 transition duration-150 ease-in-out hover:text-yellow-500 md:mx-3"
             :class="[route === '/familyRecording' ? 'pill-active' : '']"
           >
             免費新居婚紗
@@ -48,6 +48,6 @@
 
 <style scoped>
   .pill-active {
-    @apply rounded-full p-4 text-yellow-400 shadow;
+    @apply rounded-full p-4 text-yellow-500 shadow;
   }
 </style>

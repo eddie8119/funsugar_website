@@ -34,7 +34,7 @@
               target="_blank"
             >
               <h1
-                class="delay-80 text-2xl font-semibold uppercase transition duration-150 ease-in-out hover:text-yellow-400"
+                class="delay-80 text-2xl font-semibold uppercase transition duration-150 ease-in-out hover:text-yellow-500"
               >
                 室內空間作品攝影
               </h1>
@@ -56,7 +56,7 @@
               target="_blank"
             >
               <h1
-                class="delay-80 text-2xl font-semibold uppercase transition duration-150 ease-in-out hover:text-yellow-400"
+                class="delay-80 text-2xl font-semibold uppercase transition duration-150 ease-in-out hover:text-yellow-500"
               >
                 建材公司影片
               </h1>
@@ -88,7 +88,7 @@
               target="_blank"
             >
               <h1
-                class="delay-80 text-2xl font-semibold uppercase transition duration-150 ease-in-out hover:text-yellow-400"
+                class="delay-80 text-2xl font-semibold uppercase transition duration-150 ease-in-out hover:text-yellow-500"
               >
                 屋主新居落成家族紀錄片
               </h1>
@@ -134,7 +134,7 @@
               target="_blank"
             >
               <h1
-                class="delay-80 text-2xl font-semibold uppercase transition duration-150 ease-in-out hover:text-yellow-400"
+                class="delay-80 text-2xl font-semibold uppercase transition duration-150 ease-in-out hover:text-yellow-500"
               >
                 家扶扶幼捐款項目
               </h1>
@@ -153,7 +153,7 @@
           <div class="w-2/3 text-left md:order-2 md:w-full">
             <a href="https://www.ccf.org.tw/support/project" target="_blank">
               <h1
-                class="delay-80 text-2xl font-semibold uppercase transition duration-150 ease-in-out hover:text-yellow-400"
+                class="delay-80 text-2xl font-semibold uppercase transition duration-150 ease-in-out hover:text-yellow-500"
               >
                 家扶捐款兌換攝影
               </h1>
@@ -181,7 +181,7 @@
           <div class="w-2/3 text-right md:w-full md:text-left">
             <a href="https://donations.hondao.org.tw/" target="_blank">
               <h1
-                class="delay-80 text-2xl font-semibold uppercase transition duration-150 ease-in-out hover:text-yellow-400"
+                class="delay-80 text-2xl font-semibold uppercase transition duration-150 ease-in-out hover:text-yellow-500"
               >
                 弘道老人捐款兌換攝影
               </h1>

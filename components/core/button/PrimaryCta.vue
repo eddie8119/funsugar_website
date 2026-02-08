@@ -51,7 +51,7 @@
       },
       label: {
         type: String,
-        default: "體驗版，即時感受",
+        default: "體驗版，立即感受",
       },
       reverse: {
         type: Boolean,
@@ -79,9 +79,8 @@
       variantClasses() {
         const styles = {
           primary: {
-            wrapper:
-              "bg-white text-black border border-black/10 shadow-sm hover:border-black/40",
-            icon: "bg-orange-500 text-white",
+            wrapper: "bg-yellow-500 text-black  hover:shadow-sm ",
+            icon: "bg-white",
             label: "text-black",
           },
           secondary: {
