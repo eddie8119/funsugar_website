@@ -1,4 +1,29 @@
 {
   "button": {},
-  "dialog": {}
+  "dialog": {},
+  "footer": {
+    "contactTitle": "Contact us",
+    "navigationTitle": "Navigation",
+    "ctaHeading": "— let's get in touch",
+    "socialHeading": "Social media",
+    "tagline": "Built to Be Better",
+    "copyright": "Copyright © Funsugar",
+    "nav": {
+      "home": "Official Website",
+      "photography": "Interior Photography",
+      "app": "Lucky Start Notebook"
+    },
+    "contact": {
+      "email": "Email"
+    }
+  },
+  "hero": {
+    "construction": {
+      "eyebrow": "Record boldly, reduce mistakes",
+      "headline": "\"Lucky Start Notebook\" keeps every site task documented so progress flows and budgets stay on track.",
+      "cta": "Launch the job notebook",
+      "subheading": "Lucky Start Notebook",
+      "tagline": "Funsugar Studio"
+    }
+  }
 }

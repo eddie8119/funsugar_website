@@ -1,0 +1,56 @@
+{
+  "en": {
+    "footer": {
+      "contactTitle": "Contact us",
+      "navigationTitle": "Navigation",
+      "ctaHeading": "— let's get in touch",
+      "socialHeading": "Social media",
+      "tagline": "Built to Be Better",
+      "copyright": "Copyright © Funsugar",
+      "nav": {
+        "home": "Official Website",
+        "photography": "Interior Photography",
+        "app": "Lucky Start Notebook"
+      },
+      "contact": {
+        "email": "Email"
+      }
+    }
+  },
+  "zh-TW": {
+    "footer": {
+      "contactTitle": "聯絡我們",
+      "navigationTitle": "網站導覽",
+      "ctaHeading": "— 我們保持聯繫",
+      "socialHeading": "社群媒體",
+      "tagline": "Built to Be Better",
+      "copyright": "Copyright © 方生糖",
+      "nav": {
+        "home": "官方網站",
+        "photography": "室內攝影",
+        "app": "開工大吉手帳"
+      },
+      "contact": {
+        "email": "電子郵件"
+      }
+    }
+  },
+  "ja": {
+    "footer": {
+      "contactTitle": "お問い合わせ",
+      "navigationTitle": "ナビゲーション",
+      "ctaHeading": "— ご連絡をお待ちしています",
+      "socialHeading": "ソーシャルメディア",
+      "tagline": "Built to Be Better",
+      "copyright": "Copyright © 方生糖",
+      "nav": {
+        "home": "公式サイト",
+        "photography": "室内撮影",
+        "app": "開工大吉手帳"
+      },
+      "contact": {
+        "email": "メール"
+      }
+    }
+  }
+}

@@ -1,4 +1,29 @@
 {
   "button": {},
-  "dialog": {}
+  "dialog": {},
+  "footer": {
+    "contactTitle": "お問い合わせ",
+    "navigationTitle": "ナビゲーション",
+    "ctaHeading": "— ご連絡をお待ちしています",
+    "socialHeading": "ソーシャルメディア",
+    "tagline": "Built to Be Better",
+    "copyright": "Copyright © 方生糖",
+    "nav": {
+      "home": "公式サイト",
+      "photography": "室内撮影",
+      "app": "開工大吉手帳"
+    },
+    "contact": {
+      "email": "メール"
+    }
+  },
+  "hero": {
+    "construction": {
+      "eyebrow": "記録してミスを減らす",
+      "headline": "「開工大吉ノート」で現場の記録を一元管理し、抜け漏れを防いで工期とコストを守る。",
+      "cta": "現場ノートを今すぐ体験",
+      "subheading": "開工大吉ノート",
+      "tagline": "方生糖スタジオ"
+    }
+  }
 }

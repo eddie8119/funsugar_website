@@ -1,4 +1,29 @@
 {
   "button": {},
-  "dialog": {}
+  "dialog": {},
+  "footer": {
+    "contactTitle": "聯絡我們",
+    "navigationTitle": "網站導覽",
+    "ctaHeading": "— 我們保持聯繫",
+    "socialHeading": "社群媒體",
+    "tagline": "Built to Be Better",
+    "copyright": "Copyright © 方生糖",
+    "nav": {
+      "home": "官方網站",
+      "photography": "室內攝影",
+      "app": "開工大吉手帳"
+    },
+    "contact": {
+      "email": "電子郵件"
+    }
+  },
+  "hero": {
+    "construction": {
+      "eyebrow": "記錄工地，降低失誤",
+      "headline": "「KaiJi 開工大吉手帳」目標是更好的紀錄管理，減少遺漏項目發生的機會。重來的次數少了，工地進展就順了，錢也省了。",
+      "cta": "KaiJi，開工大吉",
+      "subheading": "KaiJi 開工大吉手帳",
+      "tagline": "方生糖 Studio"
+    }
+  }
 }
