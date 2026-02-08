@@ -61,7 +61,7 @@
                 建材公司影片
               </h1>
             </a>
-            <p class="capitalize text-stone-500">室內設計訪談影片</p>
+            <p class="capitalize text-stone-500">室內設計記錄影片</p>
             <p class="capitalize text-stone-500">
               Interior Design Interview Videos And Room Tour
             </p>
@@ -159,7 +159,7 @@
               </h1>
             </a>
             <p class="capitalize text-stone-500">
-              委託設計師捐款居家類型公益不限專案，每1200元捐款可兌換一張室內攝影<br />
+              委託方捐款家扶基金會，每1200元捐款可兌換 1 張室內攝影<br />
             </p>
           </div>
           <img
@@ -187,7 +187,7 @@
               </h1>
             </a>
             <p class="capitalize text-stone-500">
-              委託設計師捐款弘道老人福利基金會不限專案，每1200元捐款可兌換一張室內攝影<br />
+              委託方捐款弘道老人福利基金會，每1200元捐款可兌換 1 張室內攝影<br />
             </p>
           </div>
         </div>

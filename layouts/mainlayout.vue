@@ -17,8 +17,11 @@
 
         if (currentPath.startsWith("/photography")) {
           return [
-            { label: "新居婚紗", to: "/photography/new-home" },
             { label: "服務問答", to: "/photography/term-of-service" },
+            {
+              label: "慈善捐款兌換",
+              to: { path: "/photography", hash: "#services-section" },
+            },
           ];
         }
         // if (currentPath.startsWith("/")) {

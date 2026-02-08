@@ -77,8 +77,7 @@ export default {
       {
         hid: "twitter:description",
         name: "twitter:description",
-        content:
-          "室內設計與工程監工的行動幫手，快速紀錄任務，減少遺漏與重工。",
+        content: "室內設計與工程監工的行動幫手，快速紀錄任務，減少遺漏與重工。",
       },
       {
         hid: "twitter:image",
@@ -109,7 +108,7 @@ export default {
           logo: "https://designer-helper-funsugar.netlify.app/favicon.png",
           sameAs: [
             "https://www.instagram.com/funsugar_not_designer/",
-            "https://www.behance.net/WANG81195321"
+            "https://www.behance.net/WANG81195321",
           ],
           description:
             "KaiJi 開工大吉手帳與室內攝影服務，協助設計師管理工地的利器。",
