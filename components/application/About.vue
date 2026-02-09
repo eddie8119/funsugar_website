@@ -33,7 +33,7 @@
 
           <div class="flex items-center">
             <PrimaryCta
-              href="https://interior-helper.vercel.app/"
+              href="https://kaiji-app.vercel.app/"
               :label="$t('about.cta')"
               variant="primary"
             />

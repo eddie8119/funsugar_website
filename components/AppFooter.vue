@@ -110,7 +110,7 @@
           { labelKey: "footer.nav.photography", href: "/photography" },
           {
             labelKey: "footer.nav.app",
-            href: "https://interior-helper.vercel.app/",
+            href: "https://kaiji-app.vercel.app/",
           },
         ],
         contactDetails: [{}],

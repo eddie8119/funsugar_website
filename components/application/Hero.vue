@@ -20,7 +20,7 @@
           />
 
           <PrimaryCta
-            href="https://interior-helper.vercel.app/"
+            href="https://kaiji-app.vercel.app/"
             :new-tab="true"
             :label="$t('hero.construction.cta')"
             variant="primary"
