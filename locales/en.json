@@ -28,35 +28,25 @@
     "description": "From capturing updates to sharing them instantly, every milestone stays transparent so the whole crew reacts fast.",
     "ctaLabel": "Try the live demo",
     "testimonialHeading": "Users say",
-    "testimonials": [
-      {
-        "quote": "I can prioritize each site in minutes — it's like having a personal assistant.",
-        "author": "Project Manager"
-      },
-      {
-        "quote": "Since adopting the notebook, inspections and records stay in sync.",
-        "author": "Interior Designer"
-      }
-    ]
+    "testimonials": {
+      "quote1": "I can prioritize each site in minutes — it's like having a personal assistant.",
+      "author1": "Project Manager",
+      "quote2": "Since adopting the notebook, inspections and records stay in sync.",
+      "author2": "Interior Designer"
+    }
   },
   "feature": {
     "eyebrow": "Key capabilities",
     "title": "Plan smoothly, execute faster",
     "subtitle": "Three core tools keep every construction site in sync",
-    "services": [
-      {
-        "title": "Drag-and-drop tasks",
-        "description": "Rearrange tasks freely so the plan always matches the job site reality"
-      },
-      {
-        "title": "Markup on floor plans",
-        "description": "Pin to-dos directly on drawings so every detail pairs visuals with text"
-      },
-      {
-        "title": "Calendar by site",
-        "description": "Multiple projects and crews stay organized with a shared timeline"
-      }
-    ]
+    "services": {
+      "title1": "Drag-and-drop tasks",
+      "description1": "Rearrange tasks freely so the plan always matches the job site reality",
+      "title2": "Markup on floor plans",
+      "description2": "Pin to-dos directly on drawings so every detail pairs visuals with text",
+      "title3": "Calendar by site",
+      "description3": "Multiple projects and crews stay organized with a shared timeline"
+    }
   },
   "footer": {
     "contactTitle": "Contact us",
@@ -83,7 +73,6 @@
       "tagline": "Funsugar Studio"
     },
     "visual": {
-      "logoLabel": "KaiJi",
       "badgeLabel": "Efficiency boost",
       "description": "Greater accuracy means less rework so progress and budgets stay steady."
     }

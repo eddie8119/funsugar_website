@@ -4,20 +4,14 @@
       "eyebrow": "Key capabilities",
       "title": "Plan smoothly, execute faster",
       "subtitle": "Three core tools keep every construction site in sync",
-      "services": [
-        {
-          "title": "Drag-and-drop tasks",
-          "description": "Rearrange tasks freely so the plan always matches the job site reality"
-        },
-        {
-          "title": "Markup on floor plans",
-          "description": "Pin to-dos directly on drawings so every detail pairs visuals with text"
-        },
-        {
-          "title": "Calendar by site",
-          "description": "Multiple projects and crews stay organized with a shared timeline"
-        }
-      ]
+      "services": {
+        "title1": "Drag-and-drop tasks",
+        "description1": "Rearrange tasks freely so the plan always matches the job site reality",
+        "title2": "Markup on floor plans",
+        "description2": "Pin to-dos directly on drawings so every detail pairs visuals with text",
+        "title3": "Calendar by site",
+        "description3": "Multiple projects and crews stay organized with a shared timeline"
+      }
     }
   },
   "zh-TW": {
@@ -25,20 +19,14 @@
       "eyebrow": "功能亮點",
       "title": "輕鬆記，順順管",
       "subtitle": "三大功能幫你輕鬆管理工程",
-      "services": [
-        {
-          "title": "任務自由拖移",
-          "description": "任意拖移任務卡片，順應工地滾動調整"
-        },
-        {
-          "title": "平面圖標記",
-          "description": "代辦任務直接標註在圖紙上，有圖有字更清楚"
-        },
-        {
-          "title": "任務行事曆",
-          "description": "多處工地、多項任務，也能井然有序"
-        }
-      ]
+      "services": {
+        "title1": "任務自由拖移",
+        "description1": "任意拖移任務卡片，順應工地滾動調整",
+        "title2": "平面圖標記",
+        "description2": "代辦任務直接標註在圖紙上，有圖有字更清楚",
+        "title3": "任務行事曆",
+        "description3": "多處工地、多項任務，也能井然有序"
+      }
     }
   },
   "ja": {
@@ -46,20 +34,14 @@
       "eyebrow": "主な機能",
       "title": "簡単に記録し、スムーズに管理",
       "subtitle": "3つの機能で現場管理をシンプルに",
-      "services": [
-        {
-          "title": "タスクのドラッグ操作",
-          "description": "現場の変化に合わせてカードを自由に並び替え"
-        },
-        {
-          "title": "平面図へのマーキング",
-          "description": "図面上にタスクを直接記して、視覚と文字で伝達"
-        },
-        {
-          "title": "タスクカレンダー",
-          "description": "複数現場とタスクも一つの時間軸で把握"
-        }
-      ]
+      "services": {
+        "title1": "タスクのドラッグ操作",
+        "description1": "現場の変化に合わせてカードを自由に並び替え",
+        "title2": "平面図へのマーキング",
+        "description2": "図面上にタスクを直接記して、視覚と文字で伝達",
+        "title3": "タスクカレンダー",
+        "description3": "複数現場とタスクも一つの時間軸で把握"
+      }
     }
   }
 }

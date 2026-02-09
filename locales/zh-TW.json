@@ -28,35 +28,25 @@
     "description": "從記錄、整理到共享，讓每一次工地進度都清楚透明，團隊都能即時掌握。",
     "ctaLabel": "體驗版，立即感受",
     "testimonialHeading": "使用者這樣說",
-    "testimonials": [
-      {
-        "quote": "快速整理出每個案場任務的優先順序，就像是一個貼身的助理。",
-        "author": "專案經理"
-      },
-      {
-        "quote": "導入這套手帳後，工地紀錄與驗收節奏一目了然。",
-        "author": "設計師"
-      }
-    ]
+    "testimonials": {
+      "quote1": "快速整理出每個案場任務的優先順序，就像是一個貼身的助理。",
+      "author1": "專案經理",
+      "quote2": "導入這套手帳後，工地紀錄與驗收節奏一目了然。",
+      "author2": "設計師"
+    }
   },
   "feature": {
     "eyebrow": "功能亮點",
     "title": "輕鬆記，順順管",
     "subtitle": "三大功能幫你輕鬆管理工程",
-    "services": [
-      {
-        "title": "任務自由拖移",
-        "description": "任意拖移任務卡片，順應工地滾動調整"
-      },
-      {
-        "title": "平面圖標記",
-        "description": "代辦任務直接標註在圖紙上，有圖有字更清楚"
-      },
-      {
-        "title": "任務行事曆",
-        "description": "多處工地、多項任務，也能井然有序"
-      }
-    ]
+    "services": {
+      "title1": "任務自由拖移",
+      "description1": "任意拖移任務卡片，順應工地滾動調整",
+      "title2": "平面圖標記",
+      "description2": "代辦任務直接標註在圖紙上，有圖有字更清楚",
+      "title3": "任務行事曆",
+      "description3": "多處工地、多項任務，也能井然有序"
+    }
   },
   "footer": {
     "contactTitle": "聯絡我們",
@@ -83,7 +73,6 @@
       "tagline": "方生糖 Studio"
     },
     "visual": {
-      "logoLabel": "KaiJi",
       "badgeLabel": "效率提升",
       "description": "記錄與完成的準確率提升，減少重工與誤差，讓工進更順更省。"
     }
