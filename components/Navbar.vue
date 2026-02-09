@@ -2,15 +2,26 @@
   <header
     class="fixed top-0 left-0 z-50 w-full bg-white/30 px-4 py-3 backdrop-blur lg:px-20"
   >
-    <div class="flex w-full items-center justify-between gap-4">
+    <div class="relative flex w-full items-center justify-between gap-4">
       <NavBrand />
-      <NavMenu
-        ref="navMenu"
-        :nav-items="navItems"
-        :dropdown-items="dropdownItems"
-        :contact-cta="contactCta"
-        @mobile-menu-toggle="onMobileMenuToggle"
-      />
+
+      <!-- Centered nav links on desktop -->
+      <div
+        class="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 md:flex"
+      >
+        <!-- <NavLinkList :items="resolvedNavItems" class="gap-6" /> -->
+      </div>
+
+      <div class="flex items-center gap-4">
+        <NavMenu
+          ref="navMenu"
+          :nav-items="resolvedNavItems"
+          :dropdown-items="resolvedDropdownItems"
+          :contact-cta="resolvedContactCta"
+          @mobile-menu-toggle="onMobileMenuToggle"
+        />
+        <LanguageSwitcher />
+      </div>
     </div>
 
     <transition name="fade" mode="out-in">
@@ -31,12 +42,16 @@
   import NavBrand from "@/components/Navbar/NavBrand.vue";
   import NavMenu from "@/components/Navbar/NavMenu.vue";
 
+  import LanguageSwitcher from "@/components/Navbar/LanguageSwitcher.vue";
+
   export default {
     name: "Navbar",
     components: {
       CommissionForm,
       NavBrand,
       NavMenu,
+
+      LanguageSwitcher,
     },
     props: {
       navItems: {
@@ -53,14 +68,35 @@
       return {
         showModal: false,
         dropdownItems: [
-          { label: "開工大吉", to: "/" },
+          { label: "KaiJi 開工大吉", to: "/" },
           { label: "室內攝影", to: "/photography" },
         ],
         contactCta: {
           href: "https://mail.google.com/mail/?view=cm&fs=1&to=funsugar8119@gmail.com&body=詢問方生糖:",
-          label: "攝影預約",
+          label: "預約",
         },
       };
+    },
+    computed: {
+      navCopy() {
+        const locale = this.$i18n?.locale;
+        return this.$i18n?.messages?.[locale]?.nav || {};
+      },
+      resolvedNavItems() {
+        return this.navCopy.links || this.navItems;
+      },
+      resolvedDropdownItems() {
+        return this.navCopy.dropdown || this.dropdownItems;
+      },
+      resolvedContactCta() {
+        if (this.navCopy.cta) {
+          return {
+            ...this.contactCta,
+            label: this.navCopy.cta,
+          };
+        }
+        return this.contactCta;
+      },
     },
     methods: {
       closeMenu() {

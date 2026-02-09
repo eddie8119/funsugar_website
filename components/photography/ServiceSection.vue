@@ -19,86 +19,59 @@
         </p>
       </div>
       <!--  -->
-      <div class="flex flex-col md:flex-row md:gap-8">
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
         <div
-          class="my-8 flex flex-row items-center justify-between md:w-1/3 md:flex-col md:items-start md:justify-start"
+          v-for="service in serviceItems"
+          :key="service.title"
+          class="flex flex-col items-center gap-4 text-center md:items-start md:text-left"
+          :class="service.cardClass"
         >
-          <img
-            src="@/assets/images/services/lifestyle.png"
-            alt="interior"
-            class="-z-50 md:mb-4"
-          />
-          <div class="w-2/3 text-right md:w-full md:text-left">
-            <a
-              href="https://www.behance.net/gallery/158438305/40-"
-              target="_blank"
-            >
-              <h1
-                class="delay-80 text-2xl font-semibold uppercase transition duration-150 ease-in-out hover:text-yellow-500"
-              >
-                室內空間作品攝影
-              </h1>
-            </a>
-            <p class="capitalize text-stone-500">
-              室內設計事務所完工作品集紀錄
-            </p>
-            <p class="capitalize text-stone-500">
-              Interior Design Office Completed Portfolio Record
-            </p>
-          </div>
-        </div>
-        <div
-          class="my-8 flex flex-row items-center justify-between md:w-1/3 md:flex-col md:items-start"
-        >
-          <div class="w-2/3 text-left md:order-2 md:w-full">
-            <a
-              href="https://www.behance.net/gallery/131481845/_"
-              target="_blank"
-            >
-              <h1
-                class="delay-80 text-2xl font-semibold uppercase transition duration-150 ease-in-out hover:text-yellow-500"
-              >
-                建材公司影片
-              </h1>
-            </a>
-            <p class="capitalize text-stone-500">室內設計記錄影片</p>
-            <p class="capitalize text-stone-500">
-              Interior Design Interview Videos And Room Tour
-            </p>
-          </div>
-          <img
-            src="@/assets/images/services/moments.png"
-            alt="film"
-            class="-z-50 md:order-1 md:mb-4"
-          />
-        </div>
-        <div
-          class="my-8 flex flex-row items-center justify-between md:w-1/3 md:flex-col md:items-start"
-        >
-          <div class="w-1/3">
+          <div
+            class="flex items-center justify-center"
+            :class="service.imageWrapperClass"
+          >
             <img
-              src="@/assets/images/services/home.png"
-              alt="Moments"
+              :src="service.image"
+              :alt="service.imageAlt"
               class="-z-50 md:mb-4"
+              :class="service.imageClass"
             />
           </div>
-          <div class="w-2/3 text-right md:w-full md:text-left">
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSf9Gz3Tbm2qxpIxiQVAZRqNx3ZBaO2R3LiQam-Wpyt-xno_kA/viewform"
-              target="_blank"
-            >
+          <div
+            class="flex w-full flex-col gap-2"
+            :class="service.textWrapperClass"
+          >
+            <a :href="service.link" target="_blank">
               <h1
                 class="delay-80 text-2xl font-semibold uppercase transition duration-150 ease-in-out hover:text-yellow-500"
               >
-                屋主新居落成家族紀錄片
+                {{ service.title }}
               </h1>
             </a>
-            <p class="capitalize text-stone-500">屋主新屋紀錄片(限台北市)</p>
-            <p class="capitalize text-stone-500">
-              The homeowner's new house record commission (Taipei City)
+            <p
+              v-for="(description, index) in service.descriptions"
+              :key="`${service.title}-${index}`"
+              class="capitalize text-stone-500"
+            >
+              {{ description }}
             </p>
           </div>
         </div>
+        <client-only>
+          <div
+            class="relative w-full overflow-hidden rounded-2xl shadow-lg"
+            style="padding-top: 56.25%"
+          >
+            <iframe
+              class="absolute left-0 top-0 h-full w-full"
+              src="https://www.youtube.com/embed/c-DApvmK3lE?rel=0&playsinline=1"
+              title="材料工廠拍攝"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            />
+          </div>
+        </client-only>
       </div>
       <!-- Circle start -->
       <div
@@ -121,73 +94,36 @@
       <!--  -->
       <div class="flex flex-col md:flex-row md:gap-8">
         <div
-          class="my-8 flex flex-row items-center justify-between md:w-1/3 md:flex-col md:items-start md:justify-start"
-        >
-          <img
-            src="@/assets/images/services/home.png"
-            alt="interior"
-            class="-z-50 md:mb-4"
-          />
-          <div class="w-2/3 text-right md:w-full md:text-left">
-            <a
-              href="https://donate.ccf.org.tw/19/shopcart-step1/210"
-              target="_blank"
-            >
-              <h1
-                class="delay-80 text-2xl font-semibold uppercase transition duration-150 ease-in-out hover:text-yellow-500"
-              >
-                家扶扶幼捐款項目
-              </h1>
-            </a>
-            <p class="capitalize text-stone-500">
-              每次委託費 1 成捐款至<a
-                href="https://donate.ccf.org.tw/19/shopcart-step1/210"
-                >"家園議題的慈善機構"</a
-              >，收到委託人的匯款當下即捐出，創造善流動
-            </p>
-          </div>
-        </div>
-        <div
+          v-for="item in positiveEnergyItems"
+          :key="item.title"
           class="my-8 flex flex-row items-center justify-between md:w-1/3 md:flex-col md:items-start"
+          :class="item.cardClass"
         >
-          <div class="w-2/3 text-left md:order-2 md:w-full">
-            <a href="https://www.ccf.org.tw/support/project" target="_blank">
+          <div
+            class="w-1/3 md:w-full"
+            :class="[
+              item.imageWrapperClass,
+              item.swapOnDesktop ? 'order-2 md:order-1' : 'order-1',
+            ]"
+          >
+            <img :src="item.image" :alt="item.imageAlt" class="-z-50 md:mb-4" />
+          </div>
+          <div
+            class="w-2/3 md:w-full"
+            :class="[
+              item.textWrapperClass,
+              item.swapOnDesktop ? 'order-1 md:order-2' : 'order-2',
+            ]"
+          >
+            <a :href="item.link" target="_blank">
               <h1
                 class="delay-80 text-2xl font-semibold uppercase transition duration-150 ease-in-out hover:text-yellow-500"
               >
-                家扶捐款兌換攝影
+                {{ item.title }}
               </h1>
             </a>
             <p class="capitalize text-stone-500">
-              委託方捐款家扶基金會，每1200元捐款可兌換 1 張室內攝影<br />
-            </p>
-          </div>
-          <img
-            src="@/assets/images/services/home.png"
-            alt="film"
-            class="-z-50 md:order-1 md:mb-4"
-          />
-        </div>
-        <div
-          class="my-8 flex flex-row items-center justify-between md:w-1/3 md:flex-col md:items-start"
-        >
-          <div class="w-1/3">
-            <img
-              src="@/assets/images/services/home.png"
-              alt="Moments"
-              class="-z-50 md:mb-4"
-            />
-          </div>
-          <div class="w-2/3 text-right md:w-full md:text-left">
-            <a href="https://donations.hondao.org.tw/" target="_blank">
-              <h1
-                class="delay-80 text-2xl font-semibold uppercase transition duration-150 ease-in-out hover:text-yellow-500"
-              >
-                弘道老人捐款兌換攝影
-              </h1>
-            </a>
-            <p class="capitalize text-stone-500">
-              委託方捐款弘道老人福利基金會，每1200元捐款可兌換 1 張室內攝影<br />
+              {{ item.descriptions }}
             </p>
           </div>
         </div>
@@ -197,7 +133,98 @@
 </template>
 
 <script>
-  export default {};
+  import ServiceHomeImage from "@/assets/images/services/home.png";
+  import ServiceLifestyleImage from "@/assets/images/services/lifestyle.png";
+  import ServiceMomentsImage from "@/assets/images/services/moments.png";
+
+  export default {
+    data() {
+      return {
+        serviceItems: [
+          {
+            title: "室內空間作品攝影",
+            link: "https://www.behance.net/gallery/158438305/40-",
+            image: ServiceLifestyleImage,
+            imageAlt: "interior",
+            cardClass: "",
+            imageWrapperClass: "",
+            imageClass: "",
+            textWrapperClass: "",
+            descriptions: [
+              "室內設計事務所完工作品集紀錄",
+              "Interior Design Office Completed Portfolio Record",
+            ],
+          },
+          {
+            title: "建材公司影片",
+            link: "https://www.behance.net/gallery/131481845/_",
+            image: ServiceMomentsImage,
+            imageAlt: "film",
+            cardClass: "",
+            imageWrapperClass: "",
+            imageClass: "",
+            textWrapperClass: "",
+            descriptions: [
+              "室內設計記錄影片",
+              "Interior Design Interview Videos And Room Tour",
+            ],
+          },
+          // {
+          //   title: "屋主新居落成家族紀錄片",
+          //   link: "https://docs.google.com/forms/d/e/1FAIpQLSf9Gz3Tbm2qxpIxiQVAZRqNx3ZBaO2R3LiQam-Wpyt-xno_kA/viewform",
+          //   image: ServiceHomeImage,
+          //   imageAlt: "Moments",
+          //   cardClass: "md:items-start",
+          //   imageWrapperClass: "order-1 w-1/3 md:w-full",
+          //   imageClass: "",
+          //   textWrapperClass: "order-2 text-right md:text-left",
+          //   descriptions: [
+          //     "屋主新屋紀錄片(限台北市)",
+          //     "The homeowner's new house record commission (Taipei City)",
+          //   ],
+          // },
+        ],
+        positiveEnergyItems: [
+          {
+            title: "家扶扶幼捐款項目",
+            link: "https://donate.ccf.org.tw/19/shopcart-step1/210",
+            image: ServiceHomeImage,
+            imageAlt: "interior",
+            swapOnDesktop: false,
+            cardClass: "md:justify-start",
+            imageWrapperClass: "",
+            textWrapperClass: "text-right md:text-left",
+            descriptions:
+              "每次委託費 1 成捐款至家園議題的慈善機構，收到委託人的匯款當下即捐出，創造善流動",
+          },
+          {
+            title: "家扶捐款兌換攝影",
+            link: "https://www.ccf.org.tw/support/project",
+            image: ServiceHomeImage,
+            imageAlt: "film",
+            swapOnDesktop: true,
+            cardClass: "",
+            imageWrapperClass: "md:order-1",
+            textWrapperClass: "text-left",
+            descriptions:
+              "委託方捐款家扶基金會，每1200元捐款可兌換 1 張室內攝影",
+          },
+          {
+            title: "弘道老人捐款兌換攝影",
+            link: "https://donations.hondao.org.tw/",
+            image: ServiceHomeImage,
+            imageAlt: "Moments",
+            swapOnDesktop: false,
+            cardClass: "",
+            imageWrapperClass: "w-1/3 md:w-full",
+            textWrapperClass: "text-right md:text-left",
+            descriptions:
+              "委託方捐款弘道老人福利基金會，每1200元捐款可兌換 1 張室內攝影",
+          },
+        ],
+      };
+    },
+  };
 </script>
 
 <style></style>

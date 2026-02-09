@@ -2,14 +2,14 @@
   <div
     class="flex w-full flex-col items-stretch gap-4 md:ml-auto md:w-auto md:flex-row md:items-center"
   >
-    <NavDropdown :label="dropdownLabel" :items="dropdownItems" />
+    <NavDropdown :label="resolvedDropdownLabel" :items="dropdownItems" />
     <a
       class="btn w-full text-center md:w-auto"
-      :href="cta.href"
+      :href="resolvedCta.href"
       target="_blank"
       rel="noopener"
     >
-      {{ cta.label }}
+      {{ resolvedCta.label }}
     </a>
   </div>
 </template>
@@ -29,14 +29,35 @@
       },
       dropdownLabel: {
         type: String,
-        default: "服務",
+        default: "",
       },
       cta: {
         type: Object,
-        default: () => ({
-          href: "https://mail.google.com/mail/?view=cm&fs=1&to=funsugar8119@gmail.com&body=詢問方生糖:",
-          label: "攝影預約",
-        }),
+        default: () => ({}),
+      },
+    },
+    computed: {
+      navCopy() {
+        const locale = this.$i18n?.locale;
+        return this.$i18n?.messages?.[locale]?.nav || {};
+      },
+      resolvedDropdownLabel() {
+        return this.dropdownLabel || this.navCopy.dropdownLabel || "";
+      },
+      resolvedCta() {
+        if (Object.keys(this.cta || {}).length) {
+          return this.cta;
+        }
+        if (this.navCopy.cta) {
+          return {
+            href: "#contact",
+            label: this.navCopy.cta,
+          };
+        }
+        return {
+          href: "#contact",
+          label: "",
+        };
       },
     },
   };

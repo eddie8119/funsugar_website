@@ -5,10 +5,12 @@
         <p
           class="text-sm font-semibold uppercase tracking-[0.4em] text-gray-500"
         >
-          功能亮點
+          {{ $t("feature.eyebrow") }}
         </p>
-        <H2Title title="輕鬆記，順順管" class-name="mt-2 text-3xl" />
-        <p class="mt-2 text-base text-gray-600">三大功能幫你輕鬆管理工程</p>
+        <H2Title :title="$t('feature.title')" class-name="mt-2 text-3xl" />
+        <p class="mt-2 text-base text-gray-600">
+          {{ $t("feature.subtitle") }}
+        </p>
       </div>
       <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
         <div
@@ -63,7 +65,7 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.5L15.232 5.232z"
+                  d="M8 7V3m8 4V3m-9 8h8m-9 6h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z"
                 />
               </svg>
             </div>
@@ -103,26 +105,26 @@
     components: {
       H2Title,
     },
-    data() {
-      return {
-        services: [
+    computed: {
+      services() {
+        return [
           {
-            title: "任務自由拖移",
-            description: "任意的拖移任務卡片，順應工地滾動的變化",
+            title: this.$t("feature.services.title1"),
+            description: this.$t("feature.services.description1"),
             picture: Drag,
           },
           {
-            title: "平面圖標記",
-            description: "代辦任務直接標註在平面圖紙上，有字有圖",
+            title: this.$t("feature.services.title2"),
+            description: this.$t("feature.services.description2"),
             picture: Mark,
           },
           {
-            title: "任務行事曆",
-            description: "多處工地、多個任務，也井然有序",
+            title: this.$t("feature.services.title3"),
+            description: this.$t("feature.services.description3"),
             picture: Calendar,
           },
-        ],
-      };
+        ];
+      },
     },
   };
 </script>

@@ -5,10 +5,18 @@
       src="@/assets/images/logo2.png"
       alt="方生糖 Logo"
     />
-    <div class="flex flex-col justify-center leading-tight">
-      <p class="font-semibold tracking-widest text-yellow-500">
-        {{ brandTitle }}
-      </p>
+    <div class="flex flex-col justify-center gap-1 leading-tight">
+      <div class="flex h-6 items-center">
+        <img
+          v-if="isKaiJi"
+          src="@/assets/images/logo/kaiji_logo.png"
+          alt="KaiJi Logo"
+          class="h-full object-contain"
+        />
+        <span v-else class="font-semibold tracking-widest text-yellow-500">{{
+          brandTitle
+        }}</span>
+      </div>
       <p class="font-light tracking-widest">{{ brandSubtitle }}</p>
     </div>
   </nuxt-link>
@@ -18,6 +26,9 @@
   export default {
     name: "NavBrand",
     computed: {
+      isKaiJi() {
+        return !this.$route.path.startsWith("/photography");
+      },
       brandTitle() {
         const currentPath = this.$route.path;
 

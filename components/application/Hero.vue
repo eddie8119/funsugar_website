@@ -1,12 +1,14 @@
 <template>
   <section
-    class="flex min-h-screen items-center px-4 py-16 pt-[80px] sm:px-6 md:pt-16 lg:px-8"
+    class="flex min-h-screen w-full justify-center px-4 pt-[80px] pb-16 sm:px-6 lg:px-8"
   >
     <div
       class="dh-container flex w-full flex-1 flex-col items-center gap-12 lg:flex-row lg:items-stretch lg:gap-16"
     >
       <!-- Left  -->
-      <div class="flex w-full flex-col justify-between gap-10 lg:w-1/2">
+      <div
+        class="flex w-full flex-col justify-between gap-10 lg:w-1/2 lg:flex-1"
+      >
         <div class="space-y-4">
           <p class="text-xs uppercase tracking-[0.4em] text-gray-400">
             — {{ $t("hero.construction.eyebrow") }}
@@ -26,20 +28,27 @@
         </div>
 
         <div class="space-y-3">
-          <h2
-            class="text-4xl font-extrabold tracking-tight text-yellow-500 sm:text-5xl"
-          >
-            {{ $t("hero.construction.subheading") }}
-          </h2>
+          <div class="flex items-center gap-2">
+            <img
+              src="@/assets/images/logo/kaiji_logo.png"
+              alt="KaiJi Logo"
+              class="h-10 object-contain"
+            />
+            <h2
+              class="text-4xl font-extrabold tracking-tight text-yellow-500 sm:text-5xl"
+            >
+              {{ $t("hero.construction.subheading") }}
+            </h2>
+          </div>
 
-          <p class="text-xs uppercase tracking-[0.4em] text-gray-400">
+          <p class="text-sm uppercase tracking-[0.4em] text-gray-400">
             {{ $t("hero.construction.tagline") }}
           </p>
         </div>
       </div>
 
       <!-- Right  -->
-      <div class="flex w-full items-center lg:w-1/2">
+      <div class="flex w-full items-center lg:w-1/2 lg:flex-1">
         <HeroVisual />
       </div>
     </div>
@@ -52,7 +61,7 @@
   import HeroVisual from "@/components/application/HeroVisual.vue";
 
   export default {
-    name: "Hero1",
+    name: "Hero",
     components: {
       PrimaryCta,
       H1Title,

@@ -1,5 +1,5 @@
 <template>
-  <div class="relative w-full max-w-[640px] px-3 sm:px-0">
+  <div class="relative h-full min-h-[380px] w-full max-w-[640px] px-3 sm:px-0">
     <!-- Top-left decorative notch - 左上角裝飾缺口 -->
     <div
       class="absolute -top-6 left-3 z-10 h-[90px] w-[120px] bg-white sm:left-0 sm:h-[100px] sm:w-[150px]"
@@ -7,11 +7,11 @@
     />
 
     <!-- Main white frame container - 主要白色外框 -->
-    <div class="relative mx-auto w-full" style="border-radius: 48px">
+    <div class="relative mx-auto h-full w-full" style="border-radius: 48px">
       <!-- Image container with precise rounded corners - 圖片容器 -->
       <!-- 關鍵：所有四個角都要有 36px 圓角 -->
       <div
-        class="relative h-[420px] overflow-hidden sm:h-[520px] lg:h-[640px]"
+        class="relative h-full min-h-[360px] overflow-hidden sm:min-h-[460px]"
         style="border-radius: 36px 36px 0 36px"
       >
         <!-- Main image - 主圖片 -->
@@ -72,13 +72,13 @@
             <p
               class="mb-2 text-[10px] font-semibold uppercase tracking-[0.3em] text-gray-700"
             >
-              效率提升
+              {{ $t("hero.visual.badgeLabel") }}
             </p>
             <p class="mb-1 text-4xl font-black leading-none text-gray-900">
               30<span class="ml-0.5 text-2xl">%</span>
             </p>
             <p class="text-[10px] leading-relaxed text-gray-700">
-              記錄與完成的準確率提升，減少重工與誤差，讓工進更順更省。
+              {{ $t("hero.visual.description") }}
             </p>
           </div>
         </div>

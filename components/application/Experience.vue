@@ -15,7 +15,7 @@
               <iframe
                 ref="videoPlayer"
                 :src="videoEmbedUrl"
-                title="Experience video"
+                :title="$t('experence.videoTitle')"
                 class="h-full w-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
@@ -26,7 +26,7 @@
           <span
             class="absolute bottom-12 right-6 rounded-full bg-yellow-500 px-4 py-2 text-xs font-bold uppercase tracking-[0.3em] shadow-lg"
           >
-            不註冊，也能體驗
+            {{ $t("experence.videoBadge") }}
           </span>
         </div>
         <div
@@ -34,20 +34,20 @@
         >
           <div>
             <p class="text-xs uppercase text-gray-500">
-              — 把工地的管理紀錄變簡單
+              {{ $t("experence.eyebrow") }}
             </p>
             <H2Title
-              title="幫助室內事務所輕鬆紀錄工地現場繁瑣，省時省錢"
+              :title="$t('experence.title')"
               class-name="my-4 text-3xl leading-tight md:text-4xl lg:text-5xl"
             />
             <p class="mb-8 text-base text-gray-600 md:text-lg">
-              從記錄、整理到共享，讓每一次工地進度都清楚透明，團隊都能即時掌握。
+              {{ $t("experence.description") }}
             </p>
             <div class="flex flex-wrap items-center gap-4">
               <PrimaryCta
                 variant="secondary"
                 href="https://interior-construction-helper.web.app/"
-                label="體驗版，立即感受"
+                :label="$t('experence.ctaLabel')"
                 :new-tab="true"
               />
             </div>
@@ -56,7 +56,7 @@
             <div
               class="mb-4 flex flex-col gap-2 text-xs uppercase tracking-[0.4em] text-gray-500 md:flex-row md:items-center md:justify-between"
             >
-              <span>使用者這樣說</span>
+              <span>{{ $t("experence.testimonialHeading") }}</span>
               <!-- <a href="#testimonials" class="text-yellow-500">Explore more</a> -->
             </div>
             <div class="grid gap-8 sm:grid-cols-2">
@@ -115,16 +115,6 @@
         player: null,
         playerReady: false,
         videoObserver: null,
-        testimonials: [
-          {
-            quote: "快速整理出每個案場任務的優先順序，就像是一個貼身的助理。",
-            author: "專案經理",
-          },
-          {
-            quote: "導入這套手帳後，工地紀錄與驗收節奏一目了然。",
-            author: "設計師",
-          },
-        ],
       };
     },
     computed: {
@@ -140,6 +130,19 @@
         return id
           ? `https://www.youtube.com/embed/${id}?rel=0&playsinline=1&mute=1&enablejsapi=1`
           : "";
+      },
+
+      testimonials() {
+        return [
+          {
+            quote: this.$t("experence.testimonials.quote1"),
+            author: this.$t("experence.testimonials.author1"),
+          },
+          {
+            quote: this.$t("experence.testimonials.quote2"),
+            author: this.$t("experence.testimonials.author2"),
+          },
+        ];
       },
     },
     mounted() {

@@ -29,7 +29,7 @@
       >
         <NavLinkList
           :items="navItems"
-          class="w-full border-b border-black/10 pb-4 text-center md:flex md:flex-1 md:justify-center md:border-none md:p-0"
+          class="w-full border-b border-black/10 pb-4 text-center md:flex md:hidden md:flex-1 md:justify-center md:border-none md:p-0"
           @click.native="closeMenu"
         />
         <NavActions
