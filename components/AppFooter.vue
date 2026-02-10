@@ -96,10 +96,10 @@
 </template>
 
 <script>
-  import InstagramIcon from "@/assets/icons/Instagram.png";
-  import YoutubeIcon from "@/assets/icons/Youtube.png";
-  import LineIcon from "@/assets/icons/Line.png";
-  import BehanceIcon from "@/assets/icons/Behance.png";
+  import InstagramIcon from "@/assets/icons/Instagram.svg";
+  import YoutubeIcon from "@/assets/icons/Youtube.svg";
+  import LineIcon from "@/assets/icons/Line.svg";
+  import BehanceIcon from "@/assets/icons/Behance.svg";
 
   export default {
     name: "AppFooter",
