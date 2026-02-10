@@ -70,7 +70,7 @@
                   <img
                     :src="iconSources[link.icon]"
                     :alt="link.label"
-                    class="h-5 w-5 object-contain opacity-40 invert transition group-hover:opacity-80"
+                    class="h-5 w-5 object-contain opacity-40 invert filter transition group-hover:opacity-80"
                   />
                 </a>
               </li>
