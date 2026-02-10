@@ -63,14 +63,14 @@
               <li v-for="link in socialLinks" :key="link.label">
                 <a
                   :href="link.href"
-                  class="group flex h-8 w-8 items-center justify-center transition"
+                  class="group flex h-9 w-9 items-center justify-center transition"
                   target="_blank"
                   rel="noopener"
                 >
                   <img
                     :src="iconSources[link.icon]"
                     :alt="link.label"
-                    class="h-5 w-5 object-contain opacity-40 invert filter transition group-hover:opacity-80"
+                    class=" object-contain opacity-30 transition group-hover:opacity-80"
                   />
                 </a>
               </li>
