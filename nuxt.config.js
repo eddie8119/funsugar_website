@@ -1,3 +1,9 @@
+import { BRAND_LINK } from "./constants/link";
+
+const WEBSITE_URL = BRAND_LINK.website;
+const OG_IMAGE = `${WEBSITE_URL}og-cover.png`;
+const FAVICON = `${WEBSITE_URL}favicon.png`;
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -52,7 +58,7 @@ export default {
       {
         hid: "og:image",
         property: "og:image",
-        content: "https://designer-helper-funsugar.netlify.app/og-cover.png",
+        content: OG_IMAGE,
       },
       {
         hid: "og:image:alt",
@@ -62,7 +68,7 @@ export default {
       {
         hid: "og:url",
         property: "og:url",
-        content: "https://designer-helper-funsugar.netlify.app/",
+        content: WEBSITE_URL,
       },
       {
         hid: "twitter:card",
@@ -82,7 +88,7 @@ export default {
       {
         hid: "twitter:image",
         name: "twitter:image",
-        content: "https://designer-helper-funsugar.netlify.app/og-cover.png",
+        content: OG_IMAGE,
       },
       {
         hid: "twitter:site",
@@ -94,7 +100,7 @@ export default {
       { rel: "icon", type: "image/x-icon", href: "/favicon.png" },
       {
         rel: "canonical",
-        href: "https://designer-helper-funsugar.netlify.app/",
+        href: WEBSITE_URL,
       },
     ],
     script: [
@@ -104,30 +110,30 @@ export default {
           "@context": "https://schema.org",
           "@type": "Organization",
           name: "方生糖 Designer Helper",
-          url: "https://designer-helper-funsugar.netlify.app/",
-          logo: "https://designer-helper-funsugar.netlify.app/favicon.png",
+          url: WEBSITE_URL,
+          logo: FAVICON,
           sameAs: [
-            "https://www.instagram.com/funsugar_not_designer/",
-            "https://www.behance.net/WANG81195321",
+            BRAND_LINK.instagram,
+            BRAND_LINK.behance,
           ],
           description:
             "KaiJi 開工大吉手帳與室內攝影服務，協助設計師管理工地的利器。",
           contactPoint: {
             "@type": "ContactPoint",
             contactType: "customer service",
-            email: "funsugar8119@gmail.com",
+            email: BRAND_LINK.email,
           },
           makesOffer: [
             {
               "@type": "Offer",
               name: "KaiJi 開工大吉手帳",
-              url: "https://designer-helper-funsugar.netlify.app/",
+              url: WEBSITE_URL,
               category: "SoftwareApplication",
             },
             {
               "@type": "Offer",
               name: "室內空間攝影服務",
-              url: "https://designer-helper-funsugar.netlify.app/photography",
+              url: `${WEBSITE_URL}photography`,
               category: "PhotographyService",
             },
           ],

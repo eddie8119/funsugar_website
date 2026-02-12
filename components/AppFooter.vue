@@ -48,9 +48,9 @@
             {{ $t("footer.ctaHeading") }}
           </h4>
           <a
-            href="mailto:funsugar8119@gmail.com"
+            :href="`mailto:${BRAND_LINK.email}`"
             class="break-all text-2xl font-bold transition-colors hover:text-yellow-500 md:text-4xl"
-            >funsugar8119@gmail.com</a
+            >{{ BRAND_LINK.email }}</a
           >
           <div class="mt-8">
             <p class="mb-2 text-sm text-gray-400">
@@ -100,6 +100,7 @@
   import YoutubeIcon from "@/assets/icons/Youtube.svg";
   import LineIcon from "@/assets/icons/Line.svg";
   import BehanceIcon from "@/assets/icons/Behance.svg";
+  import { BRAND_LINK } from "@/constants/link";
 
   export default {
     name: "AppFooter",
@@ -110,30 +111,30 @@
           { labelKey: "footer.nav.photography", href: "/photography" },
           {
             labelKey: "footer.nav.app",
-            href: "https://kaiji-app.vercel.app/",
+            href: BRAND_LINK.website,
           },
         ],
         contactDetails: [{}],
         socialLinks: [
           {
             label: "YouTube",
-            href: "https://www.youtube.com/playlist?list=PLq6qa78AJYu004VTivvUU-RY3Hc6pEzlF",
+            href: BRAND_LINK.youtube,
             icon: "youtube",
           },
           {
             label: "Instagram",
-            href: "https://www.instagram.com/funsugar_not_designer/",
+            href: BRAND_LINK.instagram,
             icon: "instagram",
           },
 
           {
             label: "Behance",
-            href: "https://www.behance.net/WANG81195321",
+            href: BRAND_LINK.behance,
             icon: "behance",
           },
           {
             label: "LINE",
-            href: "https://line.me/R/ti/p/eddi7777",
+            href: BRAND_LINK.line,
             icon: "line",
           },
         ],
