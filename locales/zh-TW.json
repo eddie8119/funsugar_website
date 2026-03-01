@@ -1,6 +1,6 @@
 {
   "about": {
-    "eyebrow": "關於 KaiJi 開工大吉手帳",
+    "eyebrow": "關於 KaiJi",
     "headline": "在工地時常自己一個遺漏，補救至少就是一個點工 3000 起跳。若是材料報銷了，更慘，這些都是公司額外的成本負擔。",
     "cta": "開工大吉，省起來",
     "savings": {
@@ -31,21 +31,27 @@
     "testimonials": {
       "quote1": "快速整理出每個案場任務的優先順序，就像是一個貼身的助理。",
       "author1": "專案經理",
-      "quote2": "導入這套手帳後，工地紀錄與驗收節奏一目了然。",
+      "quote2": "使用 KaiJi 軟體後，工地紀錄節奏順暢，判讀一目了然。",
       "author2": "設計師"
     }
   },
   "feature": {
     "eyebrow": "功能亮點",
     "title": "輕鬆記，順順管",
-    "subtitle": "三大功能幫你輕鬆管理工程",
+    "subtitle": "六大功能幫你輕鬆管理工程",
     "services": {
       "title1": "任務自由拖移",
       "description1": "任意拖移任務卡片，順應工地滾動調整",
       "title2": "平面圖標記",
-      "description2": "代辦任務直接標註在圖紙上，有圖有字更清楚",
+      "description2": "代辦任務直接標註在圖紙上，紀錄更直覺",
       "title3": "任務行事曆",
-      "description3": "多處工地、多項任務，也能井然有序"
+      "description3": "很多工地、很多任務，也能井然有序排程掌握",
+      "title4": "任務過濾與提示",
+      "description4": "透果時間過濾未完成任務，聯繫工班進場。未完成任務也會有介面提示",
+      "title5": "材料管理",
+      "description5": "統計專案的材料使用量，以及預計的完成度",
+      "title6": "視覺介面進度掌握",
+      "description6": "掌握工程現場與設計規劃的進度落差"
     }
   },
   "footer": {
@@ -58,7 +64,7 @@
     "nav": {
       "home": "官方網站",
       "photography": "室內攝影",
-      "app": "開工大吉手帳"
+      "app": "KaiJi"
     },
     "contact": {
       "email": "電子郵件"
@@ -67,9 +73,9 @@
   "hero": {
     "construction": {
       "eyebrow": "記錄工地，降低失誤",
-      "headline": "「KaiJi 開工大吉手帳」目標是更好的紀錄管理，減少遺漏項目發生的機會。重來的次數少了，工地進展就順了，錢也省了。",
+      "headline": "「KaiJi 開工大吉」目標是滑順的紀錄管理，減少遺漏項目發生的機會。重頭來的次數少了，工地進展就順了，成本就省了。",
       "cta": "KaiJi，開工大吉",
-      "subheading": "開工大吉手帳",
+      "subheading": "開工大吉",
       "tagline": "方生糖 Studio"
     },
     "visual": {

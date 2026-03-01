@@ -1,6 +1,6 @@
 {
   "about": {
-    "eyebrow": "About KaiJi Notebook",
+    "eyebrow": "About KaiJi",
     "headline": "Missing one task on site easily costs an extra NT$3000 day-rate. If materials are wasted it hurts even more — those misses become pure overhead.",
     "cta": "Launch smarter savings",
     "savings": {
@@ -13,7 +13,7 @@
   "button": {
     "about_cta": "Launch smarter savings",
     "experience_cta": "Try the live demo",
-    "hero_cta": "Launch the job notebook",
+    "hero_cta": "KaiJie",
     "nav_cta": "Book now"
   },
   "dialog": {
@@ -31,21 +31,27 @@
     "testimonials": {
       "quote1": "I can prioritize each site in minutes — it's like having a personal assistant.",
       "author1": "Project Manager",
-      "quote2": "Since adopting the notebook, inspections and records stay in sync.",
+      "quote2": "With KaiJi, our record rhythm stays smooth and every update is instantly clear.",
       "author2": "Interior Designer"
     }
   },
   "feature": {
     "eyebrow": "Key capabilities",
     "title": "Plan smoothly, execute faster",
-    "subtitle": "Three core tools keep every construction site in sync",
+    "subtitle": "Six core tools keep every construction site in sync",
     "services": {
       "title1": "Drag-and-drop tasks",
       "description1": "Rearrange tasks freely so the plan always matches the job site reality",
       "title2": "Markup on floor plans",
-      "description2": "Pin to-dos directly on drawings so every detail pairs visuals with text",
+      "description2": "Mark to-dos directly on floor plans so documentation stays intuitive",
       "title3": "Calendar by site",
-      "description3": "Multiple projects and crews stay organized with a shared timeline"
+      "description3": "Many sites and tasks stay neatly scheduled on one shared timeline",
+      "title4": "Task filtering & alerts",
+      "description4": "Filter unfinished tasks by date, coordinate crew call-ins, and surface UI reminders.",
+      "title5": "Material management",
+      "description5": "Track material usage per project along with projected completion.",
+      "title6": "Visual progress tracking",
+      "description6": "Spot gaps between onsite progress and design plans at a glance."
     }
   },
   "footer": {
@@ -58,7 +64,7 @@
     "nav": {
       "home": "Official Website",
       "photography": "Interior Photography",
-      "app": "KaiJi Notebook"
+      "app": "KaiJi"
     },
     "contact": {
       "email": "Email"
@@ -67,14 +73,14 @@
   "hero": {
     "construction": {
       "eyebrow": "Record boldly, reduce mistakes",
-      "headline": "\"KaiJi Notebook\" keeps every site task documented so progress flows and budgets stay on track.",
-      "cta": "Launch the job notebook",
-      "subheading": "Notebook",
+      "headline": "KaiJi keeps jobsite documentation smooth so fewer tasks slip, progress flows, and budgets stay lean.",
+      "cta": "Launch the KaiJi",
+      "subheading": "KaiJi launch software",
       "tagline": "Funsugar Studio"
     },
     "visual": {
       "badgeLabel": "Efficiency boost",
-      "description": "Greater accuracy means less rework so progress and budgets stay steady."
+      "description": "Higher accuracy reduces rework, keeping timelines smooth and costs controlled."
     }
   },
   "nav": {

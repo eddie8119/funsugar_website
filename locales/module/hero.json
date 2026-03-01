@@ -3,14 +3,14 @@
     "hero": {
       "construction": {
         "eyebrow": "Record boldly, reduce mistakes",
-        "headline": "\"KaiJi Notebook\" keeps every site task documented so progress flows and budgets stay on track.",
-        "cta": "Launch the job notebook",
-        "subheading": "Notebook",
+        "headline": "KaiJi keeps jobsite documentation smooth so fewer tasks slip, progress flows, and budgets stay lean.",
+        "cta": "Launch the KaiJi",
+        "subheading": "KaiJi launch software",
         "tagline": "Funsugar Studio"
       },
       "visual": {
         "badgeLabel": "Efficiency boost",
-        "description": "Greater accuracy means less rework so progress and budgets stay steady."
+        "description": "Higher accuracy reduces rework, keeping timelines smooth and costs controlled."
       }
     }
   },
@@ -18,9 +18,9 @@
     "hero": {
       "construction": {
         "eyebrow": "記錄工地，降低失誤",
-        "headline": "「KaiJi 開工大吉手帳」目標是更好的紀錄管理，減少遺漏項目發生的機會。重來的次數少了，工地進展就順了，錢也省了。",
+        "headline": "「KaiJi 開工大吉」目標是滑順的紀錄管理，減少遺漏項目發生的機會。重頭來的次數少了，工地進展就順了，成本就省了。",
         "cta": "KaiJi，開工大吉",
-        "subheading": "開工大吉手帳",
+        "subheading": "開工大吉",
         "tagline": "方生糖 Studio"
       },
       "visual": {
@@ -32,15 +32,15 @@
   "ja": {
     "hero": {
       "construction": {
-        "eyebrow": "記録してミスを減らす",
-        "headline": "「開工大吉ノート」で現場の記録を一元管理し、抜け漏れを防いで工期とコストを守る。",
-        "cta": "現場ノートを今すぐ体験",
-        "subheading": "開工大吉ノート",
+        "eyebrow": "現場を記録してミスを減らす",
+        "headline": "「KaiJi 開工大吉」は滑らかな記録管理で抜け漏れを抑え、やり直しを減らし、進行とコストを安定させます。",
+        "cta": "KaiJiで吉日スタート",
+        "subheading": "開工大吉ソフト",
         "tagline": "Funsugar Studio"
       },
       "visual": {
         "badgeLabel": "効率アップ",
-        "description": "記録精度が上がれば手戻りが減り、進捗もコストも安定します。"
+        "description": "記録精度が上がれば手戻りが減り、工期もコストも滑らかに進みます。"
       }
     }
   }

@@ -3,14 +3,20 @@
     "feature": {
       "eyebrow": "Key capabilities",
       "title": "Plan smoothly, execute faster",
-      "subtitle": "Three core tools keep every construction site in sync",
+      "subtitle": "Six core tools keep every construction site in sync",
       "services": {
         "title1": "Drag-and-drop tasks",
         "description1": "Rearrange tasks freely so the plan always matches the job site reality",
         "title2": "Markup on floor plans",
-        "description2": "Pin to-dos directly on drawings so every detail pairs visuals with text",
+        "description2": "Mark to-dos directly on floor plans so documentation stays intuitive",
         "title3": "Calendar by site",
-        "description3": "Multiple projects and crews stay organized with a shared timeline"
+        "description3": "Many sites and tasks stay neatly scheduled on one shared timeline",
+        "title4": "Task filtering & alerts",
+        "description4": "Filter unfinished tasks by date, coordinate crew call-ins, and surface UI reminders.",
+        "title5": "Material management",
+        "description5": "Track material usage per project along with projected completion.",
+        "title6": "Visual progress tracking",
+        "description6": "Spot gaps between onsite progress and design plans at a glance."
       }
     }
   },
@@ -18,14 +24,20 @@
     "feature": {
       "eyebrow": "功能亮點",
       "title": "輕鬆記，順順管",
-      "subtitle": "三大功能幫你輕鬆管理工程",
+      "subtitle": "六大功能幫你輕鬆管理工程",
       "services": {
         "title1": "任務自由拖移",
         "description1": "任意拖移任務卡片，順應工地滾動調整",
         "title2": "平面圖標記",
-        "description2": "代辦任務直接標註在圖紙上，有圖有字更清楚",
+        "description2": "代辦任務直接標註在圖紙上，紀錄更直覺",
         "title3": "任務行事曆",
-        "description3": "多處工地、多項任務，也能井然有序"
+        "description3": "很多工地、很多任務，也能井然有序排程掌握",
+        "title4": "任務過濾與提示",
+        "description4": "透果時間過濾未完成任務，聯繫工班進場。未完成任務也會有介面提示",
+        "title5": "材料管理",
+        "description5": "統計專案的材料使用量，以及預計的完成度",
+        "title6": "視覺介面進度掌握",
+        "description6": "掌握工程現場與設計規劃的進度落差"
       }
     }
   },
@@ -33,14 +45,20 @@
     "feature": {
       "eyebrow": "主な機能",
       "title": "簡単に記録し、スムーズに管理",
-      "subtitle": "3つの機能で現場管理をシンプルに",
+      "subtitle": "6つの機能で現場管理をシンプルに",
       "services": {
         "title1": "タスクのドラッグ操作",
         "description1": "現場の変化に合わせてカードを自由に並び替え",
         "title2": "平面図へのマーキング",
-        "description2": "図面上にタスクを直接記して、視覚と文字で伝達",
+        "description2": "図面上にタスクを直接記して、記録をもっと直感的に",
         "title3": "タスクカレンダー",
-        "description3": "複数現場とタスクも一つの時間軸で把握"
+        "description3": "多くの現場やタスクも、一つの時間軸で整然と把握できます",
+        "title4": "タスクフィルターと通知",
+        "description4": "日付で未完了タスクを絞り込み、職人の手配やUIリマインダーで抜けを防ぎます。",
+        "title5": "材料管理",
+        "description5": "各プロジェクトの材料使用量と予定進捗を集計します。",
+        "title6": "ビジュアル進捗管理",
+        "description6": "現場の進捗と設計計画のギャップを一目で把握できます。"
       }
     }
   }
