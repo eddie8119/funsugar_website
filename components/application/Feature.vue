@@ -17,14 +17,14 @@
           v-for="(service, index) in services"
           :key="index"
           class="rounded-3xl border border-black/5 bg-white p-8 shadow-[0_15px_40px_rgba(15,23,42,0.08)] transition duration-300"
-          :class="index === 1 ? 'bg-[#f4eee8]' : 'bg-white'"
+          :class="(index + 1) % 2 === 0 ? 'bg-[#f4eee8]' : 'bg-white'"
         >
           <div class="mb-4 flex items-center gap-4">
             <div
               class="flex h-12 w-12 items-center justify-center rounded-2xl bg-black/5 text-black"
             >
               <svg
-                v-if="index === 0"
+                v-if="serviceIcons[index]"
                 class="h-6 w-6"
                 fill="none"
                 stroke="currentColor"
@@ -35,37 +35,7 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  d="M13 10V3L4 14h7v7l9-11h-7z"
-                />
-              </svg>
-              <svg
-                v-if="index === 1"
-                class="h-6 w-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
-                />
-              </svg>
-              <svg
-                v-if="index === 2"
-                class="h-6 w-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M8 7V3m8 4V3m-9 8h8m-9 6h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  :d="serviceIcons[index]"
                 />
               </svg>
             </div>
@@ -99,6 +69,9 @@
   import Mark from "~/assets/images/application/Mark.png";
   import Drag from "~/assets/images/application/Drag.png";
   import Calendar from "~/assets/images/application/Calendar.png";
+  import Uncompleted from "~/assets/images/application/Uncompleted.png";
+  import Gantt from "~/assets/images/application/Gantt.png";
+  import Material from "~/assets/images/application/Material.png";
   import H2Title from "@/components/core/title/H2Title.vue";
   export default {
     name: "Services",
@@ -106,6 +79,16 @@
       H2Title,
     },
     computed: {
+      serviceIcons() {
+        return [
+          "M13 10V3L4 14h7v7l9-11h-7z",
+          "M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01",
+          "M8 7V3m8 4V3m-9 8h8m-9 6h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z",
+          "M5 13l4 4L19 7m-5 10h5v4H5v-4h5",
+          "M3 7h4l2 5 4-10 3 8h5",
+          "M4 6h16M4 12h16M4 18h10m4-6 2 2 4-4",
+        ];
+      },
       services() {
         return [
           {
@@ -122,6 +105,21 @@
             title: this.$t("feature.services.title3"),
             description: this.$t("feature.services.description3"),
             picture: Calendar,
+          },
+          {
+            title: this.$t("feature.services.title4"),
+            description: this.$t("feature.services.description4"),
+            picture: Uncompleted,
+          },
+          {
+            title: this.$t("feature.services.title5"),
+            description: this.$t("feature.services.description5"),
+            picture: Material,
+          },
+          {
+            title: this.$t("feature.services.title6"),
+            description: this.$t("feature.services.description6"),
+            picture: Gantt,
           },
         ];
       },

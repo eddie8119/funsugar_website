@@ -7,7 +7,7 @@ const FAVICON = `${WEBSITE_URL}favicon.png`;
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "KaiJi 開工大吉手帳｜室內工程管理與設計師專屬工具",
+    title: "KaiJi 開工大吉｜室內工程管理軟體",
     htmlAttrs: {
       lang: "Zh-Hant-TW",
     },
@@ -18,25 +18,19 @@ export default {
       {
         hid: "application-name",
         name: "application-name",
-        content: "KaiJi 開工大吉手帳",
+        content: "KaiJi 開工大吉",
       },
-      { hid: "author", name: "author", content: "方生糖 Designer Helper" },
+      { hid: "author", name: "author", content: "方生糖" },
       {
         hid: "description",
         name: "description",
         content:
-          "KaiJi 開工大吉手帳，專為室內設計與工程監管打造的數位工具，輕鬆記錄工地、降低遺漏與誤工成本，是設計師與工程團隊的高效率助手。",
-      },
-      {
-        hid: "keywords",
-        name: "keywords",
-        content:
-          "KaiJi, 開工大吉手帳, 室內工地管理手帳, 室內工程管理, 工地管理, 室內設計師工具, 室內工程記錄, 室內專案協作, 室內攝影, 台北室內攝影,空間攝影",
+          "KaiJi 開工大吉是一款專為室內設計與施工團隊打造的工程管理軟體，整合工地紀錄、任務追蹤與專案排程，幫助監工與設計師降低漏項、誤工與溝通成本，讓每個案場從開工就井然有序。",
       },
       {
         hid: "og:site_name",
         property: "og:site_name",
-        content: "方生糖 Designer Helper",
+        content: "方生糖",
       },
       { hid: "og:locale", property: "og:locale", content: "zh_TW" },
       {
@@ -47,7 +41,7 @@ export default {
       {
         hid: "og:title",
         property: "og:title",
-        content: "KaiJi 開工大吉手帳｜室內工程管理與設計師專屬工具",
+        content: "KaiJi 開工大吉｜室內工程管理軟體",
       },
       {
         hid: "og:description",
@@ -63,7 +57,7 @@ export default {
       {
         hid: "og:image:alt",
         property: "og:image:alt",
-        content: "KaiJi 開工大吉手帳預覽",
+        content: "KaiJi 開工大吉預覽",
       },
       {
         hid: "og:url",
@@ -78,7 +72,7 @@ export default {
       {
         hid: "twitter:title",
         name: "twitter:title",
-        content: "KaiJi 開工大吉手帳｜室內工程管理與設計師專屬工具",
+        content: "KaiJi 開工大吉｜室內工程管理軟體",
       },
       {
         hid: "twitter:description",
@@ -108,16 +102,13 @@ export default {
         type: "application/ld+json",
         json: {
           "@context": "https://schema.org",
-          "@type": "Organization",
-          name: "方生糖 Designer Helper",
+          "@type": "SoftwareApplication",
+          name: "方生糖",
           url: WEBSITE_URL,
           logo: FAVICON,
-          sameAs: [
-            BRAND_LINK.instagram,
-            BRAND_LINK.behance,
-          ],
+          sameAs: [BRAND_LINK.instagram, BRAND_LINK.behance],
           description:
-            "KaiJi 開工大吉手帳與室內攝影服務，協助設計師管理工地的利器。",
+            "KaiJi 開工大吉與室內攝影服務，協助設計師管理工地的利器。",
           contactPoint: {
             "@type": "ContactPoint",
             contactType: "customer service",
@@ -126,7 +117,7 @@ export default {
           makesOffer: [
             {
               "@type": "Offer",
-              name: "KaiJi 開工大吉手帳",
+              name: "KaiJi 開工大吉",
               url: WEBSITE_URL,
               category: "SoftwareApplication",
             },

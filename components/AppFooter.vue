@@ -9,7 +9,7 @@
           <address class="space-y-1 text-base not-italic text-gray-300">
             <p
               v-for="detail in contactDetails"
-              :key="detail.label"
+              :key="detail.labelKey"
               class="flex flex-col text-sm"
             >
               <span class="text-xs uppercase tracking-[0.3em] text-gray-500">
@@ -48,9 +48,9 @@
             {{ $t("footer.ctaHeading") }}
           </h4>
           <a
-            :href="`mailto:${BRAND_LINK.email}`"
+            :href="`mailto:${brandLink.email}`"
             class="break-all text-2xl font-bold transition-colors hover:text-yellow-500 md:text-4xl"
-            >{{ BRAND_LINK.email }}</a
+            >{{ brandLink.email }}</a
           >
           <div class="mt-8">
             <p class="mb-2 text-sm text-gray-400">
@@ -70,7 +70,7 @@
                   <img
                     :src="iconSources[link.icon]"
                     :alt="link.label"
-                    class=" object-contain opacity-30 transition group-hover:opacity-80"
+                    class="object-contain opacity-30 transition group-hover:opacity-80"
                   />
                 </a>
               </li>
@@ -100,12 +100,13 @@
   import YoutubeIcon from "@/assets/icons/Youtube.svg";
   import LineIcon from "@/assets/icons/Line.svg";
   import BehanceIcon from "@/assets/icons/Behance.svg";
-  import { BRAND_LINK } from "@/constants/link";
+  import { BRAND_LINK } from "@/constants/link.js";
 
   export default {
     name: "AppFooter",
     data() {
       return {
+        brandLink: BRAND_LINK,
         navLinks: [
           { labelKey: "footer.nav.home", href: "/" },
           { labelKey: "footer.nav.photography", href: "/photography" },
@@ -114,7 +115,13 @@
             href: BRAND_LINK.website,
           },
         ],
-        contactDetails: [{}],
+        contactDetails: [
+          {
+            labelKey: "footer.contact.email",
+            value: BRAND_LINK.email,
+            href: `mailto:${BRAND_LINK.email}`,
+          },
+        ],
         socialLinks: [
           {
             label: "YouTube",

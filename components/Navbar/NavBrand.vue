@@ -45,7 +45,7 @@
           return "Designer Helper";
         }
 
-        return "開工大吉手帳";
+        return "開工大吉";
       },
     },
   };
