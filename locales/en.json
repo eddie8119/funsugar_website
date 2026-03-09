@@ -106,5 +106,26 @@
     ],
     "dropdownLabel": "Services",
     "cta": "Book now"
+  },
+  "tutorials": {
+    "title": "Product tutorials",
+    "description": "Each video breaks down one workflow",
+    "items": {
+      "projects": {
+        "tag": "Projects",
+        "title": "How to kick off a project",
+        "description": "Upload your Excel Gantt plan and KaiJi instantly converts it into an editable schedule so you can tweak progress while comparing design and onsite timelines."
+      },
+      "tasks": {
+        "tag": "Tasks",
+        "title": "Create and monitor tasks",
+        "description": "Inside each project, add construction to-dos, arrange sequences by trade, and set reminders plus material notes."
+      },
+      "share": {
+        "tag": "Collaboration",
+        "title": "Share progress and updates",
+        "description": "Synchronize every stakeholder through cloud sharing so jobsite progress stays transparent in real time."
+      }
+    }
   }
 }

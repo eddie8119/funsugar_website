@@ -1,0 +1,71 @@
+{
+  "en": {
+    "tutorials": {
+      "title": "Product tutorials",
+      "description": "Each video breaks down one workflow",
+      "items": {
+        "projects": {
+          "tag": "Projects",
+          "title": "How to kick off a project",
+          "description": "Upload your Excel Gantt plan and KaiJi instantly converts it into an editable schedule so you can tweak progress while comparing design and onsite timelines."
+        },
+        "tasks": {
+          "tag": "Tasks",
+          "title": "Create and monitor tasks",
+          "description": "Inside each project, add construction to-dos, arrange sequences by trade, and set reminders plus material notes."
+        },
+        "share": {
+          "tag": "Collaboration",
+          "title": "Share progress and updates",
+          "description": "Synchronize every stakeholder through cloud sharing so jobsite progress stays transparent in real time."
+        }
+      }
+    }
+  },
+  "zh-TW": {
+    "tutorials": {
+      "title": "使用教學",
+      "description": "每支影片都帶你快速理解一個功能。",
+      "items": {
+        "projects": {
+          "tag": "專案",
+          "title": "如何開始一個專案",
+          "description": " Excel 甘特圖上傳後，系統會自動建立可編輯的甘特圖，讓你隨時調整進度並同時查看規劃與施工兩條時間軸。"
+        },
+        "tasks": {
+          "tag": "任務待辦",
+          "title": "建立與追蹤任務",
+          "description": "進入專案後即可建立施工代辦任務，依工程類型安排工序並設定時間提醒與材料備註。"
+        },
+        "share": {
+          "tag": "協作",
+          "title": "分享進度與回報",
+          "description": "透過雲端分享，即時同步工地進度給所有利害關係人。"
+        }
+      }
+    }
+  },
+  "ja": {
+    "tutorials": {
+      "title": "使い方チュートリアル",
+      "description": "各動画で 1 つの機能を素早く把握。",
+      "items": {
+        "projects": {
+          "tag": "プロジェクト",
+          "title": "プロジェクトを始める方法",
+          "description": "Excel のガントチャートをアップロードすると編集可能なチャートに変換され、計画と施工の 2 本のタイムラインを並べて調整できます。"
+        },
+        "tasks": {
+          "tag": "タスク",
+          "title": "タスクの作成と追跡",
+          "description": "プロジェクト内で施工タスクを作成し、工種ごとに工程を組み、リマインダーや材料メモを追加できます。"
+        },
+        "share": {
+          "tag": "協業",
+          "title": "進捗共有と報告",
+          "description": "クラウド共有でステークホルダー全員にリアルタイムで工事進捗を同期します。"
+        }
+      }
+    }
+  }
+}

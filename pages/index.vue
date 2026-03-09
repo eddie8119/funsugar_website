@@ -3,6 +3,7 @@
     <Hero />
     <About />
     <Feature />
+    <VideoTutorials />
     <!-- <Showcase /> -->
     <Experience />
   </div>
@@ -12,6 +13,7 @@
   import Hero from "@/components/application/Hero";
   import About from "@/components/application/About";
   import Feature from "@/components/application/Feature";
+  import VideoTutorials from "@/components/application/VideoTutorials";
   import Experience from "@/components/application/Experience";
 
   export default {
@@ -19,6 +21,7 @@
       Hero,
       About,
       Feature,
+      VideoTutorials,
       Experience,
     },
     layout: "mainlayout",
