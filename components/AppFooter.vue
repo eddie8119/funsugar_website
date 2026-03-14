@@ -130,7 +130,7 @@
           },
           {
             label: "Instagram",
-            href: BRAND_LINK.instagram,
+            href: BRAND_LINK.instagramKaiji,
             icon: "instagram",
           },
 
