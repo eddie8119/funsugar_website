@@ -121,6 +121,11 @@
         "title": "Create and monitor tasks",
         "description": "Inside each project, add construction to-dos, arrange sequences by trade, and set reminders plus material notes."
       },
+      "drawing": {
+        "tag": "Plans",
+        "title": "Annotate tasks directly on drawings",
+        "description": "Walk the site and pin tasks to their real-world locations, including multiple markers for the same task when needed."
+      },
       "share": {
         "tag": "Collaboration",
         "title": "Share progress and updates",

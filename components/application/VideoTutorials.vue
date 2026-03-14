@@ -70,6 +70,10 @@
             key: "tasks",
             url: "https://www.youtube.com/embed/FL6nL-Av6Xs?si=mk_rN82Optr85AS6",
           },
+          {
+            key: "drawing",
+            url: "https://www.youtube.com/embed/fNwkKRHrdy8?si=u7mXWrfxKuJUuN8A",
+          },
         ];
 
         return sources.map((source) => {

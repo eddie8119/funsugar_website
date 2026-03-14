@@ -14,6 +14,11 @@
           "title": "Create and monitor tasks",
           "description": "Inside each project, add construction to-dos, arrange sequences by trade, and set reminders plus material notes."
         },
+        "drawing": {
+          "tag": "Plans",
+          "title": "Annotate tasks directly on drawings",
+          "description": "Walk the site and pin tasks to their real-world locations, including multiple markers for the same task when needed."
+        },
         "share": {
           "tag": "Collaboration",
           "title": "Share progress and updates",
@@ -37,6 +42,11 @@
           "title": "建立與追蹤任務",
           "description": "進入專案後即可建立施工代辦任務，依工程類型安排工序並設定時間提醒與材料備註。"
         },
+        "drawing": {
+          "tag": "圖面",
+          "title": "註記任務資訊在圖面",
+          "description": "現場監工時更直覺地對應實際空間位置。並滿足同一任務建立多處標註。"
+        },
         "share": {
           "tag": "協作",
           "title": "分享進度與回報",
@@ -59,6 +69,11 @@
           "tag": "タスク",
           "title": "タスクの作成と追跡",
           "description": "プロジェクト内で施工タスクを作成し、工種ごとに工程を組み、リマインダーや材料メモを追加できます。"
+        },
+        "drawing": {
+          "tag": "図面",
+          "title": "図面にタスク情報を注記",
+          "description": "現場確認の際に実際の空間と結び付けて直感的に位置を把握し、同じタスクでも複数箇所へラベル付けできます。"
         },
         "share": {
           "tag": "協業",
