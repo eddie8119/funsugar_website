@@ -19,6 +19,14 @@
         {
           "label": "Interior Photography",
           "to": "/photography"
+        },
+        {
+          "label": "SiteShot",
+          "to": "/site-shot"
+        },
+        {
+          "label": "SiteNear",
+          "to": "/site-near"
         }
       ],
       "dropdownLabel": "Services",
@@ -45,6 +53,14 @@
         {
           "label": "室內攝影",
           "to": "/photography"
+        },
+        {
+          "label": "SiteShot",
+          "to": "/site-shot"
+        },
+        {
+          "label": "SiteNear",
+          "to": "/site-near"
         }
       ],
       "dropdownLabel": "服務",
@@ -71,6 +87,14 @@
         {
           "label": "室内撮影",
           "to": "/photography"
+        },
+        {
+          "label": "SiteShot",
+          "to": "/site-shot"
+        },
+        {
+          "label": "SiteNear",
+          "to": "/site-near"
         }
       ],
       "dropdownLabel": "サービス",

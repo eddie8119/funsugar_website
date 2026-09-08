@@ -10,7 +10,7 @@
         :key="item.label"
         :to="item.to"
         :href="item.href"
-        class="block whitespace-nowrap px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
+        class="block whitespace-nowrap px-4 py-2 text-center text-sm text-gray-700 hover:bg-gray-50"
         role="menuitem"
       >
         {{ item.label }}

@@ -102,6 +102,14 @@
       {
         "label": "室內攝影",
         "to": "/photography"
+      },
+      {
+        "label": "SiteShot",
+        "to": "/site-shot"
+      },
+      {
+        "label": "SiteNear",
+        "to": "/site-near"
       }
     ],
     "dropdownLabel": "服務",

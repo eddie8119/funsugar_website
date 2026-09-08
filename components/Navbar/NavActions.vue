@@ -4,6 +4,7 @@
   >
     <NavDropdown :label="resolvedDropdownLabel" :items="dropdownItems" />
     <a
+      v-if="resolvedCta.label"
       class="btn w-full text-center md:w-auto"
       :href="resolvedCta.href"
       target="_blank"
@@ -47,12 +48,6 @@
       resolvedCta() {
         if (Object.keys(this.cta || {}).length) {
           return this.cta;
-        }
-        if (this.navCopy.cta) {
-          return {
-            href: "#contact",
-            label: this.navCopy.cta,
-          };
         }
         return {
           href: "#contact",

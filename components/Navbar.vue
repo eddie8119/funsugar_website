@@ -70,11 +70,13 @@
         dropdownItems: [
           { label: "KaiJi 開工大吉", to: "/" },
           { label: "室內攝影", to: "/photography" },
+          { label: "SiteShot", to: "/site-shot" },
+          { label: "SiteNear", to: "/site-near" },
         ],
-        contactCta: {
-          href: "https://mail.google.com/mail/?view=cm&fs=1&to=funsugar8119@gmail.com&body=詢問方生糖:",
-          label: "預約",
-        },
+        // contactCta: {
+        //   href: "https://mail.google.com/mail/?view=cm&fs=1&to=funsugar8119@gmail.com&body=詢問方生糖:",
+        //   label: "預約",
+        // },
       };
     },
     computed: {
@@ -89,12 +91,6 @@
         return this.navCopy.dropdown || this.dropdownItems;
       },
       resolvedContactCta() {
-        if (this.navCopy.cta) {
-          return {
-            ...this.contactCta,
-            label: this.navCopy.cta,
-          };
-        }
         return this.contactCta;
       },
     },
