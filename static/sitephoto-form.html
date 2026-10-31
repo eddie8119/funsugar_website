@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <title>sitephoto form detection</title>
+  </head>
+  <body>
+    <form
+      name="sitephoto-inquiry"
+      method="POST"
+      action="/sitephoto/thanks"
+      netlify
+      netlify-honeypot="bot-field"
+      hidden
+    >
+      <input name="bot-field" />
+      <input type="radio" name="type" value="公益攝影" />
+      <input type="radio" name="type" value="商業委託" />
+      <select name="plan"></select>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <select name="district"></select>
+      <input type="date" name="preferred_date" />
+      <textarea name="details"></textarea>
+    </form>
+  </body>
+</html>
