@@ -117,6 +117,120 @@
     "dropdownLabel": "More Design Services",
     "cta": "Book now"
   },
+  "sitephoto": {
+    "meta": {
+      "title": "SitePhoto｜You donate, I shoot",
+      "description": "A charity interior photography project in Taipei. Donate to a good cause — I'll photograph your space."
+    },
+    "nav": {
+      "works": "Works",
+      "story": "Charity Project",
+      "plans": "Plans",
+      "apply": "Apply ↗"
+    },
+    "hero": {
+      "kicker": "Interior & Space Photography",
+      "titleLine1": "Let spaces be seen,",
+      "titleLine2": "let kindness flow on.",
+      "subtitle": "You donate. I photograph.",
+      "description": "Redirect your photography budget to charity — SitePhoto turns your space into a lasting portfolio.",
+      "ctaPrimary": "Apply now ↗",
+      "ctaSecondary": "Browse works ↓",
+      "note": "15 charity slots per year / Taipei City only",
+      "imageAlt": "Interior space photography",
+      "imageCaption": "Light and everyday life"
+    },
+    "works": {
+      "kicker": "01 / Works",
+      "behanceLink": "Full portfolio on Behance ↗",
+      "behanceNote": "New work is published on Behance — head there for the complete portfolio.",
+      "itemTitle": "Interior Work"
+    },
+    "story": {
+      "kicker": "02 / The Charity Project",
+      "headlinePre": "Let a home's ",
+      "headlineHighlight": "happiness",
+      "headlineMid": " go",
+      "headlineTail": "further.",
+      "stats": {
+        "shoots": {
+          "value": "15",
+          "label": "Shoots per year"
+        },
+        "donation": {
+          "value": "NT$180K",
+          "label": "Annual donation goal"
+        },
+        "direct": {
+          "value": "100%",
+          "label": "Goes straight to charity"
+        }
+      },
+      "p1": "The homeowner moves into their dream home; the designer completes a work to be proud of.",
+      "p2": "I kept wondering — could this happiness reach a little further?",
+      "p3": "So this project was born: designers donate the photography budget to a charity, and I do the shooting.",
+      "p4": "So that finishing one home can do a little good for many more people.",
+      "closing": "You donate, I photograph — a home's happiness keeps flowing."
+    },
+    "plans": {
+      "kicker": "03 / Plans",
+      "intro": "No photography fee — once your slot is confirmed, donate directly to a charity.",
+      "planPrefix": "Plan",
+      "items": {
+        "small": {
+          "name": "Under ~100㎡"
+        },
+        "large": {
+          "name": "~100–200㎡"
+        }
+      },
+      "priceNote": "Minimum donation",
+      "photos": "{n} retouched photos",
+      "select": "Choose this plan ↗",
+      "footnote": "For spaces over ~200㎡, special venues, or commercial commissions, please enquire separately. Deliverables and dates are confirmed case by case.",
+      "steps": {
+        "apply": "Apply",
+        "confirm": "Confirm slot",
+        "donate": "Donate",
+        "deliver": "Shoot & deliver"
+      },
+      "warning": "Apply first, and donate only after your slot is confirmed — not before."
+    },
+    "apply": {
+      "kicker": "04 / Apply",
+      "titleLine1": "Let's capture",
+      "titleLine2": "your space.",
+      "description": "Fill in a few details — I'll reply by email to confirm fit and available dates.",
+      "notice": "Charity photography is limited to Taipei City.",
+      "typeLabel": "Commission type",
+      "typeCharity": "Charity photography",
+      "typeCommercial": "Paid commission",
+      "planLabel": "Plan",
+      "planSmall": "Under ~100㎡ / NT$12,000 donation",
+      "planLarge": "~100–200㎡ / NT$18,000 donation",
+      "nameLabel": "Name",
+      "namePlaceholder": "What should I call you?",
+      "emailLabel": "Email",
+      "districtLabel": "Shooting area ({area})",
+      "areaCharity": "Taipei City only",
+      "areaCommercial": "Taipei & New Taipei",
+      "districtPlaceholder": "Select a district",
+      "groupTaipei": "Taipei City",
+      "groupNewTaipei": "New Taipei City",
+      "dateLabel": "Preferred shoot date",
+      "detailsLabel": "Space details or photo links (optional)",
+      "detailsPlaceholder": "e.g. ~92㎡ apartment finishing in December — Google Drive links welcome",
+      "submit": "Submit application",
+      "submitting": "Submitting…",
+      "disclaimer": "An application doesn't guarantee a booking — I'll share next steps after confirming availability."
+    },
+    "thanks": {
+      "title": "Application submitted!",
+      "p1": "Thanks for supporting SitePhoto. I'll reply by email with the shoot terms and available dates.",
+      "p2": "Your booking isn't confirmed yet — please don't donate just yet.",
+      "back": "Back to SitePhoto"
+    }
+  },
   "tutorials": {
     "title": "Product tutorials",
     "description": "Each video breaks down one workflow",

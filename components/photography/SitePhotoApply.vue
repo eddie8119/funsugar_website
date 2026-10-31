@@ -5,21 +5,22 @@
   >
     <div>
       <div class="mb-6 text-sm font-bold tracking-[2px] text-[#f9d236]">
-        04 / 申請委託
+        {{ $t("sitephoto.apply.kicker") }}
       </div>
       <h2
-        class="mb-[22px] text-[clamp(30px,3.3vw,53px)] font-black leading-[1.3] tracking-[-1.4px] text-[#faf8f2]"
+        class="mb-[22px] text-[clamp(30px,3.3vw,53px)] font-black leading-[1.3] tracking-[-1.4px] text-[#faf8f2] [text-wrap:balance]"
       >
-        一起記錄<br />你的空間。
+        {{ $t("sitephoto.apply.titleLine1") }}<br />{{
+          $t("sitephoto.apply.titleLine2")
+        }}
       </h2>
       <p class="my-4 leading-[1.9] text-[#bbb]">
-        填寫幾項基本資訊，會透過 Email
-        回覆你，確認是否適合拍攝以及可預約的日期。
+        {{ $t("sitephoto.apply.description") }}
       </p>
       <div
         class="mt-10 border-l-[3px] border-[#f9d236] px-5 py-[15px] leading-[1.8] text-[#ddd]"
       >
-        公益攝影委託範圍僅限台北市
+        {{ $t("sitephoto.apply.notice") }}
       </div>
     </div>
     <form
@@ -36,7 +37,7 @@
         <label>請勿填寫：<input name="bot-field" /></label>
       </p>
       <label class="block text-[13px] font-bold"
-        >委託類型
+        >{{ $t("sitephoto.apply.typeLabel") }}
         <div class="mt-3 flex flex-wrap gap-6">
           <label class="font-normal"
             ><input
@@ -45,7 +46,7 @@
               name="type"
               value="公益攝影"
             />
-            公益攝影</label
+            {{ $t("sitephoto.apply.typeCharity") }}</label
           >
           <label class="font-normal"
             ><input
@@ -54,35 +55,39 @@
               name="type"
               value="商業委託"
             />
-            一般付費委託</label
+            {{ $t("sitephoto.apply.typeCommercial") }}</label
           >
         </div>
       </label>
       <label v-if="form.type === '公益攝影'" class="block text-[13px] font-bold"
-        >拍攝方案
+        >{{ $t("sitephoto.apply.planLabel") }}
         <select
           v-model="form.plan"
           name="plan"
           class="mt-[9px] w-full rounded-none border border-[#d4d4d4] bg-white p-[13px] text-sm"
         >
           <option value="30 坪以內／12,000 元">
-            30 坪以內／捐款 12,000 元
+            {{ $t("sitephoto.apply.planSmall") }}
           </option>
-          <option value="31–60 坪／18,000 元">31–60 坪／捐款 18,000 元</option>
+          <option value="31–60 坪／18,000 元">
+            {{ $t("sitephoto.apply.planLarge") }}
+          </option>
         </select>
       </label>
       <input v-else type="hidden" name="plan" value="另行報價" />
       <label class="block text-[13px] font-bold"
-        >名稱<input
+        >{{ $t("sitephoto.apply.nameLabel")
+        }}<input
           v-model.trim="form.name"
           name="name"
           required
           maxlength="100"
-          placeholder="如何稱呼？"
+          :placeholder="$t('sitephoto.apply.namePlaceholder')"
           class="mt-[9px] w-full rounded-none border border-[#d4d4d4] bg-white p-[13px] text-sm"
       /></label>
       <label class="block text-[13px] font-bold"
-        >電子郵件<input
+        >{{ $t("sitephoto.apply.emailLabel")
+        }}<input
           v-model.trim="form.email"
           name="email"
           type="email"
@@ -91,15 +96,17 @@
           class="mt-[9px] w-full rounded-none border border-[#d4d4d4] bg-white p-[13px] text-sm"
       /></label>
       <label class="block text-[13px] font-bold"
-        >拍攝地區（{{ form.type === "商業委託" ? "雙北" : "僅限台北市" }}）
+        >{{ $t("sitephoto.apply.districtLabel", { area: districtAreaText }) }}
         <select
           v-model="form.district"
           name="district"
           required
           class="mt-[9px] w-full rounded-none border border-[#d4d4d4] bg-white p-[13px] text-sm"
         >
-          <option value="" disabled>請選擇行政區</option>
-          <optgroup label="台北市">
+          <option value="" disabled>
+            {{ $t("sitephoto.apply.districtPlaceholder") }}
+          </option>
+          <optgroup :label="$t('sitephoto.apply.groupTaipei')">
             <option
               v-for="district in taipeiDistricts"
               :key="district"
@@ -108,7 +115,10 @@
               {{ district }}
             </option>
           </optgroup>
-          <optgroup v-if="form.type === '商業委託'" label="新北市">
+          <optgroup
+            v-if="form.type === '商業委託'"
+            :label="$t('sitephoto.apply.groupNewTaipei')"
+          >
             <option
               v-for="district in newTaipeiDistricts"
               :key="district"
@@ -120,19 +130,20 @@
         </select>
       </label>
       <label class="block text-[13px] font-bold"
-        >預計拍攝日期<input
+        >{{ $t("sitephoto.apply.dateLabel")
+        }}<input
           v-model="form.date"
           name="preferred_date"
           type="date"
           class="mt-[9px] w-full rounded-none border border-[#d4d4d4] bg-white p-[13px] text-sm"
       /></label>
       <label class="block text-[13px] font-bold"
-        >空間資訊或參考照片連結（選填）
+        >{{ $t("sitephoto.apply.detailsLabel") }}
         <textarea
           v-model.trim="form.details"
           name="details"
           rows="3"
-          placeholder="例如：28 坪住宅，預計 12 月完工；可貼 Google Drive 連結"
+          :placeholder="$t('sitephoto.apply.detailsPlaceholder')"
           class="mt-[9px] w-full rounded-none border border-[#d4d4d4] bg-white p-[13px] text-sm"
         />
       </label>
@@ -141,10 +152,14 @@
         type="submit"
         :disabled="submitting"
       >
-        {{ submitting ? "正在提交…" : "送出攝影申請" }}
+        {{
+          submitting
+            ? $t("sitephoto.apply.submitting")
+            : $t("sitephoto.apply.submit")
+        }}
       </button>
       <p class="my-3 text-xs leading-[1.8] text-[#8b8b8b]">
-        送出申請不代表預約成功。確認可承接後，才會提供下一步資訊。
+        {{ $t("sitephoto.apply.disclaimer") }}
       </p>
     </form>
   </section>
@@ -216,6 +231,15 @@
           details: "",
         },
       };
+    },
+    computed: {
+      districtAreaText() {
+        return this.$t(
+          this.form.type === "商業委託"
+            ? "sitephoto.apply.areaCommercial"
+            : "sitephoto.apply.areaCharity"
+        );
+      },
     },
     watch: {
       "form.type"() {

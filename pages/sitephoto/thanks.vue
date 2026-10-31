@@ -1,9 +1,9 @@
 <template>
   <main class="thanks">
-    <h1>申請已送出！</h1>
-    <p>謝謝您對 SitePhoto 的支持。我會透過 Email 回覆拍攝條件與可預約時間。</p>
-    <p>申請尚未代表預約成功，請先不要捐款。</p>
-    <a href="/sitephoto/">返回 SitePhoto</a>
+    <h1>{{ $t("sitephoto.thanks.title") }}</h1>
+    <p>{{ $t("sitephoto.thanks.p1") }}</p>
+    <p>{{ $t("sitephoto.thanks.p2") }}</p>
+    <a href="/sitephoto/">{{ $t("sitephoto.thanks.back") }}</a>
   </main>
 </template>
 <script>

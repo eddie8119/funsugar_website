@@ -8,7 +8,7 @@
     >
       <div>
         <div class="mb-6 text-sm font-bold tracking-[2px] text-[#8a7c48]">
-          01 / 攝影作品
+          {{ $t("sitephoto.works.kicker") }}
         </div>
       </div>
       <div class="text-right max-[850px]:text-left">
@@ -17,16 +17,16 @@
           target="_blank"
           rel="noopener noreferrer"
           class="border-b border-[#222] pb-[5px] text-sm font-bold"
-          >前往 Behance 看完整作品 ↗</a
+          >{{ $t("sitephoto.works.behanceLink") }}</a
         >
         <p class="mt-3 text-xs leading-[1.8] text-[#8b8b8b]">
-          新增作品統一發布至 Behance。完整作品請至 Behance 瀏覽
+          {{ $t("sitephoto.works.behanceNote") }}
         </p>
       </div>
     </div>
     <div class="grid grid-cols-2 gap-2 max-[850px]:grid-cols-1">
       <a
-        v-for="work in works"
+        v-for="(work, index) in works"
         :key="work.image"
         href="https://www.behance.net/WANG81195321"
         target="_blank"
@@ -35,13 +35,13 @@
       >
         <img
           :src="work.image"
-          :alt="work.title"
+          :alt="`${$t('sitephoto.works.itemTitle')} 0${index + 1}`"
           loading="lazy"
           class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
         />
         <span
           class="from-black/55 absolute inset-x-0 bottom-0 bg-gradient-to-t to-transparent p-[18px] text-[13px] text-white"
-          >{{ work.title }} ↗</span
+          >{{ $t("sitephoto.works.itemTitle") }} 0{{ index + 1 }} ↗</span
         >
       </a>
     </div>
@@ -58,10 +58,10 @@
     data() {
       return {
         works: [
-          { image: Work1, title: "空間作品 01" },
-          { image: Work3, title: "空間作品 02" },
-          { image: Work5, title: "空間作品 03" },
-          { image: Work7, title: "空間作品 04" },
+          { image: Work1 },
+          { image: Work3 },
+          { image: Work5 },
+          { image: Work7 },
         ],
       };
     },

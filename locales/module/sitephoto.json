@@ -1,0 +1,350 @@
+{
+  "en": {
+    "sitephoto": {
+      "meta": {
+        "title": "SitePhoto｜You donate, I shoot",
+        "description": "A charity interior photography project in Taipei. Donate to a good cause — I'll photograph your space."
+      },
+      "nav": {
+        "works": "Works",
+        "story": "Charity Project",
+        "plans": "Plans",
+        "apply": "Apply ↗"
+      },
+      "hero": {
+        "kicker": "Interior & Space Photography",
+        "titleLine1": "Let spaces be seen,",
+        "titleLine2": "let kindness flow on.",
+        "subtitle": "You donate. I photograph.",
+        "description": "Redirect your photography budget to charity — SitePhoto turns your space into a lasting portfolio.",
+        "ctaPrimary": "Apply now ↗",
+        "ctaSecondary": "Browse works ↓",
+        "note": "15 charity slots per year / Taipei City only",
+        "imageAlt": "Interior space photography",
+        "imageCaption": "Light and everyday life"
+      },
+      "works": {
+        "kicker": "01 / Works",
+        "behanceLink": "Full portfolio on Behance ↗",
+        "behanceNote": "New work is published on Behance — head there for the complete portfolio.",
+        "itemTitle": "Interior Work"
+      },
+      "story": {
+        "kicker": "02 / The Charity Project",
+        "headlinePre": "Let a home's ",
+        "headlineHighlight": "happiness",
+        "headlineMid": " go",
+        "headlineTail": "further.",
+        "stats": {
+          "shoots": {
+            "value": "15",
+            "label": "Shoots per year"
+          },
+          "donation": {
+            "value": "NT$180K",
+            "label": "Annual donation goal"
+          },
+          "direct": {
+            "value": "100%",
+            "label": "Goes straight to charity"
+          }
+        },
+        "p1": "The homeowner moves into their dream home; the designer completes a work to be proud of.",
+        "p2": "I kept wondering — could this happiness reach a little further?",
+        "p3": "So this project was born: designers donate the photography budget to a charity, and I do the shooting.",
+        "p4": "So that finishing one home can do a little good for many more people.",
+        "closing": "You donate, I photograph — a home's happiness keeps flowing."
+      },
+      "plans": {
+        "kicker": "03 / Plans",
+        "intro": "No photography fee — once your slot is confirmed, donate directly to a charity.",
+        "planPrefix": "Plan",
+        "items": {
+          "small": {
+            "name": "Under ~100㎡"
+          },
+          "large": {
+            "name": "~100–200㎡"
+          }
+        },
+        "priceNote": "Minimum donation",
+        "photos": "{n} retouched photos",
+        "select": "Choose this plan ↗",
+        "footnote": "For spaces over ~200㎡, special venues, or commercial commissions, please enquire separately. Deliverables and dates are confirmed case by case.",
+        "steps": {
+          "apply": "Apply",
+          "confirm": "Confirm slot",
+          "donate": "Donate",
+          "deliver": "Shoot & deliver"
+        },
+        "warning": "Apply first, and donate only after your slot is confirmed — not before."
+      },
+      "apply": {
+        "kicker": "04 / Apply",
+        "titleLine1": "Let's capture",
+        "titleLine2": "your space.",
+        "description": "Fill in a few details — I'll reply by email to confirm fit and available dates.",
+        "notice": "Charity photography is limited to Taipei City.",
+        "typeLabel": "Commission type",
+        "typeCharity": "Charity photography",
+        "typeCommercial": "Paid commission",
+        "planLabel": "Plan",
+        "planSmall": "Under ~100㎡ / NT$12,000 donation",
+        "planLarge": "~100–200㎡ / NT$18,000 donation",
+        "nameLabel": "Name",
+        "namePlaceholder": "What should I call you?",
+        "emailLabel": "Email",
+        "districtLabel": "Shooting area ({area})",
+        "areaCharity": "Taipei City only",
+        "areaCommercial": "Taipei & New Taipei",
+        "districtPlaceholder": "Select a district",
+        "groupTaipei": "Taipei City",
+        "groupNewTaipei": "New Taipei City",
+        "dateLabel": "Preferred shoot date",
+        "detailsLabel": "Space details or photo links (optional)",
+        "detailsPlaceholder": "e.g. ~92㎡ apartment finishing in December — Google Drive links welcome",
+        "submit": "Submit application",
+        "submitting": "Submitting…",
+        "disclaimer": "An application doesn't guarantee a booking — I'll share next steps after confirming availability."
+      },
+      "thanks": {
+        "title": "Application submitted!",
+        "p1": "Thanks for supporting SitePhoto. I'll reply by email with the shoot terms and available dates.",
+        "p2": "Your booking isn't confirmed yet — please don't donate just yet.",
+        "back": "Back to SitePhoto"
+      }
+    }
+  },
+  "zh-TW": {
+    "sitephoto": {
+      "meta": {
+        "title": "SitePhoto｜你捐款，我拍照",
+        "description": "台北市室內攝影公益計畫。你捐款，我拍照。讓家的幸福繼續流動。"
+      },
+      "nav": {
+        "works": "攝影作品",
+        "story": "公益計畫",
+        "plans": "拍攝方案",
+        "apply": "申請委託 ↗"
+      },
+      "hero": {
+        "kicker": "室內設計空間攝影",
+        "titleLine1": "讓空間被看見，",
+        "titleLine2": "讓善意繼續流動。",
+        "subtitle": "你捐款，我拍照。",
+        "description": "將攝影預算捐給公益機構，SitePhoto 為你的空間留下作品。",
+        "ctaPrimary": "申請公益攝影 ↗",
+        "ctaSecondary": "先看看作品 ↓",
+        "note": "每年 15 個公益攝影名額 ／ 只限台北市",
+        "imageAlt": "室內設計空間攝影作品",
+        "imageCaption": "空間的光與日常"
+      },
+      "works": {
+        "kicker": "01 / 攝影作品",
+        "behanceLink": "前往 Behance 看完整作品 ↗",
+        "behanceNote": "新增作品統一發布至 Behance。完整作品請至 Behance 瀏覽",
+        "itemTitle": "空間作品"
+      },
+      "story": {
+        "kicker": "02 / 公益攝影計畫",
+        "headlinePre": "讓",
+        "headlineHighlight": "家的幸福",
+        "headlineMid": "，",
+        "headlineTail": "再多走一段路。",
+        "stats": {
+          "shoots": {
+            "value": "15",
+            "label": "年度拍攝目標／案"
+          },
+          "donation": {
+            "value": "18萬",
+            "label": "年度捐款目標／元"
+          },
+          "direct": {
+            "value": "100%",
+            "label": "委託人直接捐給公益機構"
+          }
+        },
+        "p1": "屋主住進理想的家，設計師完成值得驕傲的作品。",
+        "p2": "我一直在想，這份幸福能不能繼續向外延伸？",
+        "p3": "於是有了這個計畫：由設計師將攝影預算捐給公益機構，我則負責拍攝。",
+        "p4": "讓一個家的完成，也能為更多人帶來一點好事。",
+        "closing": "你捐款，我拍照。讓家的幸福，繼續流動。"
+      },
+      "plans": {
+        "kicker": "03 / 攝影方案",
+        "intro": "不用支付攝影服務費。確認名額後，直接捐款給公益機構即可。",
+        "planPrefix": "方案",
+        "items": {
+          "small": {
+            "name": "30 坪以內"
+          },
+          "large": {
+            "name": "31–60 坪"
+          }
+        },
+        "priceNote": "公益捐款門檻",
+        "photos": "{n} 張精修照片",
+        "select": "選擇此方案 ↗",
+        "footnote": "超過 60 坪、特殊場景或商業委託請另外洽詢。實際交付規格及拍攝日期以雙方確認為準。",
+        "steps": {
+          "apply": "提交申請",
+          "confirm": "確認名額",
+          "donate": "完成捐款",
+          "deliver": "拍攝交付"
+        },
+        "warning": "請先申請並確認名額，再進行捐款。確認名額前請勿捐款。"
+      },
+      "apply": {
+        "kicker": "04 / 申請委託",
+        "titleLine1": "一起記錄",
+        "titleLine2": "你的空間。",
+        "description": "填寫幾項基本資訊，會透過 Email 回覆你，確認是否適合拍攝以及可預約的日期。",
+        "notice": "公益攝影委託範圍僅限台北市",
+        "typeLabel": "委託類型",
+        "typeCharity": "公益攝影",
+        "typeCommercial": "一般付費委託",
+        "planLabel": "拍攝方案",
+        "planSmall": "30 坪以內／捐款 12,000 元",
+        "planLarge": "31–60 坪／捐款 18,000 元",
+        "nameLabel": "名稱",
+        "namePlaceholder": "如何稱呼？",
+        "emailLabel": "電子郵件",
+        "districtLabel": "拍攝地區（{area}）",
+        "areaCharity": "僅限台北市",
+        "areaCommercial": "雙北",
+        "districtPlaceholder": "請選擇行政區",
+        "groupTaipei": "台北市",
+        "groupNewTaipei": "新北市",
+        "dateLabel": "預計拍攝日期",
+        "detailsLabel": "空間資訊或參考照片連結（選填）",
+        "detailsPlaceholder": "例如：28 坪住宅，預計 12 月完工；可貼 Google Drive 連結",
+        "submit": "送出攝影申請",
+        "submitting": "正在提交…",
+        "disclaimer": "送出申請不代表預約成功。確認可承接後，才會提供下一步資訊。"
+      },
+      "thanks": {
+        "title": "申請已送出！",
+        "p1": "謝謝您對 SitePhoto 的支持。我會透過 Email 回覆拍攝條件與可預約時間。",
+        "p2": "申請尚未代表預約成功，請先不要捐款。",
+        "back": "返回 SitePhoto"
+      }
+    }
+  },
+  "ja": {
+    "sitephoto": {
+      "meta": {
+        "title": "SitePhoto｜あなたが寄付し、私が撮る",
+        "description": "台北市発のチャリティ室内撮影プロジェクト。あなたが寄付し、私が空間を撮影します。"
+      },
+      "nav": {
+        "works": "作品",
+        "story": "チャリティ企画",
+        "plans": "プラン",
+        "apply": "申し込む ↗"
+      },
+      "hero": {
+        "kicker": "インテリア・空間撮影",
+        "titleLine1": "空間を見せ、",
+        "titleLine2": "善意をつなぐ。",
+        "subtitle": "あなたが寄付し、私が撮る。",
+        "description": "撮影予算を公益団体へ寄付し、SitePhoto があなたの空間を作品として残します。",
+        "ctaPrimary": "チャリティ撮影に申し込む ↗",
+        "ctaSecondary": "まず作品を見る ↓",
+        "note": "年間15枠 ／ 対象は台北市のみ",
+        "imageAlt": "インテリア空間の撮影作品",
+        "imageCaption": "空間の光と日常"
+      },
+      "works": {
+        "kicker": "01 / 作品",
+        "behanceLink": "Behance で全作品を見る ↗",
+        "behanceNote": "新しい作品は Behance に掲載しています。全作品は Behance をご覧ください。",
+        "itemTitle": "空間写真"
+      },
+      "story": {
+        "kicker": "02 / チャリティ企画",
+        "headlinePre": "住まいの",
+        "headlineHighlight": "幸せ",
+        "headlineMid": "を、",
+        "headlineTail": "もう一歩先へ届けたい。",
+        "stats": {
+          "shoots": {
+            "value": "15",
+            "label": "年間撮影目標／件"
+          },
+          "donation": {
+            "value": "18万",
+            "label": "年間寄付目標／元"
+          },
+          "direct": {
+            "value": "100%",
+            "label": "依頼者が公益団体へ直接寄付"
+          }
+        },
+        "p1": "施主は理想の住まいへ。デザイナーは誇れる作品を手にする。",
+        "p2": "この幸せを、もっと外へ広げられないだろうか——そう考え続けていました。",
+        "p3": "そこで生まれたのがこの企画です。デザイナーは撮影予算を公益団体へ寄付し、私が撮影を担当します。",
+        "p4": "一つの家の完成が、より多くの人の小さな良いことになりますように。",
+        "closing": "あなたが寄付し、私が撮る。住まいの幸せを、これからも循環させていく。"
+      },
+      "plans": {
+        "kicker": "03 / 撮影プラン",
+        "intro": "撮影料は不要です。枠の確定後、公益団体へ直接ご寄付いただくだけです。",
+        "planPrefix": "プラン",
+        "items": {
+          "small": {
+            "name": "30坪以内"
+          },
+          "large": {
+            "name": "31–60坪"
+          }
+        },
+        "priceNote": "寄付の目安金額",
+        "photos": "レタッチ済み写真 {n} 枚",
+        "select": "このプランを選ぶ ↗",
+        "footnote": "60坪を超える物件、特殊な条件、商用撮影は個別にご相談ください。納品内容と撮影日は双方の確認をもって確定します。",
+        "steps": {
+          "apply": "申し込み",
+          "confirm": "枠の確定",
+          "donate": "寄付完了",
+          "deliver": "撮影・納品"
+        },
+        "warning": "必ずお申し込みのうえ、枠が確定してからご寄付ください。確定前のご寄付はご遠慮ください。"
+      },
+      "apply": {
+        "kicker": "04 / 依頼申し込み",
+        "titleLine1": "あなたの空間を、",
+        "titleLine2": "記録に残す。",
+        "description": "いくつかの基本情報をご記入ください。撮影可否と予約可能日をメールでご返信します。",
+        "notice": "チャリティ撮影の対象エリアは台北市のみです",
+        "typeLabel": "依頼タイプ",
+        "typeCharity": "チャリティ撮影",
+        "typeCommercial": "通常依頼（有料）",
+        "planLabel": "撮影プラン",
+        "planSmall": "30坪以内／寄付 12,000元",
+        "planLarge": "31–60坪／寄付 18,000元",
+        "nameLabel": "お名前",
+        "namePlaceholder": "お名前・屋号など",
+        "emailLabel": "メールアドレス",
+        "districtLabel": "撮影エリア（{area}）",
+        "areaCharity": "台北市のみ",
+        "areaCommercial": "台北市・新北市",
+        "districtPlaceholder": "行政区を選択してください",
+        "groupTaipei": "台北市",
+        "groupNewTaipei": "新北市",
+        "dateLabel": "撮影希望日",
+        "detailsLabel": "物件情報・参考写真リンク（任意）",
+        "detailsPlaceholder": "例：28坪の住宅、12月完工予定。Google Drive のリンクも可",
+        "submit": "撮影を申し込む",
+        "submitting": "送信中…",
+        "disclaimer": "お申し込みは予約確定ではありません。受付可能か確認のうえ、次の案内をお送りします。"
+      },
+      "thanks": {
+        "title": "お申し込みを受け付けました",
+        "p1": "SitePhoto をご利用いただきありがとうございます。撮影条件と予約可能日をメールでご連絡します。",
+        "p2": "まだ予約は確定していません。先走ってご寄付されないようお願いします。",
+        "back": "SitePhoto へ戻る"
+      }
+    }
+  }
+}

@@ -10,10 +10,18 @@
       SitePhoto<span class="text-[#c7a100]">.</span></a
     >
     <nav class="flex items-center gap-7 text-[13px] font-semibold">
-      <a href="#works" class="max-[850px]:hidden">攝影作品</a>
-      <a href="#story" class="max-[850px]:hidden">公益計畫</a>
-      <a href="#plans" class="max-[850px]:hidden">拍攝方案</a>
-      <a href="#apply" class="bg-[#f9d236] px-[17px] py-3">申請委託 ↗</a>
+      <a href="#works" class="max-[850px]:hidden">{{
+        $t("sitephoto.nav.works")
+      }}</a>
+      <a href="#story" class="max-[850px]:hidden">{{
+        $t("sitephoto.nav.story")
+      }}</a>
+      <a href="#plans" class="max-[850px]:hidden">{{
+        $t("sitephoto.nav.plans")
+      }}</a>
+      <a href="#apply" class="bg-[#f9d236] px-[17px] py-3">{{
+        $t("sitephoto.nav.apply")
+      }}</a>
     </nav>
   </header>
 </template>
