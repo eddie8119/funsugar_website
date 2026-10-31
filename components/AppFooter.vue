@@ -3,7 +3,7 @@
     <div class="dh-container space-y-16">
       <div class="grid grid-cols-1 gap-10 md:grid-cols-4">
         <section class="text-center md:text-left">
-          <h4 class="mb-3 text-sm font-bold text-gray-400">
+          <h4 class="mb-3 text-sm font-bold text-[#A3A3A3]">
             {{ $t("footer.contactTitle") }}
           </h4>
           <address class="space-y-1 text-base not-italic text-gray-300">
@@ -28,10 +28,10 @@
         </section>
 
         <nav class="text-center md:text-left" aria-label="Footer navigation">
-          <h4 class="mb-3 text-sm font-bold text-gray-400">
+          <h4 class="mb-3 text-sm font-bold text-[#A3A3A3]">
             {{ $t("footer.navigationTitle") }}
           </h4>
-          <ul class="space-y-2 text-gray-300">
+          <ul class="space-y-2 text-[#858585]">
             <li v-for="(link, index) in navLinks" :key="index">
               <a
                 :href="link.href"
@@ -44,16 +44,16 @@
         </nav>
 
         <section class="text-center md:col-span-2 md:text-left">
-          <h4 class="mb-4 text-sm font-bold text-gray-400">
+          <h4 class="mb-4 text-sm font-bold text-[#A3A3A3]">
             {{ $t("footer.ctaHeading") }}
           </h4>
           <a
             :href="`mailto:${brandLink.email}`"
-            class="break-all text-2xl font-bold transition-colors hover:text-yellow-500 md:text-4xl"
+            class="break-all text-2xl font-bold text-[#B8B8B8] transition-colors hover:text-yellow-500 md:text-4xl"
             >{{ brandLink.email }}</a
           >
           <div class="mt-8">
-            <p class="mb-2 text-sm text-gray-400">
+            <p class="mb-2 text-sm text-[#A3A3A3]">
               {{ $t("footer.socialHeading") }}
             </p>
             <ul
@@ -70,7 +70,7 @@
                   <img
                     :src="iconSources[link.icon]"
                     :alt="link.label"
-                    class="object-contain opacity-30 transition group-hover:opacity-80"
+                    class="object-contain opacity-[0.52] transition group-hover:opacity-80"
                   />
                 </a>
               </li>
@@ -80,11 +80,13 @@
       </div>
 
       <section class="space-y-6">
-        <h1 class="text-4xl font-bold tracking-tight md:text-6xl lg:text-8xl">
+        <h1
+          class="text-4xl font-bold tracking-tight text-[#424242] md:text-6xl lg:text-8xl"
+        >
           {{ $t("footer.tagline") }}
         </h1>
         <div
-          class="flex flex-col border-t border-gray-700 py-4 text-center text-xs text-gray-400 md:text-sm"
+          class="flex flex-col border-t border-[#333333] py-4 text-center text-xs text-[#666666] md:text-sm"
         >
           <small class="my-2 md:my-0">
             {{ $t("footer.copyright") }}

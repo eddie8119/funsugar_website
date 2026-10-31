@@ -8,7 +8,7 @@
         04 / 申請委託
       </div>
       <h2
-        class="mb-[22px] text-[clamp(30px,3.3vw,53px)] font-black leading-[1.3] tracking-[-1.4px]"
+        class="mb-[22px] text-[clamp(30px,3.3vw,53px)] font-black leading-[1.3] tracking-[-1.4px] text-[#faf8f2]"
       >
         一起記錄<br />你的空間。
       </h2>
