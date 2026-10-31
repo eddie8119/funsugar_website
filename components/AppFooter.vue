@@ -110,6 +110,8 @@
         navLinks: [
           { labelKey: "footer.nav.home", href: "/" },
           { labelKey: "footer.nav.photography", href: "/sitephoto" },
+          { labelKey: "footer.nav.siteshot", href: "/site-shot" },
+          { labelKey: "footer.nav.sitenear", href: "/site-near" },
           {
             labelKey: "footer.nav.app",
             href: BRAND_LINK.website,

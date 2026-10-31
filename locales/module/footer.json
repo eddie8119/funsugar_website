@@ -10,6 +10,8 @@
       "nav": {
         "home": "Official Website",
         "photography": "Interior Photography",
+        "siteshot": "SiteShot",
+        "sitenear": "SiteNear",
         "app": "KaiJi"
       },
       "contact": {
@@ -27,8 +29,10 @@
       "copyright": "Copyright © 方生糖",
       "nav": {
         "home": "官方網站",
+        "app": "KaiJi",
         "photography": "室內攝影",
-        "app": "KaiJi"
+        "siteshot": "SiteShot",
+        "sitenear": "SiteNear"
       },
       "contact": {
         "email": "電子郵件"
@@ -46,6 +50,8 @@
       "nav": {
         "home": "公式サイト",
         "photography": "室内撮影",
+        "siteshot": "SiteShot",
+        "sitenear": "SiteNear",
         "app": "KaiJi"
       },
       "contact": {

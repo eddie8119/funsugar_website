@@ -29,7 +29,7 @@
           "to": "/site-near"
         }
       ],
-      "dropdownLabel": "Services",
+      "dropdownLabel": "More Design Services",
       "cta": "Book now"
     }
   },
@@ -63,7 +63,7 @@
           "to": "/site-near"
         }
       ],
-      "dropdownLabel": "服務",
+      "dropdownLabel": "更多設計服務",
       "cta": "預約"
     }
   },
@@ -97,7 +97,7 @@
           "to": "/site-near"
         }
       ],
-      "dropdownLabel": "サービス",
+      "dropdownLabel": "その他のデザインサービス",
       "cta": "予約する"
     }
   }

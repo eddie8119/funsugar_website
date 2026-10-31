@@ -64,6 +64,8 @@
     "nav": {
       "home": "Official Website",
       "photography": "Interior Photography",
+      "siteshot": "SiteShot",
+      "sitenear": "SiteNear",
       "app": "KaiJi"
     },
     "contact": {
@@ -112,7 +114,7 @@
         "to": "/site-near"
       }
     ],
-    "dropdownLabel": "Services",
+    "dropdownLabel": "More Design Services",
     "cta": "Book now"
   },
   "tutorials": {

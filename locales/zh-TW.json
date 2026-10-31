@@ -63,8 +63,10 @@
     "copyright": "Copyright © 方生糖",
     "nav": {
       "home": "官方網站",
+      "app": "KaiJi",
       "photography": "室內攝影",
-      "app": "KaiJi"
+      "siteshot": "SiteShot",
+      "sitenear": "SiteNear"
     },
     "contact": {
       "email": "電子郵件"
@@ -112,7 +114,7 @@
         "to": "/site-near"
       }
     ],
-    "dropdownLabel": "服務",
+    "dropdownLabel": "更多設計服務",
     "cta": "預約"
   },
   "tutorials": {
