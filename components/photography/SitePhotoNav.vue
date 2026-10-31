@@ -2,13 +2,12 @@
   <header
     class="mx-auto mt-[72px] flex max-w-[1400px] items-center justify-between gap-5 px-[5%] py-6 max-[850px]:py-4"
   >
-    <a href="#top" class="text-[25px] font-black tracking-[-1px]"
-      ><span
-        class="mr-[5px] rounded-[5px] bg-[#f9d236] px-[9px] py-1 text-[19px]"
-        >◉</span
-      >
-      SitePhoto<span class="text-[#c7a100]">.</span></a
-    >
+    <a href="#top"
+      ><img
+        src="@/assets/images/logo/SitePhoto_logo.png"
+        alt="SitePhoto"
+        class="h-14 w-auto object-contain max-[850px]:h-10"
+    /></a>
     <nav class="flex items-center gap-7 text-[13px] font-semibold">
       <a href="#works" class="max-[850px]:hidden">{{
         $t("sitephoto.nav.works")
