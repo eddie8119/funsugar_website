@@ -130,13 +130,20 @@
         </select>
       </label>
       <label class="block text-[13px] font-bold"
-        >{{ $t("sitephoto.apply.dateLabel")
-        }}<input
+        >{{ $t("sitephoto.apply.dateLabel") }}
+        <input
           v-model="form.date"
           name="preferred_date"
           type="date"
+          required
+          :min="minDate"
           class="mt-[9px] w-full rounded-none border border-[#d4d4d4] bg-white p-[13px] text-sm"
-      /></label>
+          @change="snapToWeekend"
+        />
+        <span class="mt-[6px] block text-xs font-normal text-[#8b8b8b]">{{
+          $t("sitephoto.apply.dateHint")
+        }}</span>
+      </label>
       <label class="block text-[13px] font-bold"
         >{{ $t("sitephoto.apply.detailsLabel") }}
         <textarea
@@ -168,12 +175,6 @@
 <script>
   export default {
     data() {
-      const now = new Date();
-      const saturday = new Date(now);
-      saturday.setDate(now.getDate() + (6 - now.getDay()) + 7);
-      const defaultDate = `${saturday.getFullYear()}-${String(
-        saturday.getMonth() + 1
-      ).padStart(2, "0")}-${String(saturday.getDate()).padStart(2, "0")}`;
       return {
         taipeiDistricts: [
           "中正區",
@@ -227,12 +228,15 @@
           name: "",
           email: "",
           district: "",
-          date: defaultDate,
+          date: "",
           details: "",
         },
       };
     },
     computed: {
+      minDate() {
+        return this.toISODate(new Date());
+      },
       districtAreaText() {
         return this.$t(
           this.form.type === "商業委託"
@@ -246,7 +250,39 @@
         this.form.district = "";
       },
     },
+    mounted() {
+      if (!this.form.date) {
+        this.form.date = this.toISODate(this.nextSaturday());
+      }
+    },
     methods: {
+      toISODate(date) {
+        return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(
+          2,
+          "0"
+        )}-${String(date.getDate()).padStart(2, "0")}`;
+      },
+      nextSaturday() {
+        const date = new Date();
+        date.setDate(date.getDate() + ((6 - date.getDay() + 7) % 7 || 7));
+        return date;
+      },
+      snapToWeekend() {
+        if (!this.form.date) {
+          return;
+        }
+        if (this.form.date < this.minDate) {
+          this.form.date = this.toISODate(this.nextSaturday());
+          return;
+        }
+        const date = new Date(`${this.form.date}T00:00:00`);
+        const day = date.getDay();
+        if (day === 0 || day === 6) {
+          return;
+        }
+        date.setDate(date.getDate() + (6 - day));
+        this.form.date = this.toISODate(date);
+      },
       choosePlan(id) {
         this.form.type = "公益攝影";
         this.form.plan =

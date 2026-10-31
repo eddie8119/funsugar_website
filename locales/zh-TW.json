@@ -187,6 +187,7 @@
       "priceNote": "公益捐款門檻",
       "photos": "{n} 張精修照片",
       "select": "選擇此方案 ↗",
+      "bookingNote": "拍攝採預約制，開放週六、週日場次。",
       "footnote": "超過 60 坪、特殊場景或商業委託請另外洽詢。實際交付規格及拍攝日期以雙方確認為準。",
       "steps": {
         "apply": "提交申請",
@@ -217,7 +218,8 @@
       "districtPlaceholder": "請選擇行政區",
       "groupTaipei": "台北市",
       "groupNewTaipei": "新北市",
-      "dateLabel": "預計拍攝日期",
+      "dateLabel": "希望拍攝日期 (開放週六、週日場次)",
+      "dateHint": "僅可選擇週六、週日，選到其他日子會自動調整為週六。",
       "detailsLabel": "空間資訊或參考照片連結（選填）",
       "detailsPlaceholder": "例如：28 坪住宅，預計 12 月完工；可貼 Google Drive 連結",
       "submit": "送出攝影申請",

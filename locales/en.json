@@ -187,6 +187,7 @@
       "priceNote": "Minimum donation",
       "photos": "{n} retouched photos",
       "select": "Choose this plan ↗",
+      "bookingNote": "Shoots are by appointment, with slots on Saturdays and Sundays.",
       "footnote": "For spaces over ~200㎡, special venues, or commercial commissions, please enquire separately. Deliverables and dates are confirmed case by case.",
       "steps": {
         "apply": "Apply",
@@ -217,7 +218,8 @@
       "districtPlaceholder": "Select a district",
       "groupTaipei": "Taipei City",
       "groupNewTaipei": "New Taipei City",
-      "dateLabel": "Preferred shoot date",
+      "dateLabel": "Preferred shoot date (Sat & Sun slots only)",
+      "dateHint": "Weekends only — other days snap to Saturday.",
       "detailsLabel": "Space details or photo links (optional)",
       "detailsPlaceholder": "e.g. ~92㎡ apartment finishing in December — Google Drive links welcome",
       "submit": "Submit application",

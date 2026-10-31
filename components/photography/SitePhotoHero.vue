@@ -39,14 +39,14 @@
     </div>
     <div class="relative aspect-[4/5] bg-[#f2f0e8] max-[850px]:order-[-1]">
       <img
-        src="@/assets/images/portfolio/portfolio1.jpg"
+        src="@/assets/images/portfolio/portfolio3.jpg"
         :alt="$t('sitephoto.hero.imageAlt')"
         class="h-full w-full object-cover"
       />
-      <span
+      <!-- <span
         class="absolute bottom-[15px] left-[15px] bg-white px-3 py-2 text-xs"
         >{{ $t("sitephoto.hero.imageCaption") }}</span
-      >
+      > -->
     </div>
   </section>
 </template>

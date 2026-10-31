@@ -40,6 +40,9 @@
       </article>
     </div>
     <p class="my-3 text-xs leading-[1.8] text-[#8b8b8b]">
+      {{ $t("sitephoto.plans.bookingNote") }}
+    </p>
+    <p class="my-3 text-xs leading-[1.8] text-[#8b8b8b]">
       {{ $t("sitephoto.plans.footnote") }}
     </p>
     <div class="mt-[55px] grid grid-cols-4 gap-[15px] max-[850px]:grid-cols-2">
