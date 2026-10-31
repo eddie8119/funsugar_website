@@ -123,7 +123,7 @@ export default {
             },
             {
               "@type": "Offer",
-              name: "室內空間攝影服務",
+              name: "室內設計空間攝影服務",
               url: `${WEBSITE_URL}photography`,
               category: "PhotographyService",
             },

@@ -1,28 +1,5 @@
-<template>
-  <div>
-    <MainSection />
-    <AboutSection />
-    <ServiceSection />
-    <PortfolioSection />
-  </div>
-</template>
-
+<template><SitePhotoLanding /></template>
 <script>
-  import MainSection from "@/components/photography/MainSection";
-  import AboutSection from "@/components/photography/AboutSection";
-  import ServiceSection from "@/components/photography/ServiceSection";
-  import PortfolioSection from "@/components/photography/PortfolioSection";
-  // import ContactSection from "@/components/photography/ContactSection";
-
-  export default {
-    name: "IndexPage",
-    components: {
-      MainSection,
-      AboutSection,
-      ServiceSection,
-      PortfolioSection,
-      // ContactSection,
-    },
-    layout: "mainlayout",
-  };
+import SitePhotoLanding from '@/components/photography/SitePhotoLanding.vue'
+export default { components:{SitePhotoLanding}, layout:'mainlayout', head(){return {title:'SitePhoto｜你捐款，我拍照',meta:[{hid:'description',name:'description',content:'台北市室內攝影公益計畫。你捐款，我拍照。讓家的幸福繼續流動。'}]}} }
 </script>

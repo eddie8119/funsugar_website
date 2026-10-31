@@ -8,7 +8,7 @@
             class="delay-80 mx-1 p-4 transition duration-150 ease-in-out hover:text-yellow-500 md:mx-3"
             :class="[route === '/photography' ? 'pill-active' : '']"
           >
-            室內空間攝影
+            室內設計空間攝影
           </nuxt-link>
           <nuxt-link
             to="/videoCase"
