@@ -109,7 +109,7 @@
         brandLink: BRAND_LINK,
         navLinks: [
           { labelKey: "footer.nav.home", href: "/" },
-          { labelKey: "footer.nav.photography", href: "/photography" },
+          { labelKey: "footer.nav.photography", href: "/sitephoto" },
           {
             labelKey: "footer.nav.app",
             href: BRAND_LINK.website,

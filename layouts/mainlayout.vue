@@ -15,12 +15,15 @@
       navItems() {
         const currentPath = this.$route.path;
 
-        if (currentPath.startsWith("/photography")) {
+        if (
+          currentPath.startsWith("/photography") ||
+          currentPath.startsWith("/sitephoto")
+        ) {
           return [
             { label: "服務問答", to: "/photography/term-of-service" },
             {
               label: "慈善捐款兌換",
-              to: { path: "/photography", hash: "#services-section" },
+              to: { path: "/sitephoto", hash: "#plans" },
             },
           ];
         }

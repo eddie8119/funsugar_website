@@ -18,7 +18,7 @@
         },
         {
           "label": "Interior Photography",
-          "to": "/photography"
+          "to": "/sitephoto"
         },
         {
           "label": "SiteShot",
@@ -52,7 +52,7 @@
         },
         {
           "label": "室內攝影",
-          "to": "/photography"
+          "to": "/sitephoto"
         },
         {
           "label": "SiteShot",
@@ -86,7 +86,7 @@
         },
         {
           "label": "室内撮影",
-          "to": "/photography"
+          "to": "/sitephoto"
         },
         {
           "label": "SiteShot",

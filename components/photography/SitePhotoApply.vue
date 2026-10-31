@@ -26,7 +26,7 @@
       class="grid gap-5 bg-white p-[35px] text-[#222] max-[480px]:p-[22px]"
       name="sitephoto-inquiry"
       method="POST"
-      action="/photography/thanks"
+      action="/sitephoto/thanks"
       data-netlify="true"
       netlify-honeypot="bot-field"
       @submit="submitting = true"

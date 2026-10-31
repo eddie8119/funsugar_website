@@ -69,7 +69,7 @@
         showModal: false,
         dropdownItems: [
           { label: "KaiJi 開工大吉", to: "/" },
-          { label: "室內攝影", to: "/photography" },
+          { label: "室內攝影", to: "/sitephoto" },
           { label: "SiteShot", to: "/site-shot" },
           { label: "SiteNear", to: "/site-near" },
         ],

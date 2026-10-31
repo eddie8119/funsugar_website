@@ -26,22 +26,24 @@
   export default {
     name: "NavBrand",
     computed: {
+      isPhotography() {
+        return (
+          this.$route.path.startsWith("/photography") ||
+          this.$route.path.startsWith("/sitephoto")
+        );
+      },
       isKaiJi() {
-        return !this.$route.path.startsWith("/photography");
+        return !this.isPhotography;
       },
       brandTitle() {
-        const currentPath = this.$route.path;
-
-        if (currentPath.startsWith("/photography")) {
+        if (this.isPhotography) {
           return "方生糖";
         }
 
         return "KaiJi";
       },
       brandSubtitle() {
-        const currentPath = this.$route.path;
-
-        if (currentPath.startsWith("/photography")) {
+        if (this.isPhotography) {
           return "Designer Helper";
         }
 

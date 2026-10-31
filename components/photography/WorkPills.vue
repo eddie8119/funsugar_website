@@ -4,9 +4,9 @@
       <div class="flex h-20 w-full items-center justify-center">
         <nav class="fixed bg-opacity-90 text-stone-500">
           <nuxt-link
-            to="/photography"
+            to="/sitephoto"
             class="delay-80 mx-1 p-4 transition duration-150 ease-in-out hover:text-yellow-500 md:mx-3"
-            :class="[route === '/photography' ? 'pill-active' : '']"
+            :class="[route === '/sitephoto' ? 'pill-active' : '']"
           >
             室內設計空間攝影
           </nuxt-link>
