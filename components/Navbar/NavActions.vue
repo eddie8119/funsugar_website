@@ -2,7 +2,11 @@
   <div
     class="flex w-full flex-col items-stretch gap-4 md:ml-auto md:w-auto md:flex-row md:items-center"
   >
-    <NavDropdown :label="resolvedDropdownLabel" :items="dropdownItems" />
+    <NavDropdown
+      class="hidden md:block"
+      :label="resolvedDropdownLabel"
+      :items="dropdownItems"
+    />
     <a
       v-if="resolvedCta.label"
       class="btn w-full text-center md:w-auto"

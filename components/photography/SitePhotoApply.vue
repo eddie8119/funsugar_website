@@ -73,12 +73,12 @@
       </label>
       <input v-else type="hidden" name="plan" value="另行報價" />
       <label class="block text-[13px] font-bold"
-        >姓名／工作室名稱<input
+        >名稱<input
           v-model.trim="form.name"
           name="name"
           required
           maxlength="100"
-          placeholder="如何稱呼你？"
+          placeholder="如何稱呼？"
           class="mt-[9px] w-full rounded-none border border-[#d4d4d4] bg-white p-[13px] text-sm"
       /></label>
       <label class="block text-[13px] font-bold"
@@ -141,7 +141,7 @@
         type="submit"
         :disabled="submitting"
       >
-        {{ submitting ? "正在提交…" : "送出攝影申請 ↗" }}
+        {{ submitting ? "正在提交…" : "送出攝影申請" }}
       </button>
       <p class="my-3 text-xs leading-[1.8] text-[#8b8b8b]">
         送出申請不代表預約成功。確認可承接後，才會提供下一步資訊。

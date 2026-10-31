@@ -73,10 +73,6 @@
           { label: "SiteShot", to: "/site-shot" },
           { label: "SiteNear", to: "/site-near" },
         ],
-        // contactCta: {
-        //   href: "https://mail.google.com/mail/?view=cm&fs=1&to=funsugar8119@gmail.com&body=詢問方生糖:",
-        //   label: "預約",
-        // },
       };
     },
     computed: {

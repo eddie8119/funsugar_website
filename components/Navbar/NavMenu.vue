@@ -27,11 +27,22 @@
             : 'opacity-100',
         ]"
       >
-        <NavLinkList
-          :items="navItems"
-          class="w-full border-b border-black/10 pb-4 text-center md:flex md:hidden md:flex-1 md:justify-center md:border-none md:p-0"
-          @click.native="closeMenu"
-        />
+        <div
+          class="flex w-full flex-col items-center gap-4 border-b border-black/10 pb-4 text-center md:hidden"
+        >
+          <component
+            :is="item.to ? 'nuxt-link' : 'a'"
+            v-for="item in dropdownItems"
+            :key="item.label"
+            :to="item.to"
+            :href="item.href"
+            class="text-base text-gray-700 hover:text-black"
+            role="menuitem"
+            @click.native="closeMenu"
+          >
+            {{ item.label }}
+          </component>
+        </div>
         <NavActions
           class="w-full md:ml-auto md:w-auto"
           :dropdown-items="dropdownItems"
@@ -51,13 +62,11 @@
 </template>
 
 <script>
-  import NavLinkList from "@/components/Navbar/NavLinkList.vue";
   import NavActions from "@/components/Navbar/NavActions.vue";
 
   export default {
     name: "NavMenu",
     components: {
-      NavLinkList,
       NavActions,
     },
     props: {
