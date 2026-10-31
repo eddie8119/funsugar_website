@@ -7,7 +7,7 @@
       class="mb-[35px] flex items-end justify-between gap-[30px] max-[850px]:flex-col max-[850px]:items-start"
     >
       <div>
-        <div class="mb-6 text-xs font-bold tracking-[2px] text-[#8a7c48]">
+        <div class="mb-6 text-sm font-bold tracking-[2px] text-[#8a7c48]">
           01 / 攝影作品
         </div>
       </div>
@@ -24,11 +24,9 @@
         </p>
       </div>
     </div>
-    <div
-      class="grid grid-cols-2 gap-2 max-[850px]:grid-cols-1"
-    >
+    <div class="grid grid-cols-2 gap-2 max-[850px]:grid-cols-1">
       <a
-        v-for="(work) in works"
+        v-for="work in works"
         :key="work.image"
         href="https://www.behance.net/WANG81195321"
         target="_blank"

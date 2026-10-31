@@ -4,7 +4,7 @@
     class="grid grid-cols-2 gap-[10%] bg-[#202020] px-[max(5%,calc((100%_-_1260px)/2))] py-[100px] text-white max-[850px]:grid-cols-1 max-[850px]:gap-[30px] max-[850px]:px-[5%] max-[850px]:py-[70px]"
   >
     <div>
-      <div class="mb-6 text-xs font-bold tracking-[2px] text-[#f9d236]">
+      <div class="mb-6 text-sm font-bold tracking-[2px] text-[#f9d236]">
         04 / 申請委託
       </div>
       <h2

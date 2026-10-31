@@ -3,7 +3,7 @@
     class="mx-auto grid max-w-[1400px] grid-cols-2 items-center gap-[5%] px-[5%] pb-[100px] pt-[35px] max-[850px]:grid-cols-1 max-[850px]:gap-[30px] max-[850px]:pb-[70px] max-[850px]:pt-[25px]"
   >
     <div class="py-[30px] max-[850px]:py-0">
-      <div class="mb-6 text-xs font-bold tracking-[2px] text-[#8a7c48]">
+      <div class="mb-6 text-sm font-bold tracking-[2px] text-[#8a7c48]">
         室內設計空間攝影
       </div>
       <h1
@@ -35,9 +35,7 @@
         每年 15 個公益攝影名額&#12288;／&#12288;只限台北市
       </div>
     </div>
-    <div
-      class="relative aspect-[4/5] bg-[#f2f0e8] max-[850px]:order-[-1]"
-    >
+    <div class="relative aspect-[4/5] bg-[#f2f0e8] max-[850px]:order-[-1]">
       <img
         src="@/assets/images/portfolio/portfolio1.jpg"
         alt="室內設計空間攝影作品"

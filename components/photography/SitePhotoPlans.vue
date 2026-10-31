@@ -3,14 +3,9 @@
     id="plans"
     class="mx-auto max-w-[1400px] px-[5%] py-[95px] max-[850px]:py-[65px]"
   >
-    <div class="mb-6 text-xs font-bold tracking-[2px] text-[#8a7c48]">
+    <div class="mb-6 text-sm font-bold tracking-[2px] text-[#8a7c48]">
       03 / 攝影方案
     </div>
-    <h2
-      class="mb-[22px] text-[clamp(30px,3.3vw,53px)] font-black leading-[1.3] tracking-[-1.4px]"
-    >
-      簡單的兩種選擇。
-    </h2>
     <p class="my-4 max-w-[500px] text-base leading-[1.9] text-[#626262]">
       不用支付攝影服務費。確認名額後，直接捐款給公益機構即可。
     </p>
