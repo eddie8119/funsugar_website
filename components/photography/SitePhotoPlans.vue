@@ -72,18 +72,51 @@
     <p class="mb-[13px] mt-[22px] text-[13px] font-bold">
       {{ $t("sitephoto.plans.warning") }}
     </p>
-    <div class="mt-[60px] max-w-[820px]">
-      <h3 class="mb-4 text-[25px] font-black">
+    <div class="mx-auto mt-[110px] max-w-[820px] max-[850px]:mt-[80px]">
+      <h3 class="mb-4 text-center text-[25px] font-black">
         {{ $t("sitephoto.plans.faqHeading") }}
       </h3>
       <dl>
         <div
           v-for="(item, index) in $t('sitephoto.plans.faq')"
           :key="index"
-          class="border-b border-[#deded9] py-4"
+          class="border-b border-[#deded9]"
         >
-          <dt class="mb-2 font-extrabold">{{ item.q }}</dt>
-          <dd class="text-[15px] leading-[1.9] text-[#626262]">{{ item.a }}</dd>
+          <dt>
+            <button
+              type="button"
+              class="flex w-full cursor-pointer items-center justify-between gap-4 px-3 py-4 text-left font-extrabold transition-colors duration-200 hover:bg-[#f6f5f1]"
+              :aria-expanded="openIndex === index"
+              :aria-controls="`faq-panel-${index}`"
+              @click="toggle(index)"
+            >
+              {{ item.q }}
+              <svg
+                class="h-4 w-4 shrink-0 text-[#999] transition-transform duration-300"
+                :class="{ 'rotate-180': openIndex === index }"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+          </dt>
+          <dd
+            :id="`faq-panel-${index}`"
+            class="grid transition-[grid-template-rows] duration-300 ease-in-out"
+            :class="openIndex === index ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'"
+          >
+            <div class="overflow-hidden">
+              <p class="pb-4 text-[15px] leading-[1.9] text-[#626262]">
+                {{ item.a }}
+              </p>
+            </div>
+          </dd>
         </div>
       </dl>
     </div>
@@ -94,6 +127,7 @@
   export default {
     data() {
       return {
+        openIndex: -1,
         plans: [
           {
             id: "small",
@@ -108,6 +142,11 @@
         ],
         steps: ["apply", "confirm", "donate", "deliver"],
       };
+    },
+    methods: {
+      toggle(index) {
+        this.openIndex = this.openIndex === index ? -1 : index;
+      },
     },
   };
 </script>
