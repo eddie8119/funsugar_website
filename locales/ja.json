@@ -89,11 +89,11 @@
     "links": [
       {
         "label": "新居ウェディング",
-        "to": "/photography/new-home"
+        "to": "/sitephoto/new-home"
       },
       {
         "label": "サービスQ&A",
-        "to": "/photography/term-of-service"
+        "to": "/sitephoto/term-of-service"
       }
     ],
     "dropdown": [

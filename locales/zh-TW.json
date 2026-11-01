@@ -89,11 +89,11 @@
     "links": [
       {
         "label": "新居婚紗",
-        "to": "/photography/new-home"
+        "to": "/sitephoto/new-home"
       },
       {
         "label": "服務問答",
-        "to": "/photography/term-of-service"
+        "to": "/sitephoto/term-of-service"
       }
     ],
     "dropdown": [

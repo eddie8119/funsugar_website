@@ -89,11 +89,11 @@
     "links": [
       {
         "label": "New Home Portraits",
-        "to": "/photography/new-home"
+        "to": "/sitephoto/new-home"
       },
       {
         "label": "Service Q&A",
-        "to": "/photography/term-of-service"
+        "to": "/sitephoto/term-of-service"
       }
     ],
     "dropdown": [

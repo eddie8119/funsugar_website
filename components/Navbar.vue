@@ -58,8 +58,8 @@
         type: Array,
         default() {
           return [
-            { label: "新居婚紗", to: "/photography/new-home" },
-            { label: "服務問答", to: "/photography/term-of-service" },
+            { label: "新居婚紗", to: "/sitephoto/new-home" },
+            { label: "服務問答", to: "/sitephoto/term-of-service" },
           ];
         },
       },
