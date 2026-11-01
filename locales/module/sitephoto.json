@@ -3,7 +3,12 @@
     "sitephoto": {
       "meta": {
         "title": "SitePhoto｜You donate, I shoot",
-        "description": "A charity interior photography project in Taipei. Donate to a good cause — I'll photograph your space."
+        "description": "A charity interior photography project in Taipei. Donate to a good cause — I'll photograph your space.",
+        "ogTitle": "SitePhoto｜Taipei Interior Photography — You donate, I shoot",
+        "ogDescription": "Redirect your photography budget to charity and get professional images of your interior design work. Taipei City, weekend bookings only.",
+        "ogImageAlt": "SitePhoto Taipei interior photography and charity project",
+        "schemaName": "Taipei Interior Photography for Interior Design Projects",
+        "schemaServiceType": "Interior space photography"
       },
       "nav": {
         "works": "Works",
@@ -17,6 +22,7 @@
         "titleLine2": "let kindness flow on.",
         "subtitle": "You donate. I photograph.",
         "description": "Redirect your photography budget to charity — SitePhoto turns your space into a lasting portfolio.",
+        "seoLine": "Taipei interior photography for designers — completed projects and spaces.",
         "ctaPrimary": "Apply now ↗",
         "ctaSecondary": "Browse works ↓",
         "note": "15 charity slots per year / Taipei City only",
@@ -27,6 +33,9 @@
         "kicker": "01 / Works",
         "behanceLink": "Full portfolio on Behance ↗",
         "behanceNote": "New work is published on Behance — head there for the complete portfolio.",
+        "heading": "Interior Design Project Photography — Selected Works",
+        "summary": "Space photography of completed homes and interior design projects, focused on natural light, proportion and lived-in feel, for designer portfolios and proposals.",
+        "itemAlt": "Taipei interior design project photography {n}",
         "itemTitle": "Interior Work"
       },
       "story": {
@@ -57,7 +66,32 @@
       },
       "plans": {
         "kicker": "03 / Plans",
+        "heading": "Interior Photography Plans & Charity Donation Thresholds",
         "intro": "No photography fee — once your slot is confirmed, donate directly to a charity.",
+        "donationClarify": "The NT$12,000 / 18,000 amounts below are donation thresholds paid directly to a charity — not a photography fee charged by SitePhoto. Taipei City only, Saturday and Sunday bookings.",
+        "faqHeading": "FAQ",
+        "faq": [
+          {
+            "q": "How is the price calculated?",
+            "a": "There is no photography fee. Donation thresholds depend on size: up to ~100㎡ NT$12,000 (12 retouched photos), ~100–200㎡ NT$18,000 (20 retouched photos), paid directly to a charity."
+          },
+          {
+            "q": "Why don't I pay a photography fee?",
+            "a": "Designers donate their photography budget to a charity and I provide the shoot. The money never passes through SitePhoto."
+          },
+          {
+            "q": "Which areas can I book?",
+            "a": "Charity shoots are limited to Taipei City. Other areas or commercial commissions: please enquire separately."
+          },
+          {
+            "q": "Can I book a weekday?",
+            "a": "Shoots are by appointment on Saturdays and Sundays only."
+          },
+          {
+            "q": "How do I apply?",
+            "a": "Fill in the form below. Donate only after your slot and date are confirmed."
+          }
+        ],
         "planPrefix": "Plan",
         "items": {
           "small": {
@@ -120,8 +154,13 @@
   "zh-TW": {
     "sitephoto": {
       "meta": {
-        "title": "SitePhoto｜你捐款，我拍照",
-        "description": "台北市室內攝影公益計畫。你捐款，我拍照。讓家的幸福繼續流動。"
+        "title": "台北室內攝影・室內設計作品拍攝｜SitePhoto 公益攝影",
+        "description": "SitePhoto 提供台北市室內設計作品拍攝與空間攝影。設計師將攝影預算直接捐給公益機構，由我提供攝影服務。了解作品集、公益捐款方案與週末預約方式。",
+        "ogTitle": "SitePhoto｜台北室內攝影・你捐款，我拍照",
+        "ogDescription": "讓家的幸福，繼續向外流動。將攝影預算化為公益捐款，為室內設計作品留下專業影像。台北市週末預約制。",
+        "ogImageAlt": "SitePhoto 台北室內攝影作品與公益攝影計畫",
+        "schemaName": "台北室內攝影與室內設計作品拍攝",
+        "schemaServiceType": "室內空間攝影"
       },
       "nav": {
         "works": "攝影作品",
@@ -135,6 +174,7 @@
         "titleLine2": "讓善意繼續流動。",
         "subtitle": "你捐款，我拍照。",
         "description": "將攝影預算捐給公益機構，SitePhoto 為你的空間留下作品。",
+        "seoLine": "台北室內攝影｜專為室內設計師拍攝完工作品與空間影像。",
         "ctaPrimary": "申請公益攝影 ↗",
         "ctaSecondary": "先看看作品 ↓",
         "note": "每年 15 個公益攝影名額 ／ 只限台北市",
@@ -145,6 +185,9 @@
         "kicker": "01 / 攝影作品",
         "behanceLink": "前往 Behance 看完整作品 ↗",
         "behanceNote": "新增作品統一發布至 Behance。完整作品請至 Behance 瀏覽",
+        "heading": "室內設計作品拍攝｜攝影作品",
+        "summary": "以下為住宅與室內設計完工案的空間攝影，著重自然光線、空間比例與生活感，作為設計師作品集與提案使用。",
+        "itemAlt": "台北室內設計完工空間攝影作品 {n}",
         "itemTitle": "空間作品"
       },
       "story": {
@@ -175,7 +218,32 @@
       },
       "plans": {
         "kicker": "03 / 攝影方案",
+        "heading": "室內空間攝影方案與公益捐款門檻",
         "intro": "不用支付攝影服務費。確認名額後，直接捐款給公益機構即可。",
+        "donationClarify": "下方 NT$12,000／18,000 為直接捐贈給公益機構的捐款門檻，並非 SitePhoto 收取的攝影費。服務範圍僅限台北市，採週六、週日預約制。",
+        "faqHeading": "常見問題",
+        "faq": [
+          {
+            "q": "室內空間攝影價格怎麼計算？",
+            "a": "公益攝影不收攝影服務費，依坪數設有捐款門檻：30 坪以內 NT$12,000（12 張精修照片）、31–60 坪 NT$18,000（20 張精修照片），由委託人直接捐給公益機構。"
+          },
+          {
+            "q": "為什麼不是支付攝影費？",
+            "a": "這是一項公益攝影計畫：設計師將攝影預算直接捐給公益機構，我則提供拍攝服務，款項不經過 SitePhoto。"
+          },
+          {
+            "q": "台北哪些區域可以預約？",
+            "a": "公益攝影僅限台北市範圍內的案場。超出範圍或商業委託請另外洽詢。"
+          },
+          {
+            "q": "可以安排平日拍攝嗎？",
+            "a": "目前拍攝採預約制，僅開放週六、週日場次。"
+          },
+          {
+            "q": "如何申請？",
+            "a": "於本頁下方填寫申請表單，確認可承接與拍攝日期後才會進行捐款，確認名額前請勿捐款。"
+          }
+        ],
         "planPrefix": "方案",
         "items": {
           "small": {

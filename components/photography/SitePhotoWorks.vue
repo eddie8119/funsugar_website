@@ -10,6 +10,12 @@
         <div class="mb-6 text-sm font-bold tracking-[2px] text-[#8a7c48]">
           {{ $t("sitephoto.works.kicker") }}
         </div>
+        <h2 class="mb-3 text-[clamp(26px,2.8vw,42px)] font-black leading-[1.3]">
+          {{ $t("sitephoto.works.heading") }}
+        </h2>
+        <p class="max-w-[620px] text-base leading-[1.9] text-[#626262]">
+          {{ $t("sitephoto.works.summary") }}
+        </p>
       </div>
       <div class="text-right max-[850px]:text-left">
         <a
@@ -35,7 +41,7 @@
       >
         <img
           :src="work.image"
-          :alt="`${$t('sitephoto.works.itemTitle')} 0${index + 1}`"
+          :alt="$t('sitephoto.works.itemAlt', { n: index + 1 })"
           loading="lazy"
           class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
         />

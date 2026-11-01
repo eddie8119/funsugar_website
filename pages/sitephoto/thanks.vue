@@ -7,7 +7,16 @@
   </main>
 </template>
 <script>
-  export default { layout: "mainlayout" };
+  export default {
+    layout: "mainlayout",
+    head() {
+      return {
+        meta: [
+          { hid: "robots", name: "robots", content: "noindex, follow" },
+        ],
+      };
+    },
+  };
 </script>
 <style scoped>
   .thanks {

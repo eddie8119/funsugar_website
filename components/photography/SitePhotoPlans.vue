@@ -6,8 +6,14 @@
     <div class="mb-6 text-sm font-bold tracking-[2px] text-[#8a7c48]">
       {{ $t("sitephoto.plans.kicker") }}
     </div>
-    <p class="my-4 max-w-[500px] text-base leading-[1.9] text-[#626262]">
+    <h2 class="mb-3 text-[clamp(26px,2.8vw,42px)] font-black leading-[1.3]">
+      {{ $t("sitephoto.plans.heading") }}
+    </h2>
+    <p class="my-4 max-w-[620px] text-base leading-[1.9] text-[#626262]">
       {{ $t("sitephoto.plans.intro") }}
+    </p>
+    <p class="my-4 max-w-[620px] text-sm font-bold leading-[1.9] text-[#444]">
+      {{ $t("sitephoto.plans.donationClarify") }}
     </p>
     <div class="my-[35px] grid grid-cols-2 gap-5 max-[480px]:grid-cols-1">
       <article
@@ -66,6 +72,21 @@
     <p class="mb-[13px] mt-[22px] text-[13px] font-bold">
       {{ $t("sitephoto.plans.warning") }}
     </p>
+    <div class="mt-[60px] max-w-[820px]">
+      <h3 class="mb-4 text-[25px] font-black">
+        {{ $t("sitephoto.plans.faqHeading") }}
+      </h3>
+      <dl>
+        <div
+          v-for="(item, index) in $t('sitephoto.plans.faq')"
+          :key="index"
+          class="border-b border-[#deded9] py-4"
+        >
+          <dt class="mb-2 font-extrabold">{{ item.q }}</dt>
+          <dd class="text-[15px] leading-[1.9] text-[#626262]">{{ item.a }}</dd>
+        </div>
+      </dl>
+    </div>
   </section>
 </template>
 

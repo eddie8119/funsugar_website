@@ -13,6 +13,9 @@
           $t("sitephoto.hero.titleLine2")
         }}
       </h1>
+      <p class="mb-[15px] text-base font-bold text-[#444]">
+        {{ $t("sitephoto.hero.seoLine") }}
+      </p>
       <h2 class="mb-[15px] text-[25px] font-extrabold max-[480px]:text-[22px]">
         {{ $t("sitephoto.hero.subtitle") }}
       </h2>

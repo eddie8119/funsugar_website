@@ -120,7 +120,12 @@
   "sitephoto": {
     "meta": {
       "title": "SitePhoto｜You donate, I shoot",
-      "description": "A charity interior photography project in Taipei. Donate to a good cause — I'll photograph your space."
+      "description": "A charity interior photography project in Taipei. Donate to a good cause — I'll photograph your space.",
+      "ogTitle": "SitePhoto｜Taipei Interior Photography — You donate, I shoot",
+      "ogDescription": "Redirect your photography budget to charity and get professional images of your interior design work. Taipei City, weekend bookings only.",
+      "ogImageAlt": "SitePhoto Taipei interior photography and charity project",
+      "schemaName": "Taipei Interior Photography for Interior Design Projects",
+      "schemaServiceType": "Interior space photography"
     },
     "nav": {
       "works": "Works",
@@ -134,6 +139,7 @@
       "titleLine2": "let kindness flow on.",
       "subtitle": "You donate. I photograph.",
       "description": "Redirect your photography budget to charity — SitePhoto turns your space into a lasting portfolio.",
+      "seoLine": "Taipei interior photography for designers — completed projects and spaces.",
       "ctaPrimary": "Apply now ↗",
       "ctaSecondary": "Browse works ↓",
       "note": "15 charity slots per year / Taipei City only",
@@ -144,6 +150,9 @@
       "kicker": "01 / Works",
       "behanceLink": "Full portfolio on Behance ↗",
       "behanceNote": "New work is published on Behance — head there for the complete portfolio.",
+      "heading": "Interior Design Project Photography — Selected Works",
+      "summary": "Space photography of completed homes and interior design projects, focused on natural light, proportion and lived-in feel, for designer portfolios and proposals.",
+      "itemAlt": "Taipei interior design project photography {n}",
       "itemTitle": "Interior Work"
     },
     "story": {
@@ -174,7 +183,32 @@
     },
     "plans": {
       "kicker": "03 / Plans",
+      "heading": "Interior Photography Plans & Charity Donation Thresholds",
       "intro": "No photography fee — once your slot is confirmed, donate directly to a charity.",
+      "donationClarify": "The NT$12,000 / 18,000 amounts below are donation thresholds paid directly to a charity — not a photography fee charged by SitePhoto. Taipei City only, Saturday and Sunday bookings.",
+      "faqHeading": "FAQ",
+      "faq": [
+        {
+          "q": "How is the price calculated?",
+          "a": "There is no photography fee. Donation thresholds depend on size: up to ~100㎡ NT$12,000 (12 retouched photos), ~100–200㎡ NT$18,000 (20 retouched photos), paid directly to a charity."
+        },
+        {
+          "q": "Why don't I pay a photography fee?",
+          "a": "Designers donate their photography budget to a charity and I provide the shoot. The money never passes through SitePhoto."
+        },
+        {
+          "q": "Which areas can I book?",
+          "a": "Charity shoots are limited to Taipei City. Other areas or commercial commissions: please enquire separately."
+        },
+        {
+          "q": "Can I book a weekday?",
+          "a": "Shoots are by appointment on Saturdays and Sundays only."
+        },
+        {
+          "q": "How do I apply?",
+          "a": "Fill in the form below. Donate only after your slot and date are confirmed."
+        }
+      ],
       "planPrefix": "Plan",
       "items": {
         "small": {

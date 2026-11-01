@@ -9,7 +9,7 @@ export default {
   head: {
     title: "KaiJi 開工大吉｜室內工程管理軟體",
     htmlAttrs: {
-      lang: "Zh-Hant-TW",
+      lang: "zh-Hant-TW",
     },
     meta: [
       { charset: "utf-8" },
@@ -93,16 +93,18 @@ export default {
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.png" },
       {
+        hid: "canonical",
         rel: "canonical",
         href: WEBSITE_URL,
       },
     ],
     script: [
       {
+        hid: "ld-organization",
         type: "application/ld+json",
         json: {
           "@context": "https://schema.org",
-          "@type": "SoftwareApplication",
+          "@type": "Organization",
           name: "方生糖",
           url: WEBSITE_URL,
           logo: FAVICON,
@@ -124,7 +126,7 @@ export default {
             {
               "@type": "Offer",
               name: "室內設計空間攝影服務",
-              url: `${WEBSITE_URL}sitephoto`,
+              url: `${WEBSITE_URL}sitephoto/`,
               category: "PhotographyService",
             },
           ],
