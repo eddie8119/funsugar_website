@@ -92,7 +92,7 @@
         "to": "/sitephoto/new-home"
       },
       {
-        "label": "Service Q&A",
+        "label": "Shooting Guidelines & Terms",
         "to": "/sitephoto/term-of-service"
       }
     ],
@@ -190,7 +190,7 @@
       "faq": [
         {
           "q": "How is the price calculated?",
-          "a": "There is no photography fee. Donation thresholds depend on size: up to ~100㎡ NT$12,000 (12 retouched photos), ~100–200㎡ NT$18,000 (20 retouched photos), paid directly to a charity."
+          "a": "There is no photography fee. Donation thresholds depend on size: up to 100 m² NT$12,000 (12 retouched photos), 100–200 m² NT$18,000 (20 retouched photos), paid directly to a charity."
         },
         {
           "q": "Why don't I pay a photography fee?",
@@ -212,17 +212,21 @@
       "planPrefix": "Plan",
       "items": {
         "small": {
-          "name": "Under ~100㎡"
+          "name": "Under 100 m²"
         },
         "large": {
-          "name": "~100–200㎡"
+          "name": "100–200 m²"
         }
       },
       "priceNote": "Minimum donation",
       "photos": "{n} retouched photos",
       "select": "Choose this plan ↗",
       "bookingNote": "Shoots are by appointment, with slots on Saturdays and Sundays.",
-      "footnote": "For spaces over ~200㎡, special venues, or commercial commissions, please enquire separately. Deliverables and dates are confirmed case by case.",
+      "prepNote": "The space must be finished, cleaned, and staged before the shoot — cleaning and styling services are not included.",
+      "guideHeading": "Before the shoot, know what to expect",
+      "guideDescription": "Site preparation, shoot-day cooperation, retouch scope, and photo delivery.",
+      "guideLink": "View the full shooting guidelines ↗",
+      "footnote": "For spaces over 200 m², special venues, or commercial commissions, please enquire separately. Deliverables and dates are confirmed case by case.",
       "steps": {
         "apply": "Apply",
         "confirm": "Confirm slot",
@@ -241,8 +245,8 @@
       "typeCharity": "Charity photography",
       "typeCommercial": "Paid commission",
       "planLabel": "Plan",
-      "planSmall": "Under ~100㎡ / NT$12,000 donation",
-      "planLarge": "~100–200㎡ / NT$18,000 donation",
+      "planSmall": "Under 100 m² / NT$12,000 donation",
+      "planLarge": "100–200 m² / NT$18,000 donation",
       "nameLabel": "Name",
       "namePlaceholder": "What should I call you?",
       "emailLabel": "Email",
@@ -255,10 +259,13 @@
       "dateLabel": "Preferred shoot date (Sat & Sun slots only)",
       "dateHint": "Weekends only — other days snap to Saturday.",
       "detailsLabel": "Space details or photo links (optional)",
-      "detailsPlaceholder": "e.g. ~92㎡ apartment finishing in December — Google Drive links welcome",
+      "detailsPlaceholder": "e.g. a 92 m² apartment finishing in December — Google Drive links welcome",
       "submit": "Submit application",
       "submitting": "Submitting…",
-      "disclaimer": "An application doesn't guarantee a booking — I'll share next steps after confirming availability."
+      "disclaimer": "An application doesn't guarantee a booking — I'll share next steps after confirming availability.",
+      "agreeTermsPre": "I have read the",
+      "agreeTermsLinkText": "applicable shooting guidelines and service terms",
+      "agreeTermsTail": "."
     },
     "thanks": {
       "title": "Application submitted!",

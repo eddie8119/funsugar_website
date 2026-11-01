@@ -92,7 +92,7 @@
         "to": "/sitephoto/new-home"
       },
       {
-        "label": "サービスQ&A",
+        "label": "撮影の注意事項と利用規約",
         "to": "/sitephoto/term-of-service"
       }
     ],
@@ -188,6 +188,10 @@
       "photos": "レタッチ済み写真 {n} 枚",
       "select": "このプランを選ぶ ↗",
       "bookingNote": "撮影は予約制です。土曜・日曜の枠を開放しています。",
+      "prepNote": "撮影前に完工清掃と会場整備を済ませてください。清掃・スタイリングはサービスに含まれません。",
+      "guideHeading": "撮影前に、サービス内容をご確認ください",
+      "guideDescription": "会場の準備、撮影時のご協力、レタッチ範囲、写真納品についての説明です。",
+      "guideLink": "撮影の注意事項をすべて見る ↗",
       "footnote": "60坪を超える物件、特殊な条件、商用撮影は個別にご相談ください。納品内容と撮影日は双方の確認をもって確定します。",
       "steps": {
         "apply": "申し込み",
@@ -224,7 +228,10 @@
       "detailsPlaceholder": "例：28坪の住宅、12月完工予定。Google Drive のリンクも可",
       "submit": "撮影を申し込む",
       "submitting": "送信中…",
-      "disclaimer": "お申し込みは予約確定ではありません。受付可能か確認のうえ、次の案内をお送りします。"
+      "disclaimer": "お申し込みは予約確定ではありません。受付可能か確認のうえ、次の案内をお送りします。",
+      "agreeTermsPre": "該当する",
+      "agreeTermsLinkText": "撮影の注意事項と利用規約",
+      "agreeTermsTail": "を読みました。"
     },
     "thanks": {
       "title": "お申し込みを受け付けました",

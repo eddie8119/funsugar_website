@@ -11,9 +11,7 @@
     layout: "mainlayout",
     head() {
       return {
-        meta: [
-          { hid: "robots", name: "robots", content: "noindex, follow" },
-        ],
+        meta: [{ hid: "robots", name: "robots", content: "noindex, follow" }],
       };
     },
   };

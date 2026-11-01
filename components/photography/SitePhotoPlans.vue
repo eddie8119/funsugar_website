@@ -37,6 +37,9 @@
         <div class="mb-[10px]">
           {{ $t("sitephoto.plans.photos", { n: plan.photos }) }}
         </div>
+        <p class="mt-[10px] text-[13px] leading-[1.8] text-[#777]">
+          {{ $t("sitephoto.plans.prepNote") }}
+        </p>
         <a
           href="#apply"
           class="mt-[25px] inline-block bg-[#f9d236] px-4 py-3 text-[15px] font-extrabold text-[#222]"
@@ -45,12 +48,28 @@
         >
       </article>
     </div>
-    <p class="my-3 text-xs leading-[1.8] text-[#8b8b8b]">
+    <p class="my-3 text-sm leading-[1.8] text-[#626262]">
       {{ $t("sitephoto.plans.bookingNote") }}
     </p>
-    <p class="my-3 text-xs leading-[1.8] text-[#8b8b8b]">
+    <p class="my-3 text-sm leading-[1.8] text-[#626262]">
       {{ $t("sitephoto.plans.footnote") }}
     </p>
+    <div class="my-3">
+      <p class="text-[15px] font-bold leading-[1.8] text-[#444]">
+        {{ $t("sitephoto.plans.guideHeading") }}
+      </p>
+      <p class="text-sm leading-[1.8] text-[#626262]">
+        {{ $t("sitephoto.plans.guideDescription") }}
+        <nuxt-link
+          :to="{
+            path: '/sitephoto/term-of-service',
+            query: { type: 'charity' },
+          }"
+          class="ml-1 border-b border-[#8a7c48] pb-[1px] font-bold text-[#8a7c48]"
+          >{{ $t("sitephoto.plans.guideLink") }}</nuxt-link
+        >
+      </p>
+    </div>
     <div class="mt-[55px] grid grid-cols-4 gap-[15px] max-[850px]:grid-cols-2">
       <div
         v-for="(step, index) in steps"

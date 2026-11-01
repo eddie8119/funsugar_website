@@ -20,7 +20,7 @@
           currentPath.startsWith("/sitephoto")
         ) {
           return [
-            { label: "服務問答", to: "/sitephoto/term-of-service" },
+            { label: "拍攝須知與服務約定", to: "/sitephoto/term-of-service" },
             {
               label: "慈善捐款兌換",
               to: { path: "/sitephoto", hash: "#plans" },

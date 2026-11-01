@@ -154,6 +154,27 @@
           class="mt-[9px] w-full rounded-none border border-[#d4d4d4] bg-white p-[13px] text-sm"
         />
       </label>
+      <label
+        class="flex items-start gap-3 text-sm leading-[1.8] text-[#626262]"
+      >
+        <input
+          v-model="form.agreeTerms"
+          type="checkbox"
+          name="agree_terms"
+          value="已確認"
+          required
+          class="mt-1 h-4 w-4 shrink-0 accent-[#222]"
+        />
+        <span
+          >{{ $t("sitephoto.apply.agreeTermsPre")
+          }}<nuxt-link
+            :to="termsLink"
+            target="_blank"
+            class="border-b border-[#8a7c48] pb-[1px] font-bold text-[#8a7c48]"
+            >{{ $t("sitephoto.apply.agreeTermsLinkText") }}</nuxt-link
+          >{{ $t("sitephoto.apply.agreeTermsTail") }}</span
+        >
+      </label>
       <button
         class="inline-block cursor-pointer border-0 bg-[#f9d236] px-[25px] py-4 text-[15px] font-extrabold text-[#222] disabled:cursor-wait disabled:opacity-50 max-[480px]:px-[17px] max-[480px]:py-[14px]"
         type="submit"
@@ -165,7 +186,7 @@
             : $t("sitephoto.apply.submit")
         }}
       </button>
-      <p class="my-3 text-xs leading-[1.8] text-[#8b8b8b]">
+      <p class="my-3 text-sm leading-[1.8] text-[#626262]">
         {{ $t("sitephoto.apply.disclaimer") }}
       </p>
     </form>
@@ -230,10 +251,17 @@
           district: "",
           date: "",
           details: "",
+          agreeTerms: false,
         },
       };
     },
     computed: {
+      termsLink() {
+        return {
+          path: "/sitephoto/term-of-service",
+          query: { type: this.form.type === "公益攝影" ? "charity" : "paid" },
+        };
+      },
       minDate() {
         return this.toISODate(new Date());
       },

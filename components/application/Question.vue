@@ -6,7 +6,7 @@
           <h2
             class="mb-8 text-4xl font-bold leading-tight text-black md:text-5xl"
           >
-            常見問題
+            拍攝須知與服務約定
           </h2>
           <div class="space-y-4">
             <div

@@ -92,7 +92,7 @@
         "to": "/sitephoto/new-home"
       },
       {
-        "label": "服務問答",
+        "label": "拍攝須知與服務約定",
         "to": "/sitephoto/term-of-service"
       }
     ],
@@ -222,6 +222,10 @@
       "photos": "{n} 張精修照片",
       "select": "選擇此方案 ↗",
       "bookingNote": "拍攝採預約制，開放週六、週日場次。",
+      "prepNote": "拍攝前須完成完工清潔及場地整理；攝影師不提供清潔或佈置服務。",
+      "guideHeading": "拍攝前，先了解服務內容",
+      "guideDescription": "場地準備、拍攝配合、精修範圍與照片交付說明。",
+      "guideLink": "查看完整拍攝須知 ↗",
       "footnote": "超過 60 坪、特殊場景或商業委託請另外洽詢。實際交付規格及拍攝日期以雙方確認為準。",
       "steps": {
         "apply": "提交申請",
@@ -258,7 +262,10 @@
       "detailsPlaceholder": "例如：28 坪住宅，預計 12 月完工；可貼 Google Drive 連結",
       "submit": "送出攝影申請",
       "submitting": "正在提交…",
-      "disclaimer": "送出申請不代表預約成功。確認可承接後，才會提供下一步資訊。"
+      "disclaimer": "送出申請不代表預約成功。確認可承接後，才會提供下一步資訊。",
+      "agreeTermsPre": "我已閱讀對應委託類型的",
+      "agreeTermsLinkText": "拍攝須知與服務約定",
+      "agreeTermsTail": "。"
     },
     "thanks": {
       "title": "申請已送出！",

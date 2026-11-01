@@ -59,7 +59,7 @@
         default() {
           return [
             { label: "新居婚紗", to: "/sitephoto/new-home" },
-            { label: "服務問答", to: "/sitephoto/term-of-service" },
+            { label: "拍攝須知與服務約定", to: "/sitephoto/term-of-service" },
           ];
         },
       },
