@@ -66,6 +66,7 @@
       "photography": "Interior Photography",
       "siteshot": "SiteShot",
       "sitenear": "SiteNear",
+      "notebook": "Notebook",
       "app": "KaiJi"
     },
     "contact": {
@@ -98,20 +99,24 @@
     ],
     "dropdown": [
       {
+        "label": "SiteShot",
+        "to": "/siteshot"
+      },
+      {
+        "label": "SiteNear",
+        "to": "/sitenear"
+      },
+      {
         "label": "KaiJi Luck Builder",
         "to": "/"
       },
       {
+        "label": "Notebook",
+        "to": "/notebook"
+      },
+      {
         "label": "Interior Photography",
         "to": "/sitephoto"
-      },
-      {
-        "label": "SiteShot",
-        "to": "/site-shot"
-      },
-      {
-        "label": "SiteNear",
-        "to": "/site-near"
       }
     ],
     "dropdownLabel": "More Design Services",

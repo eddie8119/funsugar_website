@@ -110,14 +110,15 @@
       return {
         brandLink: BRAND_LINK,
         navLinks: [
-          { labelKey: "footer.nav.home", href: "/" },
-          { labelKey: "footer.nav.photography", href: "/sitephoto" },
-          { labelKey: "footer.nav.siteshot", href: "/site-shot" },
-          { labelKey: "footer.nav.sitenear", href: "/site-near" },
+          { labelKey: "footer.nav.siteshot", href: "/siteshot" },
+          { labelKey: "footer.nav.sitenear", href: "/sitenear" },
+
           {
             labelKey: "footer.nav.app",
             href: BRAND_LINK.website,
           },
+          { labelKey: "footer.nav.notebook", href: "/notebook" },
+          { labelKey: "footer.nav.photography", href: "/sitephoto" },
         ],
         contactDetails: [
           {

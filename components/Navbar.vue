@@ -68,10 +68,11 @@
       return {
         showModal: false,
         dropdownItems: [
+          { label: "SiteShot", to: "/siteshot" },
+          { label: "SiteNear", to: "/sitenear" },
           { label: "KaiJi 開工大吉", to: "/" },
+          { label: "Notebook", to: "/notebook" },
           { label: "室內攝影", to: "/sitephoto" },
-          { label: "SiteShot", to: "/site-shot" },
-          { label: "SiteNear", to: "/site-near" },
         ],
       };
     },

@@ -13,20 +13,24 @@
       ],
       "dropdown": [
         {
+          "label": "SiteShot",
+          "to": "/siteshot"
+        },
+        {
+          "label": "SiteNear",
+          "to": "/sitenear"
+        },
+        {
           "label": "KaiJi Luck Builder",
           "to": "/"
         },
         {
+          "label": "Notebook",
+          "to": "/notebook"
+        },
+        {
           "label": "Interior Photography",
           "to": "/sitephoto"
-        },
-        {
-          "label": "SiteShot",
-          "to": "/site-shot"
-        },
-        {
-          "label": "SiteNear",
-          "to": "/site-near"
         }
       ],
       "dropdownLabel": "More Design Services",
@@ -47,20 +51,24 @@
       ],
       "dropdown": [
         {
+          "label": "SiteShot",
+          "to": "/siteshot"
+        },
+        {
+          "label": "SiteNear",
+          "to": "/sitenear"
+        },
+        {
           "label": "KaiJi 開工大吉",
           "to": "/"
         },
         {
+          "label": "Notebook",
+          "to": "/notebook"
+        },
+        {
           "label": "室內攝影",
           "to": "/sitephoto"
-        },
-        {
-          "label": "SiteShot",
-          "to": "/site-shot"
-        },
-        {
-          "label": "SiteNear",
-          "to": "/site-near"
         }
       ],
       "dropdownLabel": "更多設計服務",
@@ -81,20 +89,24 @@
       ],
       "dropdown": [
         {
+          "label": "SiteShot",
+          "to": "/siteshot"
+        },
+        {
+          "label": "SiteNear",
+          "to": "/sitenear"
+        },
+        {
           "label": "KaiJi 開工大吉ノート",
           "to": "/"
         },
         {
+          "label": "Notebook",
+          "to": "/notebook"
+        },
+        {
           "label": "室内撮影",
           "to": "/sitephoto"
-        },
-        {
-          "label": "SiteShot",
-          "to": "/site-shot"
-        },
-        {
-          "label": "SiteNear",
-          "to": "/site-near"
         }
       ],
       "dropdownLabel": "その他のデザインサービス",

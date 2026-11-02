@@ -12,6 +12,7 @@
         "photography": "Interior Photography",
         "siteshot": "SiteShot",
         "sitenear": "SiteNear",
+        "notebook": "Notebook",
         "app": "KaiJi"
       },
       "contact": {
@@ -32,7 +33,8 @@
         "app": "KaiJi",
         "photography": "室內攝影",
         "siteshot": "SiteShot",
-        "sitenear": "SiteNear"
+        "sitenear": "SiteNear",
+        "notebook": "Notebook"
       },
       "contact": {
         "email": "電子郵件"
@@ -52,6 +54,7 @@
         "photography": "室内撮影",
         "siteshot": "SiteShot",
         "sitenear": "SiteNear",
+        "notebook": "Notebook",
         "app": "KaiJi"
       },
       "contact": {
